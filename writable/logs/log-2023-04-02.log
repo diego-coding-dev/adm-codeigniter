@@ -1,0 +1,561 @@
+CRITICAL - 2023-04-02 00:15:28 --> syntax error, unexpected token "}"
+in APPPATH/Config/Routes.php on line 46.
+ 1 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-02 00:15:40 --> syntax error, unexpected token "if"
+in APPPATH/Config/Routes.php on line 60.
+ 1 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-02 00:15:48 --> Undefined variable $routes
+in APPPATH/Config/Routes.php on line 44.
+ 1 APPPATH/Config/Routes.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $routes', '/home/diego/_PHP/adm-codeigniter/app/Config/Routes.php', 44)
+ 2 SYSTEMPATH/Router/RouteCollection.php(676): CodeIgniter\Router\RouteCollection->Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 3 APPPATH/Config/Routes.php(42): CodeIgniter\Router\RouteCollection->group('employee', Object(Closure))
+ 4 SYSTEMPATH/Router/RouteCollection.php(676): CodeIgniter\Router\RouteCollection->Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 5 APPPATH/Config/Routes.php(37): CodeIgniter\Router\RouteCollection->group('adm', Object(Closure))
+ 6 SYSTEMPATH/Router/RouteCollection.php(267): require('/home/diego/_PHP/adm-codeigniter/app/Config/Routes.php')
+ 7 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 8 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-02 00:16:51 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\Adm/EmployeeController::index"
+in SYSTEMPATH/Router/Router.php on line 474.
+ 1 SYSTEMPATH/Router/Router.php(474): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\Adm/EmployeeController::index')
+ 2 SYSTEMPATH/Router/Router.php(182): CodeIgniter\Router\Router->checkRoutes('adm/employee/list-search')
+ 3 SYSTEMPATH/CodeIgniter.php(815): CodeIgniter\Router\Router->handle('adm/employee/list-search')
+ 4 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-02 09:41:08 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH/Controllers/Adm/Rh/EmployeeController.php on line 26.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Adm\\Rh\\EmployeeController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Adm\\Rh\\EmployeeController')
+ 4 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\Adm\\Rh\\EmployeeController', true)
+ 5 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-02 09:41:16 --> Invalid file: "adm/employee/.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('adm/employee/.php')
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('adm/employee/', [], true)
+ 3 APPPATH/Controllers/Adm/Rh/EmployeeController.php(25): view('adm/employee/')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->listSearch()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-02 09:56:16 --> Call to undefined method CodeIgniter\View\View::site_url()
+in APPPATH/Views/layout/adm-navbar.php on line 11.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/View/View.php(431): CodeIgniter\View\View->render('layout/adm-navbar', null, true)
+ 4 APPPATH/Views/layout/adm-main.php(19): CodeIgniter\View\View->include('layout/adm-navbar')
+ 5 SYSTEMPATH/View/View.php(213): include('/home/diego/_PHP/adm-codeigniter/app/Views/layout/adm-main.php')
+ 6 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('layout/adm-main', [], true)
+ 8 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('adm/rh/employee/listSearch', [], true)
+ 9 APPPATH/Controllers/Adm/Rh/EmployeeController.php(25): view('adm/rh/employee/listSearch', [...])
+10 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->listSearch()
+11 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+12 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-02 10:22:16 --> Too few arguments to function App\Controllers\Adm\Rh\EmployeeController::listSearch(), 0 passed in /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/Adm/Rh/EmployeeController.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->listSearch()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-02 13:19:35 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH/Controllers/Adm/Rh/EmployeeController.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-02 13:20:08 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH/Controllers/Adm/Rh/EmployeeController.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-02 13:20:11 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH/Controllers/Adm/Rh/EmployeeController.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-02 13:20:39 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH/Controllers/Adm/Rh/EmployeeController.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-02 13:20:40 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH/Controllers/Adm/Rh/EmployeeController.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-02 13:20:44 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH/Controllers/Adm/Rh/EmployeeController.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-02 13:21:23 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH/Controllers/Adm/Rh/EmployeeController.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-02 13:21:39 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH/Controllers/Adm/Rh/EmployeeController.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-02 13:22:11 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH/Controllers/Adm/Rh/EmployeeController.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-02 13:22:12 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH/Controllers/Adm/Rh/EmployeeController.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-02 17:43:19 --> Call to undefined method CodeIgniter\View\View::render_section()
+in APPPATH/Views/home.php on line 32.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH/Controllers/Home.php(9): view('home')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-02 17:53:40 --> Call to undefined method CodeIgniter\View\View::extends()
+in APPPATH/Views/home.php on line 1.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH/Controllers/Home.php(9): view('home')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-02 17:53:58 --> Call to undefined method CodeIgniter\View\View::endSction()
+in APPPATH/Views/home.php on line 7.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH/Controllers/Home.php(9): view('home')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-02 18:24:25 --> View themes, no current section.
+in SYSTEMPATH/View/View.php on line 394.
+ 1 APPPATH/Views/adm/rh/employee/adding.php(9): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/diego/_PHP/adm-codeigniter/app/Views/adm/rh/employee/adding.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('adm/rh/employee/adding', [], true)
+ 5 APPPATH/Controllers/Adm/Rh/EmployeeController.php(43): view('adm/rh/employee/adding', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->adding()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-02 18:24:43 --> View themes, no current section.
+in SYSTEMPATH/View/View.php on line 394.
+ 1 APPPATH/Views/adm/rh/employee/adding.php(9): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/diego/_PHP/adm-codeigniter/app/Views/adm/rh/employee/adding.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('adm/rh/employee/adding', [], true)
+ 5 APPPATH/Controllers/Adm/Rh/EmployeeController.php(43): view('adm/rh/employee/adding', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->adding()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-02 18:32:26 --> The route for "employee.list" cannot be found.
+in SYSTEMPATH/Helpers/url_helper.php on line 599.
+ 1 SYSTEMPATH/Helpers/url_helper.php(599): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('employee.list')
+ 2 APPPATH/Views/adm/rh/employee/adding.php(32): url_to('employee.list')
+ 3 SYSTEMPATH/View/View.php(213): include('/home/diego/_PHP/adm-codeigniter/app/Views/adm/rh/employee/adding.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('adm/rh/employee/adding', [], true)
+ 6 APPPATH/Controllers/Adm/Rh/EmployeeController.php(43): view('adm/rh/employee/adding', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->adding()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-02 19:09:40 --> Undefined variable $name
+in APPPATH/Controllers/Adm/Rh/EmployeeController.php on line 26.
+ 1 APPPATH/Controllers/Adm/Rh/EmployeeController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', '/home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php', 26)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->listSearch()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-02 19:38:53 --> syntax error, unexpected token ","
+in APPPATH/Config/Routes.php on line 46.
+ 1 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-02 20:29:34 --> "Este campo não atende aos requisitos mínimos!" is not a valid rule.
+in SYSTEMPATH/Validation/Validation.php on line 320.
+ 1 SYSTEMPATH/Validation/Validation.php(320): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('Este campo não atende aos requisitos mínimos!')
+ 2 SYSTEMPATH/Validation/Validation.php(170): CodeIgniter\Validation\Validation->processRules('errors', 'errors', null, [...], [...])
+ 3 APPPATH/Controllers/Adm/Rh/EmployeeController.php(35): CodeIgniter\Validation\Validation->run()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->listSearch()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-02 20:32:46 --> Call to undefined method CodeIgniter\Validation\Validation::get_errors()
+in APPPATH/Controllers/Adm/Rh/EmployeeController.php on line 36.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->listSearch()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-02 20:36:38 --> syntax error, unexpected token ";"
+in APPPATH/Controllers/Adm/Rh/EmployeeController.php on line 47.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Adm\\Rh\\EmployeeController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Adm\\Rh\\EmployeeController')
+ 4 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\Adm\\Rh\\EmployeeController', true)
+ 5 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-02 20:38:14 --> "permit_empty|string|min_length" is not a valid rule.
+in SYSTEMPATH/Validation/Validation.php on line 320.
+ 1 SYSTEMPATH/Validation/Validation.php(320): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('permit_empty|string|min_length')
+ 2 SYSTEMPATH/Validation/Validation.php(170): CodeIgniter\Validation\Validation->processRules('name', 'name', null, [...], [...])
+ 3 APPPATH/Controllers/Adm/Rh/EmployeeController.php(35): CodeIgniter\Validation\Validation->run()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->listSearch()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-02 20:39:52 --> CodeIgniter\Validation\Validation::run(): Argument #1 ($data) must be of type ?array, string given, called in /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php on line 35
+in SYSTEMPATH/Validation/Validation.php on line 110.
+ 1 APPPATH/Controllers/Adm/Rh/EmployeeController.php(35): CodeIgniter\Validation\Validation->run('fn', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->listSearch()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-02 20:40:04 --> CodeIgniter\Validation\Validation::run(): Argument #2 ($group) must be of type ?string, array given, called in /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php on line 35
+in SYSTEMPATH/Validation/Validation.php on line 110.
+ 1 APPPATH/Controllers/Adm/Rh/EmployeeController.php(35): CodeIgniter\Validation\Validation->run([...], [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->listSearch()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-02 20:49:35 --> Call to undefined method CodeIgniter\Validation\Validation::validate()
+in APPPATH/Controllers/Adm/Rh/EmployeeController.php on line 36.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->listSearch()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-02 21:00:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-02 21:01:36 --> compact(): Undefined variable $Este campo não atende aos requisitos mínimos!
+in APPPATH/Controllers/Adm/Rh/EmployeeController.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'compact(): Undefined variable $Este campo não atende aos requisitos mínimos!', '/home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php', 38)
+ 2 APPPATH/Controllers/Adm/Rh/EmployeeController.php(38): compact([...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->listSearch()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-02 21:02:13 --> compact(): Undefined variable $Este campo não atende aos requisitos mínimos!
+in APPPATH/Controllers/Adm/Rh/EmployeeController.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'compact(): Undefined variable $Este campo não atende aos requisitos mínimos!', '/home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php', 38)
+ 2 APPPATH/Controllers/Adm/Rh/EmployeeController.php(38): compact([...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->listSearch()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-02 21:03:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-02 21:05:22 --> Undefined variable $errors
+in APPPATH/Views/adm/rh/employee/listSearch.php on line 28.
+ 1 APPPATH/Views/adm/rh/employee/listSearch.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', '/home/diego/_PHP/adm-codeigniter/app/Views/adm/rh/employee/listSearch.php', 28)
+ 2 SYSTEMPATH/View/View.php(213): include('/home/diego/_PHP/adm-codeigniter/app/Views/adm/rh/employee/listSearch.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('adm/rh/employee/listSearch', [], true)
+ 5 APPPATH/Controllers/Adm/Rh/EmployeeController.php(49): view('adm/rh/employee/listSearch', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->listSearch()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-02 21:05:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-02 21:05:57 --> Undefined variable $errors
+in APPPATH/Views/adm/rh/employee/listSearch.php on line 28.
+ 1 APPPATH/Views/adm/rh/employee/listSearch.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', '/home/diego/_PHP/adm-codeigniter/app/Views/adm/rh/employee/listSearch.php', 28)
+ 2 SYSTEMPATH/View/View.php(213): include('/home/diego/_PHP/adm-codeigniter/app/Views/adm/rh/employee/listSearch.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('adm/rh/employee/listSearch', [], true)
+ 5 APPPATH/Controllers/Adm/Rh/EmployeeController.php(49): view('adm/rh/employee/listSearch', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->listSearch()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-02 21:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:06:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:06:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:07:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:07:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:07:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:08:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:08:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:08:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:09:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:10:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:10:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:10:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:10:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:10:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:11:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:11:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:11:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:11:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:11:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:11:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:11:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:12:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:12:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:12:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:12:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:12:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:12:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:12:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:12:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:12:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:12:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:13:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:13:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:13:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:13:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:13:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:13:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:13:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:13:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 21:30:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:31:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:31:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:32:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:32:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:34:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:44:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:44:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:45:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:45:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:45:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:45:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:45:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:46:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:46:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:46:24 --> CSRF token verified.
+INFO - 2023-04-02 21:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-02 21:47:02 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 306.
+ 1 SYSTEMPATH/Security/Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('adm/rh/employee/add', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-02 21:47:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:47:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:47:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:47:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:47:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:47:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:47:59 --> CSRF token verified.
+INFO - 2023-04-02 21:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-02 21:48:19 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 306.
+ 1 SYSTEMPATH/Security/Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('adm/rh/employee/add', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-02 21:48:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:48:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:48:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:48:26 --> CSRF token verified.
+INFO - 2023-04-02 21:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-02 21:48:42 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 306.
+ 1 SYSTEMPATH/Security/Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('adm/rh/employee/add', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-02 21:48:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:48:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:51:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 21:51:05 --> CSRF token verified.
+INFO - 2023-04-02 22:02:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:02:05 --> CSRF token verified.
+INFO - 2023-04-02 22:02:05 --> REDIRECTED ROUTE at error.404
+INFO - 2023-04-02 22:02:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:02:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:02:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:02:42 --> CSRF token verified.
+INFO - 2023-04-02 22:02:42 --> REDIRECTED ROUTE at /error
+INFO - 2023-04-02 22:02:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-02 22:02:42 --> Invalid file: "html/error_404.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('html/error_404.php')
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('html/error_404', [], true)
+ 3 APPPATH/Config/Routes.php(54): view('html/error_404')
+ 4 SYSTEMPATH/CodeIgniter.php(883): CodeIgniter\Router\RouteCollection->Config\{closure}()
+ 5 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-02 22:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:03:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:03:21 --> CSRF token verified.
+INFO - 2023-04-02 22:03:21 --> REDIRECTED ROUTE at error
+INFO - 2023-04-02 22:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-02 22:03:22 --> Invalid file: "html/error_404.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('html/error_404.php')
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('html/error_404', [], true)
+ 3 APPPATH/Config/Routes.php(54): view('html/error_404')
+ 4 SYSTEMPATH/CodeIgniter.php(883): CodeIgniter\Router\RouteCollection->Config\{closure}()
+ 5 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-02 22:03:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:03:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:03:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:03:39 --> CSRF token verified.
+INFO - 2023-04-02 22:03:39 --> REDIRECTED ROUTE at error
+INFO - 2023-04-02 22:03:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-02 22:03:39 --> Undefined variable $message
+in APPPATH/Views/errors/html/error_404.php on line 77.
+ 1 APPPATH/Views/errors/html/error_404.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message', '/home/diego/_PHP/adm-codeigniter/app/Views/errors/html/error_404.php', 77)
+ 2 SYSTEMPATH/View/View.php(213): include('/home/diego/_PHP/adm-codeigniter/app/Views/errors/html/error_404.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('errors/html/error_404', [], true)
+ 5 APPPATH/Config/Routes.php(54): view('errors/html/error_404')
+ 6 SYSTEMPATH/CodeIgniter.php(883): CodeIgniter\Router\RouteCollection->Config\{closure}()
+ 7 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-02 22:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:04:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:04:01 --> CSRF token verified.
+INFO - 2023-04-02 22:04:01 --> REDIRECTED ROUTE at error
+INFO - 2023-04-02 22:04:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-02 22:04:01 --> Undefined variable $message
+in APPPATH/Views/errors/html/error_404.php on line 77.
+ 1 APPPATH/Views/errors/html/error_404.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message', '/home/diego/_PHP/adm-codeigniter/app/Views/errors/html/error_404.php', 77)
+ 2 SYSTEMPATH/View/View.php(213): include('/home/diego/_PHP/adm-codeigniter/app/Views/errors/html/error_404.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('errors/html/error_404', [], true)
+ 5 APPPATH/Config/Routes.php(54): view('errors/html/error_404')
+ 6 SYSTEMPATH/CodeIgniter.php(883): CodeIgniter\Router\RouteCollection->Config\{closure}()
+ 7 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-02 22:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:04:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:04:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:04:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:04:10 --> CSRF token verified.
+INFO - 2023-04-02 22:04:10 --> REDIRECTED ROUTE at error
+INFO - 2023-04-02 22:04:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-02 22:04:10 --> Undefined variable $message
+in APPPATH/Views/errors/html/error_404.php on line 77.
+ 1 APPPATH/Views/errors/html/error_404.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message', '/home/diego/_PHP/adm-codeigniter/app/Views/errors/html/error_404.php', 77)
+ 2 SYSTEMPATH/View/View.php(213): include('/home/diego/_PHP/adm-codeigniter/app/Views/errors/html/error_404.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('errors/html/error_404', [], true)
+ 5 APPPATH/Config/Routes.php(54): view('errors/html/error_404')
+ 6 SYSTEMPATH/CodeIgniter.php(883): CodeIgniter\Router\RouteCollection->Config\{closure}()
+ 7 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-02 22:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:05:01 --> CSRF token verified.
+INFO - 2023-04-02 22:05:01 --> REDIRECTED ROUTE at error.404
+INFO - 2023-04-02 22:05:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:05:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:05:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:05:42 --> CSRF token verified.
+INFO - 2023-04-02 22:05:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:08:28 --> CSRF token verified.
+INFO - 2023-04-02 22:08:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:08:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:08:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:08:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:08:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:08:51 --> CSRF token verified.
+INFO - 2023-04-02 22:08:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:08:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:08:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:08:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:08:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:08:55 --> CSRF token verified.
+INFO - 2023-04-02 22:09:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:09:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:09:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:09:30 --> CSRF token verified.
+INFO - 2023-04-02 22:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:13:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-02 22:13:11 --> CSRF token verified.

@@ -29,9 +29,35 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+$routes->get('/', 'Home::index', ['as' => 'home']);
 
+/**
+ * rota adm
+ */
+$routes->group('adm', function ($routes) {
+    /**
+     * rota rh
+     */
+    $routes->group('rh', function ($routes) {
+        /**
+         * rota employee
+         */
+        $routes->group('employee', function ($routes) {
+            $routes->get('list-search', 'Adm\Rh\EmployeeController::listSearch', ['as' => 'employee.list-search']);
+            $routes->get('adding', 'Adm\Rh\EmployeeController::adding', ['as' => 'employee.adding']);
+            $routes->post('add', 'Adm\Rh\EmployeeController::add', ['as' => 'employee.add']);
+            $routes->get('show/(:hash)', 'Adm\Rh\EmployeeController::show/$1', ['as' => 'employee.show']);
+            $routes->get('disable/(:hash)', 'Adm\Rh\EmployeeController::disable/$1', ['as' => 'employee.disable']);
+            $routes->post('confirm-disable', 'Adm\Rh\EmployeeController::confirmDisable', ['as' => 'employee.confirm-disable']);
+            $routes->get('reactivate/(:hash)', 'Adm\Rh\EmployeeController::reactivate/$1', ['as' => 'employee.reactivate']);
+            $routes->post('confirm-reactivate', 'Adm\Rh\EmployeeController::confirmReactivate', ['as' => 'employee.confirm-reactivate']);
+        });
+    });
+});
 
+$routes->get('error', function () {
+    return view('errors/html/error_404');
+});
 /*
  * --------------------------------------------------------------------
  * Additional Routing

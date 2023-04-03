@@ -1,16 +1,19 @@
-    <!-- plugins:css -->
-    <link rel="stylesheet" href="<?php echo site_url(); ?>vendors/feather/feather.css">
-    <link rel="stylesheet" href="<?php echo site_url(); ?>vendors/mdi/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="<?php echo site_url(); ?>vendors/ti-icons/css/themify-icons.css">
-    <link rel="stylesheet" href="<?php echo site_url(); ?>vendors/typicons/typicons.css">
-    <link rel="stylesheet" href="<?php echo site_url(); ?>vendors/simple-line-icons/css/simple-line-icons.css">
-    <link rel="stylesheet" href="<?php echo site_url(); ?>vendors/css/vendor.bundle.base.css">
-    <!-- endinject -->
-    <!-- Plugin css for this page -->
-    <link rel="stylesheet" href="<?php echo site_url(); ?>vendors/datatables.net-bs4/dataTables.bootstrap4.css">
-    <link rel="stylesheet" href="<?php echo site_url(); ?>js/select.dataTables.min.css">
-    <!-- End plugin css for this page -->
-    <!-- inject:css -->
-    <link rel="stylesheet" href="<?php echo site_url(); ?>css/vertical-layout-light/style.css">
-    <!-- endinject -->
-    <link rel="shortcut icon" href="<?php echo site_url(); ?>images/favicon.png" />
+<!-- Favicons -->
+<link href="<?php echo site_url(); ?>assets/img/favicon.png" rel="icon">
+<link href="<?php echo site_url(); ?>assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+<!-- Google Fonts -->
+<link href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="<?php echo site_url(); ?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="<?php echo site_url(); ?>assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="<?php echo site_url(); ?>assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="<?php echo site_url(); ?>assets/vendor/quill/quill.snow.css" rel="stylesheet">
+<link href="<?php echo site_url(); ?>assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+<link href="<?php echo site_url(); ?>assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+<link href="<?php echo site_url(); ?>assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+<!-- Template Main CSS File -->
+<link href="<?php echo site_url(); ?>assets/css/style.css" rel="stylesheet">

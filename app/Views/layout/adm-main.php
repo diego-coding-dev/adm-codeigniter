@@ -2,53 +2,76 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>
-        <?php echo $this->section('title'); ?>
-    </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title><?php echo $this->renderSection('title'); ?></title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
 
     <?php echo $this->include('layout/adm-style'); ?>
 
+    <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Updated: Mar 09 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
-    <div class="container-scroller">
 
-        <?php echo $this->include('layout/adm-navbar'); ?>
+    <?php echo $this->include('layout/adm-navbar'); ?>
 
-        <!-- partial -->
-        <div class="container-fluid page-body-wrapper">
-            
-            <?php echo $this->include('layout/adm-sidebar'); ?>
+    <?php echo $this->include('layout/adm-sidebar'); ?>
 
-            <!-- partial -->
-            <div class="main-panel">
-                <div class="content-wrapper">
+    <main id="main" class="main">
+
+        <div class="pagetitle">
+            <h1><?php echo $this->renderSection('dashboard'); ?></h1>
+            <!-- <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Dashboard</li>
+                </ol>
+            </nav> -->
+        </div><!-- End Page Title -->
+
+        <section class="section dashboard">
+            <div class="row">
+
+                <!-- content -->
+                <div class="col-lg-12">
                     <div class="row">
-                        <div class="col-sm-12">
-                            
-                            <?php echo $this->renderSection('content'); ?>
 
-                        </div>
+                        <?php echo $this->include('layout/adm-messages'); ?>
+
+                        <?php echo $this->renderSection('content'); ?>
+
                     </div>
-                </div>
-                <!-- content-wrapper ends -->
-                <!-- partial:partials/_footer.html -->
-                <footer class="footer">
-                    <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                        <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from BootstrapDash.</span>
-                        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Copyright © 2021. All rights reserved.</span>
-                    </div>
-                </footer>
-                <!-- partial -->
+                </div><!-- End content -->
+
             </div>
-            <!-- main-panel ends -->
+        </section>
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <div class="copyright">
+            &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
         </div>
-        <!-- page-body-wrapper ends -->
-    </div>
-    <!-- container-scroller -->
+        <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
     <?php echo $this->include('layout/adm-script'); ?>
 
