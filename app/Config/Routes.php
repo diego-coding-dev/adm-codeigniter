@@ -55,6 +55,19 @@ $routes->group('adm', function ($routes) {
     });
 });
 
+/**
+ * Rota activation
+ */
+$routes->group('activation', function ($routes) {
+    /**
+     * Rota employee
+     */
+    $routes->group('employee', function ($routes) {
+        $routes->get('check/(:hash)', 'Activation\EmployeeActivationController::check/$1', ['as' => 'activation.employee-check']);
+        $routes->post('set-password', 'Activation\EmployeeActivationController::setPassword', ['as' => 'activation.employee-set-password']);
+    });
+});
+
 $routes->get('error', function () {
     return view('errors/html/error_404');
 });

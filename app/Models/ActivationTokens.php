@@ -18,7 +18,8 @@ class ActivationTokens extends Model
         'email',
         'token_hash',
         'created_at',
-        'updated_at'
+        'updated_at',
+        'deleted_at'
     ];
 
     // Dates

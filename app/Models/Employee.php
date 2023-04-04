@@ -32,7 +32,9 @@ class Employee extends Model
     // Validation
     protected $validationRules      = [
         'name' => 'required|string|min_length[4]|max_length[220]',
-        'email' => 'required|valid_email|string|min_length[5]|max_length[100]'
+        'email' => 'required|valid_email|string|min_length[5]|max_length[100]',
+        'password' => 'required|string|min_length[8]|max_length[100]|regex_match[/^.*([a-zA-Z][0-9]).*$/]',
+        'password_confirm' => 'required|matches[password]'
     ];
     protected $validationMessages   = [
         'name' => [
@@ -47,6 +49,17 @@ class Employee extends Model
             'string' => '* Este campo não atende aos requisitos mínimos!',
             'min_length' => '* Este campo não atende aos requisitos mínimos!',
             'max_length' => '* Este campo não atende aos requisitos mínimos!'
+        ],
+        'password' => [
+            'required' => '* Este campo é obrigatório!',
+            'string' => '* Este campo não atende aos requisitos mínimos!',
+            'min_length' => '* Este campo não atende aos requisitos mínimos!',
+            'max_length' => '* Este campo não atende aos requisitos mínimos!',
+            'regex_match' => '* Este campo não atende aos requisitos mínimos!'
+        ],
+        'password_confirm' => [
+            'required' => '* Este campo é obrigatório!',
+            'matches' => '* A senha não é igual!'
         ]
     ];
     protected $skipValidation       = false;
@@ -56,10 +69,29 @@ class Employee extends Model
     protected $allowCallbacks = true;
     protected $beforeInsert   = [];
     protected $afterInsert    = [];
-    protected $beforeUpdate   = [];
+    protected $beforeUpdate   = [
+        'hashPassword'
+    ];
     protected $afterUpdate    = [];
     protected $beforeFind     = [];
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    /**
+     * Criptografa a senha
+     *
+     * @param array $data
+     * @return array
+     */
+    protected function hashPassword(array $data): array
+    {
+        if (!isset($data['data']['password'])) {
+            return $data;
+        }
+
+        $data['data']['password'] = password_hash($data['data']['password'], PASSWORD_DEFAULT);
+
+        return $data;
+    }
 }

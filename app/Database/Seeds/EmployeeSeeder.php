@@ -18,6 +18,7 @@ class EmployeeSeeder extends Seeder
             'is_active' => true
         ];
 
-        $employeeModel->insert($employee);
+
+        $employeeModel->skipValidation(true)->insert($employee);
     }
 }

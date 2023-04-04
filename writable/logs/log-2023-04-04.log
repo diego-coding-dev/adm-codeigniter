@@ -1,0 +1,1464 @@
+INFO - 2023-04-04 08:28:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 08:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 08:28:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 08:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 08:28:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 08:28:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 08:29:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 08:29:04 --> CSRF token verified.
+INFO - 2023-04-04 08:29:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 08:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 08:31:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 08:31:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 08:31:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 08:31:24 --> CSRF token verified.
+INFO - 2023-04-04 08:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 08:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 08:58:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 08:58:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 08:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 08:59:31 --> CSRF token verified.
+INFO - 2023-04-04 09:04:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-04 09:04:49 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 306.
+ 1 SYSTEMPATH/Security/Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('activation/employee/set-password', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-04 09:04:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:04:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:04:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:04:55 --> CSRF token verified.
+INFO - 2023-04-04 09:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-04 09:07:00 --> syntax error, unexpected identifier "dd"
+in APPPATH/Controllers/Activation/EmployeeActivationController.php on line 65.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/diego/_PHP/adm-codeigniter/app/Controllers/Activation/EmployeeActivationController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Activation\\EmployeeActivationController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Activation\\EmployeeActivationController')
+ 4 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\Activation\\EmployeeActivationController', true)
+ 5 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-04 09:07:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:07:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:07:09 --> CSRF token verified.
+INFO - 2023-04-04 09:07:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:07:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:07:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:07:49 --> CSRF token verified.
+INFO - 2023-04-04 09:08:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:08:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:08:14 --> CSRF token verified.
+INFO - 2023-04-04 09:08:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:08:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:08:28 --> CSRF token verified.
+INFO - 2023-04-04 09:08:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:08:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:08:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:08:54 --> CSRF token verified.
+INFO - 2023-04-04 09:09:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:09:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:09:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:09:16 --> CSRF token verified.
+INFO - 2023-04-04 09:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:09:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:09:30 --> CSRF token verified.
+INFO - 2023-04-04 09:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:09:52 --> CSRF token verified.
+INFO - 2023-04-04 09:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:10:00 --> CSRF token verified.
+INFO - 2023-04-04 09:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:10:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:10:06 --> CSRF token verified.
+INFO - 2023-04-04 09:10:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:10:21 --> CSRF token verified.
+INFO - 2023-04-04 09:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:10:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:10:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:10:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:10:40 --> CSRF token verified.
+CRITICAL - 2023-04-04 09:10:40 --> "regex_match:/^.*(" is not a valid rule.
+in SYSTEMPATH/Validation/Validation.php on line 320.
+ 1 SYSTEMPATH/Validation/Validation.php(320): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('regex_match:/^.*(')
+ 2 SYSTEMPATH/Validation/Validation.php(170): CodeIgniter\Validation\Validation->processRules('password', 'password', '12345678', [...], [...])
+ 3 SYSTEMPATH/BaseModel.php(1453): CodeIgniter\Validation\Validation->run([...], null, 'default')
+ 4 APPPATH/Controllers/Activation/EmployeeActivationController.php(65): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Activation\EmployeeActivationController->setPassword()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Activation\EmployeeActivationController))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-04 09:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:11:38 --> CSRF token verified.
+CRITICAL - 2023-04-04 09:11:38 --> "regex_match:" is not a valid rule.
+in SYSTEMPATH/Validation/Validation.php on line 320.
+ 1 SYSTEMPATH/Validation/Validation.php(320): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('regex_match:')
+ 2 SYSTEMPATH/Validation/Validation.php(170): CodeIgniter\Validation\Validation->processRules('password', 'password', '12345678', [...], [...])
+ 3 SYSTEMPATH/BaseModel.php(1453): CodeIgniter\Validation\Validation->run([...], null, 'default')
+ 4 APPPATH/Controllers/Activation/EmployeeActivationController.php(65): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Activation\EmployeeActivationController->setPassword()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Activation\EmployeeActivationController))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-04 09:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:12:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:12:31 --> CSRF token verified.
+INFO - 2023-04-04 09:12:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:12:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:13:29 --> CSRF token verified.
+INFO - 2023-04-04 09:13:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:13:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:13:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:13:55 --> CSRF token verified.
+INFO - 2023-04-04 09:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:14:10 --> CSRF token verified.
+INFO - 2023-04-04 09:14:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:14:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:28:30 --> CSRF token verified.
+INFO - 2023-04-04 09:28:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:28:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:41:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:41:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:41:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:41:48 --> CSRF token verified.
+ERROR - 2023-04-04 09:41:48 --> ErrorException: pg_query(): Query failed: ERROR:  lastval is not yet defined in this session in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT LASTVAL(...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT LASTVAL(...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT LASTVAL(...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(440): CodeIgniter\Database\BaseConnection->query('SELECT LASTVAL(...')
+#5 /home/diego/_PHP/adm-codeigniter/system/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+#6 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 /home/diego/_PHP/adm-codeigniter/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert(Array)
+#9 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee(Array)
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+#12 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#15 {main}
+CRITICAL - 2023-04-04 09:41:48 --> Call to a member function getRow() on bool
+in SYSTEMPATH/Database/Postgre/Connection.php on line 441.
+ 1 SYSTEMPATH/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+ 2 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert([...])
+ 5 APPPATH/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee([...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+ERROR - 2023-04-04 09:41:48 --> ErrorException: pg_query(): Query failed: ERROR:  current transaction is aborted, commands ignored until end of transaction block in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "adm-ses...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "adm-ses...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "adm-ses...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "adm-ses...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Session/Handlers/DatabaseHandler.php(230): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('d11oesr3spikh8b...', '__ci_last_regen...')
+#7 [internal function]: session_write_close()
+#8 {main}
+INFO - 2023-04-04 09:41:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:41:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:42:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:42:03 --> CSRF token verified.
+ERROR - 2023-04-04 09:42:03 --> ErrorException: pg_query(): Query failed: ERROR:  lastval is not yet defined in this session in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT LASTVAL(...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT LASTVAL(...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT LASTVAL(...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(440): CodeIgniter\Database\BaseConnection->query('SELECT LASTVAL(...')
+#5 /home/diego/_PHP/adm-codeigniter/system/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+#6 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 /home/diego/_PHP/adm-codeigniter/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert(Array)
+#9 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee(Array)
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+#12 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#15 {main}
+CRITICAL - 2023-04-04 09:42:03 --> Call to a member function getRow() on bool
+in SYSTEMPATH/Database/Postgre/Connection.php on line 441.
+ 1 SYSTEMPATH/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+ 2 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert([...])
+ 5 APPPATH/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee([...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+ERROR - 2023-04-04 09:42:03 --> ErrorException: pg_query(): Query failed: ERROR:  current transaction is aborted, commands ignored until end of transaction block in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "adm-ses...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "adm-ses...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "adm-ses...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "adm-ses...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Session/Handlers/DatabaseHandler.php(230): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('d11oesr3spikh8b...', '__ci_last_regen...')
+#7 [internal function]: session_write_close()
+#8 {main}
+INFO - 2023-04-04 09:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:43:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:43:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:43:33 --> CSRF token verified.
+ERROR - 2023-04-04 09:43:33 --> ErrorException: pg_query(): Query failed: ERROR:  lastval is not yet defined in this session in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT LASTVAL(...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT LASTVAL(...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT LASTVAL(...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(440): CodeIgniter\Database\BaseConnection->query('SELECT LASTVAL(...')
+#5 /home/diego/_PHP/adm-codeigniter/system/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+#6 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 /home/diego/_PHP/adm-codeigniter/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert(Array)
+#9 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee(Array)
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+#12 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#15 {main}
+CRITICAL - 2023-04-04 09:43:33 --> Call to a member function getRow() on bool
+in SYSTEMPATH/Database/Postgre/Connection.php on line 441.
+ 1 SYSTEMPATH/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+ 2 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert([...])
+ 5 APPPATH/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee([...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+ERROR - 2023-04-04 09:43:33 --> ErrorException: pg_query(): Query failed: ERROR:  current transaction is aborted, commands ignored until end of transaction block in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "adm-ses...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "adm-ses...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "adm-ses...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "adm-ses...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Session/Handlers/DatabaseHandler.php(230): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('d11oesr3spikh8b...', '__ci_last_regen...')
+#7 [internal function]: session_write_close()
+#8 {main}
+INFO - 2023-04-04 09:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:44:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:44:28 --> CSRF token verified.
+INFO - 2023-04-04 09:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:44:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:44:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:44:52 --> CSRF token verified.
+ERROR - 2023-04-04 09:44:52 --> ErrorException: pg_query(): Query failed: ERROR:  lastval is not yet defined in this session in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT LASTVAL(...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT LASTVAL(...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT LASTVAL(...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(440): CodeIgniter\Database\BaseConnection->query('SELECT LASTVAL(...')
+#5 /home/diego/_PHP/adm-codeigniter/system/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+#6 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 /home/diego/_PHP/adm-codeigniter/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert(Array)
+#9 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee(Array)
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+#12 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#15 {main}
+CRITICAL - 2023-04-04 09:44:52 --> Call to a member function getRow() on bool
+in SYSTEMPATH/Database/Postgre/Connection.php on line 441.
+ 1 SYSTEMPATH/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+ 2 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert([...])
+ 5 APPPATH/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee([...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+ERROR - 2023-04-04 09:44:52 --> ErrorException: pg_query(): Query failed: ERROR:  current transaction is aborted, commands ignored until end of transaction block in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "adm-ses...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "adm-ses...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "adm-ses...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "adm-ses...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Session/Handlers/DatabaseHandler.php(230): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('d11oesr3spikh8b...', '__ci_last_regen...')
+#7 [internal function]: session_write_close()
+#8 {main}
+INFO - 2023-04-04 09:46:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:46:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:46:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:46:22 --> CSRF token verified.
+ERROR - 2023-04-04 09:46:22 --> ErrorException: pg_query(): Query failed: ERROR:  lastval is not yet defined in this session in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT LASTVAL(...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT LASTVAL(...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT LASTVAL(...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(440): CodeIgniter\Database\BaseConnection->query('SELECT LASTVAL(...')
+#5 /home/diego/_PHP/adm-codeigniter/system/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+#6 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 /home/diego/_PHP/adm-codeigniter/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert(Array)
+#9 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee(Array)
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+#12 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#15 {main}
+CRITICAL - 2023-04-04 09:46:22 --> Call to a member function getRow() on bool
+in SYSTEMPATH/Database/Postgre/Connection.php on line 441.
+ 1 SYSTEMPATH/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+ 2 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert([...])
+ 5 APPPATH/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee([...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+ERROR - 2023-04-04 09:46:22 --> ErrorException: pg_query(): Query failed: ERROR:  current transaction is aborted, commands ignored until end of transaction block in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "adm-ses...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "adm-ses...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "adm-ses...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "adm-ses...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Session/Handlers/DatabaseHandler.php(230): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('d11oesr3spikh8b...', '__ci_last_regen...')
+#7 [internal function]: session_write_close()
+#8 {main}
+INFO - 2023-04-04 09:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:46:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:46:29 --> CSRF token verified.
+ERROR - 2023-04-04 09:46:29 --> ErrorException: pg_query(): Query failed: ERROR:  lastval is not yet defined in this session in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT LASTVAL(...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT LASTVAL(...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT LASTVAL(...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(440): CodeIgniter\Database\BaseConnection->query('SELECT LASTVAL(...')
+#5 /home/diego/_PHP/adm-codeigniter/system/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+#6 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 /home/diego/_PHP/adm-codeigniter/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert(Array)
+#9 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee(Array)
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+#12 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#15 {main}
+CRITICAL - 2023-04-04 09:46:29 --> Call to a member function getRow() on bool
+in SYSTEMPATH/Database/Postgre/Connection.php on line 441.
+ 1 SYSTEMPATH/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+ 2 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert([...])
+ 5 APPPATH/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee([...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+ERROR - 2023-04-04 09:46:29 --> ErrorException: pg_query(): Query failed: ERROR:  current transaction is aborted, commands ignored until end of transaction block in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "adm-ses...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "adm-ses...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "adm-ses...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "adm-ses...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Session/Handlers/DatabaseHandler.php(230): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('d11oesr3spikh8b...', '__ci_last_regen...')
+#7 [internal function]: session_write_close()
+#8 {main}
+INFO - 2023-04-04 09:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:46:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:46:55 --> CSRF token verified.
+ERROR - 2023-04-04 09:46:55 --> ErrorException: pg_query(): Query failed: ERROR:  lastval is not yet defined in this session in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT LASTVAL(...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT LASTVAL(...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT LASTVAL(...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(440): CodeIgniter\Database\BaseConnection->query('SELECT LASTVAL(...')
+#5 /home/diego/_PHP/adm-codeigniter/system/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+#6 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 /home/diego/_PHP/adm-codeigniter/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert(Array)
+#9 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee(Array)
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+#12 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#15 {main}
+CRITICAL - 2023-04-04 09:46:55 --> Call to a member function getRow() on bool
+in SYSTEMPATH/Database/Postgre/Connection.php on line 441.
+ 1 SYSTEMPATH/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+ 2 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert([...])
+ 5 APPPATH/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee([...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+ERROR - 2023-04-04 09:46:55 --> ErrorException: pg_query(): Query failed: ERROR:  current transaction is aborted, commands ignored until end of transaction block in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "ad...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ad...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ad...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ad...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Session/Handlers/DatabaseHandler.php(208): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('h9ntc7brl80ossj...', '__ci_last_regen...')
+#7 [internal function]: session_write_close()
+#8 {main}
+INFO - 2023-04-04 09:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:50:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:50:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:50:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:50:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:50:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:50:20 --> CSRF token verified.
+ERROR - 2023-04-04 09:50:20 --> ErrorException: pg_query(): Query failed: ERROR:  lastval is not yet defined in this session in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT LASTVAL(...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT LASTVAL(...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT LASTVAL(...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(440): CodeIgniter\Database\BaseConnection->query('SELECT LASTVAL(...')
+#5 /home/diego/_PHP/adm-codeigniter/system/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+#6 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 /home/diego/_PHP/adm-codeigniter/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert(Array)
+#9 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee(Array)
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+#12 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#15 {main}
+CRITICAL - 2023-04-04 09:50:20 --> Call to a member function getRow() on bool
+in SYSTEMPATH/Database/Postgre/Connection.php on line 441.
+ 1 SYSTEMPATH/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+ 2 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert([...])
+ 5 APPPATH/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee([...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+ERROR - 2023-04-04 09:50:20 --> ErrorException: pg_query(): Query failed: ERROR:  current transaction is aborted, commands ignored until end of transaction block in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "adm-ses...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "adm-ses...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "adm-ses...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "adm-ses...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Session/Handlers/DatabaseHandler.php(230): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('h9ntc7brl80ossj...', '__ci_last_regen...')
+#7 [internal function]: session_write_close()
+#8 {main}
+INFO - 2023-04-04 09:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:52:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:52:22 --> CSRF token verified.
+ERROR - 2023-04-04 09:52:22 --> ErrorException: pg_query(): Query failed: ERROR:  lastval is not yet defined in this session in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT LASTVAL(...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT LASTVAL(...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT LASTVAL(...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(440): CodeIgniter\Database\BaseConnection->query('SELECT LASTVAL(...')
+#5 /home/diego/_PHP/adm-codeigniter/system/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+#6 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 /home/diego/_PHP/adm-codeigniter/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert(Array)
+#9 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee(Array)
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+#12 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#15 {main}
+CRITICAL - 2023-04-04 09:52:22 --> Call to a member function getRow() on bool
+in SYSTEMPATH/Database/Postgre/Connection.php on line 441.
+ 1 SYSTEMPATH/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+ 2 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert([...])
+ 5 APPPATH/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee([...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+ERROR - 2023-04-04 09:52:22 --> ErrorException: pg_query(): Query failed: ERROR:  current transaction is aborted, commands ignored until end of transaction block in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "adm-ses...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "adm-ses...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "adm-ses...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "adm-ses...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Session/Handlers/DatabaseHandler.php(230): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('o59f9g0kkoh8ios...', '__ci_last_regen...')
+#7 [internal function]: session_write_close()
+#8 {main}
+INFO - 2023-04-04 09:52:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:52:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:52:55 --> CSRF token verified.
+ERROR - 2023-04-04 09:52:55 --> ErrorException: pg_query(): Query failed: ERROR:  lastval is not yet defined in this session in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT LASTVAL(...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT LASTVAL(...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT LASTVAL(...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(440): CodeIgniter\Database\BaseConnection->query('SELECT LASTVAL(...')
+#5 /home/diego/_PHP/adm-codeigniter/system/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+#6 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 /home/diego/_PHP/adm-codeigniter/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert(Array)
+#9 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee(Array)
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+#12 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#15 {main}
+CRITICAL - 2023-04-04 09:52:55 --> Call to a member function getRow() on bool
+in SYSTEMPATH/Database/Postgre/Connection.php on line 441.
+ 1 SYSTEMPATH/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+ 2 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert([...])
+ 5 APPPATH/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee([...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+ERROR - 2023-04-04 09:52:55 --> ErrorException: pg_query(): Query failed: ERROR:  current transaction is aborted, commands ignored until end of transaction block in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "adm-ses...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "adm-ses...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "adm-ses...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "adm-ses...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Session/Handlers/DatabaseHandler.php(230): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('o59f9g0kkoh8ios...', '__ci_last_regen...')
+#7 [internal function]: session_write_close()
+#8 {main}
+INFO - 2023-04-04 09:56:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:56:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:56:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:56:04 --> CSRF token verified.
+ERROR - 2023-04-04 09:56:04 --> ErrorException: pg_query(): Query failed: ERROR:  lastval is not yet defined in this session in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT LASTVAL(...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT LASTVAL(...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT LASTVAL(...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(440): CodeIgniter\Database\BaseConnection->query('SELECT LASTVAL(...')
+#5 /home/diego/_PHP/adm-codeigniter/system/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+#6 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 /home/diego/_PHP/adm-codeigniter/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert(Array)
+#9 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee(Array)
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+#12 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#15 {main}
+CRITICAL - 2023-04-04 09:56:04 --> Call to a member function getRow() on bool
+in SYSTEMPATH/Database/Postgre/Connection.php on line 441.
+ 1 SYSTEMPATH/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+ 2 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert([...])
+ 5 APPPATH/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee([...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+ERROR - 2023-04-04 09:56:04 --> ErrorException: pg_query(): Query failed: ERROR:  current transaction is aborted, commands ignored until end of transaction block in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "adm-ses...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "adm-ses...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "adm-ses...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "adm-ses...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Session/Handlers/DatabaseHandler.php(230): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('o59f9g0kkoh8ios...', '__ci_last_regen...')
+#7 [internal function]: session_write_close()
+#8 {main}
+INFO - 2023-04-04 09:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:56:43 --> CSRF token verified.
+INFO - 2023-04-04 09:57:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:57:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:57:28 --> CSRF token verified.
+INFO - 2023-04-04 09:57:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:57:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:57:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:57:34 --> CSRF token verified.
+INFO - 2023-04-04 09:57:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:57:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:57:48 --> CSRF token verified.
+ERROR - 2023-04-04 09:57:48 --> ErrorException: pg_query(): Query failed: ERROR:  lastval is not yet defined in this session in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT LASTVAL(...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT LASTVAL(...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT LASTVAL(...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(440): CodeIgniter\Database\BaseConnection->query('SELECT LASTVAL(...')
+#5 /home/diego/_PHP/adm-codeigniter/system/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+#6 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 /home/diego/_PHP/adm-codeigniter/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(210): CodeIgniter\Model->insert(Array)
+#9 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee(Array)
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+#12 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#15 {main}
+CRITICAL - 2023-04-04 09:57:48 --> Call to a member function getRow() on bool
+in SYSTEMPATH/Database/Postgre/Connection.php on line 441.
+ 1 SYSTEMPATH/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+ 2 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/Adm/Rh/EmployeeController.php(210): CodeIgniter\Model->insert([...])
+ 5 APPPATH/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee([...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+ERROR - 2023-04-04 09:57:48 --> ErrorException: pg_query(): Query failed: ERROR:  current transaction is aborted, commands ignored until end of transaction block in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "adm-ses...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "adm-ses...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "adm-ses...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "adm-ses...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Session/Handlers/DatabaseHandler.php(230): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('4sim4v0vh8vnea3...', '__ci_last_regen...')
+#7 [internal function]: session_write_close()
+#8 {main}
+INFO - 2023-04-04 09:58:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:58:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:58:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:58:18 --> CSRF token verified.
+ERROR - 2023-04-04 09:58:18 --> ErrorException: pg_query(): Query failed: ERROR:  lastval is not yet defined in this session in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT LASTVAL(...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT LASTVAL(...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT LASTVAL(...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(440): CodeIgniter\Database\BaseConnection->query('SELECT LASTVAL(...')
+#5 /home/diego/_PHP/adm-codeigniter/system/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+#6 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 /home/diego/_PHP/adm-codeigniter/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert(Array)
+#9 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee(Array)
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+#12 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#15 {main}
+CRITICAL - 2023-04-04 09:58:18 --> Call to a member function getRow() on bool
+in SYSTEMPATH/Database/Postgre/Connection.php on line 441.
+ 1 SYSTEMPATH/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+ 2 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert([...])
+ 5 APPPATH/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee([...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+ERROR - 2023-04-04 09:58:18 --> ErrorException: pg_query(): Query failed: ERROR:  current transaction is aborted, commands ignored until end of transaction block in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "adm-ses...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "adm-ses...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "adm-ses...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "adm-ses...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Session/Handlers/DatabaseHandler.php(230): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('4sim4v0vh8vnea3...', '__ci_last_regen...')
+#7 [internal function]: session_write_close()
+#8 {main}
+INFO - 2023-04-04 09:58:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:58:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:58:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:58:42 --> CSRF token verified.
+ERROR - 2023-04-04 09:58:42 --> ErrorException: pg_query(): Query failed: ERROR:  lastval is not yet defined in this session in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT LASTVAL(...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT LASTVAL(...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT LASTVAL(...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(440): CodeIgniter\Database\BaseConnection->query('SELECT LASTVAL(...')
+#5 /home/diego/_PHP/adm-codeigniter/system/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+#6 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 /home/diego/_PHP/adm-codeigniter/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert(Array)
+#9 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee(Array)
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+#12 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#15 {main}
+CRITICAL - 2023-04-04 09:58:42 --> Call to a member function getRow() on bool
+in SYSTEMPATH/Database/Postgre/Connection.php on line 441.
+ 1 SYSTEMPATH/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+ 2 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert([...])
+ 5 APPPATH/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee([...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+ERROR - 2023-04-04 09:58:42 --> ErrorException: pg_query(): Query failed: ERROR:  current transaction is aborted, commands ignored until end of transaction block in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "adm-ses...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "adm-ses...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "adm-ses...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "adm-ses...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Session/Handlers/DatabaseHandler.php(230): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('4sim4v0vh8vnea3...', '__ci_last_regen...')
+#7 [internal function]: session_write_close()
+#8 {main}
+INFO - 2023-04-04 09:58:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:58:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:59:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:59:07 --> CSRF token verified.
+CRITICAL - 2023-04-04 09:59:07 --> Undefined variable $activationData
+in APPPATH/Controllers/Adm/Rh/EmployeeController.php on line 201.
+ 1 APPPATH/Controllers/Adm/Rh/EmployeeController.php(201): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $activationData', '/home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php', 201)
+ 2 APPPATH/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee([...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-04 09:59:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:59:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 09:59:31 --> CSRF token verified.
+INFO - 2023-04-04 10:00:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:00:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:00:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:00:19 --> CSRF token verified.
+ERROR - 2023-04-04 10:00:19 --> ErrorException: pg_query(): Query failed: ERROR:  lastval is not yet defined in this session in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT LASTVAL(...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT LASTVAL(...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT LASTVAL(...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(440): CodeIgniter\Database\BaseConnection->query('SELECT LASTVAL(...')
+#5 /home/diego/_PHP/adm-codeigniter/system/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+#6 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 /home/diego/_PHP/adm-codeigniter/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(213): CodeIgniter\Model->insert(Array)
+#9 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee(Array)
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+#12 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#15 {main}
+CRITICAL - 2023-04-04 10:00:19 --> Call to a member function getRow() on bool
+in SYSTEMPATH/Database/Postgre/Connection.php on line 441.
+ 1 SYSTEMPATH/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+ 2 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/Adm/Rh/EmployeeController.php(213): CodeIgniter\Model->insert([...])
+ 5 APPPATH/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee([...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+ERROR - 2023-04-04 10:00:19 --> ErrorException: pg_query(): Query failed: ERROR:  current transaction is aborted, commands ignored until end of transaction block in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "adm-ses...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "adm-ses...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "adm-ses...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "adm-ses...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Session/Handlers/DatabaseHandler.php(230): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('4sim4v0vh8vnea3...', '__ci_last_regen...')
+#7 [internal function]: session_write_close()
+#8 {main}
+INFO - 2023-04-04 10:01:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:01:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:01:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:01:37 --> CSRF token verified.
+ERROR - 2023-04-04 10:01:37 --> ErrorException: pg_query(): Query failed: ERROR:  lastval is not yet defined in this session in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT LASTVAL(...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT LASTVAL(...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT LASTVAL(...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(440): CodeIgniter\Database\BaseConnection->query('SELECT LASTVAL(...')
+#5 /home/diego/_PHP/adm-codeigniter/system/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+#6 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 /home/diego/_PHP/adm-codeigniter/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert(Array)
+#9 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee(Array)
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+#12 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#15 {main}
+CRITICAL - 2023-04-04 10:01:37 --> Call to a member function getRow() on bool
+in SYSTEMPATH/Database/Postgre/Connection.php on line 441.
+ 1 SYSTEMPATH/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+ 2 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert([...])
+ 5 APPPATH/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee([...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+ERROR - 2023-04-04 10:01:37 --> ErrorException: pg_query(): Query failed: ERROR:  current transaction is aborted, commands ignored until end of transaction block in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "adm-ses...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "adm-ses...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "adm-ses...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "adm-ses...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Session/Handlers/DatabaseHandler.php(230): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('4sim4v0vh8vnea3...', '__ci_last_regen...')
+#7 [internal function]: session_write_close()
+#8 {main}
+INFO - 2023-04-04 10:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:02:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:02:32 --> CSRF token verified.
+ERROR - 2023-04-04 10:02:32 --> ErrorException: pg_query(): Query failed: ERROR:  lastval is not yet defined in this session in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT LASTVAL(...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT LASTVAL(...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT LASTVAL(...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(440): CodeIgniter\Database\BaseConnection->query('SELECT LASTVAL(...')
+#5 /home/diego/_PHP/adm-codeigniter/system/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+#6 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 /home/diego/_PHP/adm-codeigniter/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert(Array)
+#9 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee(Array)
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+#12 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#15 {main}
+CRITICAL - 2023-04-04 10:02:32 --> Call to a member function getRow() on bool
+in SYSTEMPATH/Database/Postgre/Connection.php on line 441.
+ 1 SYSTEMPATH/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+ 2 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert([...])
+ 5 APPPATH/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee([...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+ERROR - 2023-04-04 10:02:32 --> ErrorException: pg_query(): Query failed: ERROR:  current transaction is aborted, commands ignored until end of transaction block in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "adm-ses...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "adm-ses...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "adm-ses...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "adm-ses...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Session/Handlers/DatabaseHandler.php(230): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('p6g317mtqp4kdpm...', '__ci_last_regen...')
+#7 [internal function]: session_write_close()
+#8 {main}
+INFO - 2023-04-04 10:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:04:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:04:42 --> CSRF token verified.
+ERROR - 2023-04-04 10:04:42 --> ErrorException: pg_query(): Query failed: ERROR:  lastval is not yet defined in this session in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT LASTVAL(...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT LASTVAL(...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT LASTVAL(...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(440): CodeIgniter\Database\BaseConnection->query('SELECT LASTVAL(...')
+#5 /home/diego/_PHP/adm-codeigniter/system/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+#6 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 /home/diego/_PHP/adm-codeigniter/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert(Array)
+#9 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee(Array)
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+#12 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#15 {main}
+CRITICAL - 2023-04-04 10:04:42 --> Call to a member function getRow() on bool
+in SYSTEMPATH/Database/Postgre/Connection.php on line 441.
+ 1 SYSTEMPATH/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+ 2 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert([...])
+ 5 APPPATH/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee([...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+ERROR - 2023-04-04 10:04:42 --> ErrorException: pg_query(): Query failed: ERROR:  current transaction is aborted, commands ignored until end of transaction block in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "adm-ses...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "adm-ses...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "adm-ses...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "adm-ses...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Session/Handlers/DatabaseHandler.php(230): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('p6g317mtqp4kdpm...', '__ci_last_regen...')
+#7 [internal function]: session_write_close()
+#8 {main}
+INFO - 2023-04-04 10:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:05:14 --> CSRF token verified.
+INFO - 2023-04-04 10:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:12:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:12:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:12:05 --> CSRF token verified.
+ERROR - 2023-04-04 10:12:05 --> ErrorException: pg_query(): Query failed: ERROR:  lastval is not yet defined in this session in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT LASTVAL(...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT LASTVAL(...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT LASTVAL(...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(440): CodeIgniter\Database\BaseConnection->query('SELECT LASTVAL(...')
+#5 /home/diego/_PHP/adm-codeigniter/system/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+#6 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 /home/diego/_PHP/adm-codeigniter/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert(Array)
+#9 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee(Array)
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+#12 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#15 {main}
+CRITICAL - 2023-04-04 10:12:05 --> Call to a member function getRow() on bool
+in SYSTEMPATH/Database/Postgre/Connection.php on line 441.
+ 1 SYSTEMPATH/Model.php(335): CodeIgniter\Database\Postgre\Connection->insertID()
+ 2 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/Adm/Rh/EmployeeController.php(211): CodeIgniter\Model->insert([...])
+ 5 APPPATH/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee([...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+ERROR - 2023-04-04 10:12:05 --> ErrorException: pg_query(): Query failed: ERROR:  current transaction is aborted, commands ignored until end of transaction block in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "adm-ses...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "adm-ses...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "adm-ses...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "adm-ses...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Session/Handlers/DatabaseHandler.php(230): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('3vjdo10m898221o...', '__ci_last_regen...')
+#7 [internal function]: session_write_close()
+#8 {main}
+INFO - 2023-04-04 10:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:12:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:12:14 --> CSRF token verified.
+INFO - 2023-04-04 10:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:16:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:16:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:17:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:17:00 --> CSRF token verified.
+CRITICAL - 2023-04-04 10:17:00 --> Call to undefined method App\Models\Employee::validateForInsert
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Controllers/Adm/Rh/EmployeeController.php(210): CodeIgniter\Model->__call('validateForInsert', [])
+ 2 APPPATH/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee([...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-04 10:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:17:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:17:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:17:52 --> CSRF token verified.
+INFO - 2023-04-04 10:18:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:18:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:18:21 --> CSRF token verified.
+CRITICAL - 2023-04-04 10:18:21 --> Undefined variable $validationRules
+in APPPATH/Models/Employee.php on line 77.
+ 1 APPPATH/Models/Employee.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validationRules', '/home/diego/_PHP/adm-codeigniter/app/Models/Employee.php', 77)
+ 2 APPPATH/Controllers/Adm/Rh/EmployeeController.php(210): App\Models\Employee->validateForInsert()
+ 3 APPPATH/Controllers/Adm/Rh/EmployeeController.php(94): App\Controllers\Adm\Rh\EmployeeController->persistNewEmployee([...])
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-04 10:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:18:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:18:33 --> CSRF token verified.
+INFO - 2023-04-04 10:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:19:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:19:07 --> CSRF token verified.
+INFO - 2023-04-04 10:34:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:39:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:39:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:39:13 --> CSRF token verified.
+INFO - 2023-04-04 10:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:39:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:43:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:43:23 --> CSRF token verified.
+INFO - 2023-04-04 10:43:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:43:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:44:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:45:19 --> CSRF token verified.
+INFO - 2023-04-04 10:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:46:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:46:35 --> CSRF token verified.
+INFO - 2023-04-04 10:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:47:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:47:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:47:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:47:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:47:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:47:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:47:28 --> CSRF token verified.
+INFO - 2023-04-04 10:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:47:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:47:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:47:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:47:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:47:37 --> CSRF token verified.
+INFO - 2023-04-04 10:47:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:47:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:48:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:48:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:48:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:48:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:48:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:48:37 --> CSRF token verified.
+INFO - 2023-04-04 10:48:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:48:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:49:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:49:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:49:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:49:03 --> CSRF token verified.
+INFO - 2023-04-04 10:49:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:49:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:49:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:49:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:49:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:49:41 --> CSRF token verified.
+INFO - 2023-04-04 10:49:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:49:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:49:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:49:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:49:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:49:58 --> CSRF token verified.
+INFO - 2023-04-04 10:49:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:50:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:50:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:50:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:50:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:50:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:50:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:50:51 --> CSRF token verified.
+INFO - 2023-04-04 10:50:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:50:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:50:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:50:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:50:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:50:57 --> CSRF token verified.
+INFO - 2023-04-04 10:50:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:50:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:51:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:51:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:51:49 --> CSRF token verified.
+INFO - 2023-04-04 10:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:52:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:52:06 --> CSRF token verified.
+INFO - 2023-04-04 10:52:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:52:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:52:24 --> CSRF token verified.
+INFO - 2023-04-04 10:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:52:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:52:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:52:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:52:31 --> CSRF token verified.
+INFO - 2023-04-04 10:52:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:52:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:52:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:52:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:52:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:52:47 --> CSRF token verified.
+INFO - 2023-04-04 10:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:52:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:52:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:52:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:52:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:52:57 --> CSRF token verified.
+INFO - 2023-04-04 10:52:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:52:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:53:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:53:11 --> CSRF token verified.
+INFO - 2023-04-04 10:53:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:53:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:53:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:53:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:53:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:53:24 --> CSRF token verified.
+INFO - 2023-04-04 10:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:57:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:57:44 --> CSRF token verified.
+INFO - 2023-04-04 10:57:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:57:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:58:50 --> CSRF token verified.
+ERROR - 2023-04-04 10:58:50 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;email1&quot; does not exist
+LINE 2: WHERE &quot;email1&quot; = 'funcionario2@mail.com'
+              ^
+HINT:  Perhaps you meant to reference the column &quot;activation_tokens.email&quot;. in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'DELETE FROM "ac...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('DELETE FROM "ac...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM "ac...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM "ac...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Builder.php(236): CodeIgniter\Database\BaseBuilder->delete('', NULL, true)
+#6 /home/diego/_PHP/adm-codeigniter/system/Model.php(456): CodeIgniter\Database\Postgre\Builder->delete()
+#7 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(1065): CodeIgniter\Model->doDelete(NULL, false)
+#8 /home/diego/_PHP/adm-codeigniter/app/Controllers/Activation/EmployeeActivationController.php(90): CodeIgniter\BaseModel->delete()
+#9 /home/diego/_PHP/adm-codeigniter/app/Controllers/Activation/EmployeeActivationController.php(69): App\Controllers\Activation\EmployeeActivationController->activate(Array)
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Activation\EmployeeActivationController->setPassword()
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Activation\EmployeeActivationController))
+#12 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#15 {main}
+INFO - 2023-04-04 10:58:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:58:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:59:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 10:59:38 --> CSRF token verified.
+ERROR - 2023-04-04 10:59:38 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;email1&quot; does not exist
+LINE 2: WHERE &quot;email1&quot; = 'funcionario2@mail.com'
+              ^
+HINT:  Perhaps you meant to reference the column &quot;activation_tokens.email&quot;. in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'DELETE FROM "ac...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('DELETE FROM "ac...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM "ac...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM "ac...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Builder.php(236): CodeIgniter\Database\BaseBuilder->delete('', NULL, true)
+#6 /home/diego/_PHP/adm-codeigniter/system/Model.php(456): CodeIgniter\Database\Postgre\Builder->delete()
+#7 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(1065): CodeIgniter\Model->doDelete(NULL, false)
+#8 /home/diego/_PHP/adm-codeigniter/app/Controllers/Activation/EmployeeActivationController.php(90): CodeIgniter\BaseModel->delete()
+#9 /home/diego/_PHP/adm-codeigniter/app/Controllers/Activation/EmployeeActivationController.php(69): App\Controllers\Activation\EmployeeActivationController->activate(Array)
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Activation\EmployeeActivationController->setPassword()
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Activation\EmployeeActivationController))
+#12 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#15 {main}
+INFO - 2023-04-04 11:00:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:00:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:00:37 --> CSRF token verified.
+ERROR - 2023-04-04 11:00:37 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;email1&quot; does not exist
+LINE 2: WHERE &quot;email1&quot; = 'funcionario2@mail.com'
+              ^
+HINT:  Perhaps you meant to reference the column &quot;activation_tokens.email&quot;. in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'DELETE FROM "ac...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('DELETE FROM "ac...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM "ac...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM "ac...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Builder.php(236): CodeIgniter\Database\BaseBuilder->delete('', NULL, true)
+#6 /home/diego/_PHP/adm-codeigniter/system/Model.php(456): CodeIgniter\Database\Postgre\Builder->delete()
+#7 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(1065): CodeIgniter\Model->doDelete(NULL, false)
+#8 /home/diego/_PHP/adm-codeigniter/app/Controllers/Activation/EmployeeActivationController.php(90): CodeIgniter\BaseModel->delete()
+#9 /home/diego/_PHP/adm-codeigniter/app/Controllers/Activation/EmployeeActivationController.php(69): App\Controllers\Activation\EmployeeActivationController->activate(Array)
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Activation\EmployeeActivationController->setPassword()
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Activation\EmployeeActivationController))
+#12 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#15 {main}
+ERROR - 2023-04-04 11:00:37 --> ErrorException: pg_query(): Query failed: ERROR:  current transaction is aborted, commands ignored until end of transaction block in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "adm-ses...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "adm-ses...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "adm-ses...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "adm-ses...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Session/Handlers/DatabaseHandler.php(230): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->write('8mjhoitdac4stbr...', '__ci_last_regen...')
+#7 [internal function]: session_write_close()
+#8 {main}
+INFO - 2023-04-04 11:00:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:00:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:01:32 --> CSRF token verified.
+INFO - 2023-04-04 11:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:01:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:01:48 --> CSRF token verified.
+INFO - 2023-04-04 11:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:01:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:01:58 --> CSRF token verified.
+INFO - 2023-04-04 11:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:02:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:02:35 --> CSRF token verified.
+INFO - 2023-04-04 11:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:03:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:03:10 --> CSRF token verified.
+ERROR - 2023-04-04 11:03:10 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;email1&quot; does not exist
+LINE 2: WHERE &quot;email1&quot; = 'funcionario2@mail.com'
+              ^
+HINT:  Perhaps you meant to reference the column &quot;activation_tokens.email&quot;. in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'DELETE FROM "ac...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('DELETE FROM "ac...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM "ac...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM "ac...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Builder.php(236): CodeIgniter\Database\BaseBuilder->delete('', NULL, true)
+#6 /home/diego/_PHP/adm-codeigniter/system/Model.php(456): CodeIgniter\Database\Postgre\Builder->delete()
+#7 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(1065): CodeIgniter\Model->doDelete(NULL, false)
+#8 /home/diego/_PHP/adm-codeigniter/app/Controllers/Activation/EmployeeActivationController.php(90): CodeIgniter\BaseModel->delete()
+#9 /home/diego/_PHP/adm-codeigniter/app/Controllers/Activation/EmployeeActivationController.php(69): App\Controllers\Activation\EmployeeActivationController->activate(Array)
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Activation\EmployeeActivationController->setPassword()
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Activation\EmployeeActivationController))
+#12 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#15 {main}
+INFO - 2023-04-04 11:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:03:50 --> CSRF token verified.
+ERROR - 2023-04-04 11:03:50 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;email1&quot; does not exist
+LINE 2: WHERE &quot;email1&quot; = 'funcionario2@mail.com'
+              ^
+HINT:  Perhaps you meant to reference the column &quot;activation_tokens.email&quot;. in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'DELETE FROM "ac...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('DELETE FROM "ac...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM "ac...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM "ac...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Builder.php(236): CodeIgniter\Database\BaseBuilder->delete('', NULL, true)
+#6 /home/diego/_PHP/adm-codeigniter/system/Model.php(456): CodeIgniter\Database\Postgre\Builder->delete()
+#7 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(1065): CodeIgniter\Model->doDelete(NULL, false)
+#8 /home/diego/_PHP/adm-codeigniter/app/Controllers/Activation/EmployeeActivationController.php(90): CodeIgniter\BaseModel->delete()
+#9 /home/diego/_PHP/adm-codeigniter/app/Controllers/Activation/EmployeeActivationController.php(69): App\Controllers\Activation\EmployeeActivationController->activate(Array)
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Activation\EmployeeActivationController->setPassword()
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Activation\EmployeeActivationController))
+#12 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#15 {main}
+INFO - 2023-04-04 11:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:03:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:04:23 --> CSRF token verified.
+INFO - 2023-04-04 11:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:04:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:04:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:04:40 --> CSRF token verified.
+INFO - 2023-04-04 11:04:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:04:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:08:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:08:59 --> CSRF token verified.
+INFO - 2023-04-04 11:11:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:12:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:12:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:12:13 --> CSRF token verified.
+INFO - 2023-04-04 11:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:12:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:13:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:13:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:14:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:14:18 --> CSRF token verified.
+INFO - 2023-04-04 11:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:34:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:34:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:34:56 --> CSRF token verified.
+INFO - 2023-04-04 11:34:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:36:08 --> CSRF token verified.
+INFO - 2023-04-04 11:37:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:37:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:37:50 --> CSRF token verified.
+INFO - 2023-04-04 11:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:44:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:44:24 --> CSRF token verified.
+INFO - 2023-04-04 11:44:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:44:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-04 11:44:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.

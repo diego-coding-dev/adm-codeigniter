@@ -113,7 +113,7 @@ class EmployeeController extends BaseController
         $this->dataView = [
             'title' => 'ADM - Funcionário',
             'dashboard' => 'Dados informacionais',
-            'employee' => $this->findEnployeeById($decEmployee)
+            'employee' => $this->findEmployeeById($decEmployee)
         ];
 
         return view('adm/rh/employee/show', $this->dataView);
@@ -132,7 +132,7 @@ class EmployeeController extends BaseController
         $this->dataView = [
             'title' => 'ADM - Funcionário',
             'dashboard' => 'Desativar conta',
-            'employee' => $this->findEnployeeById($decEmployee)
+            'employee' => $this->findEmployeeById($decEmployee)
         ];
 
         return view('adm/rh/employee/confirmDisable', $this->dataView);
@@ -167,7 +167,7 @@ class EmployeeController extends BaseController
         $this->dataView = [
             'title' => 'ADM - Funcionário',
             'dashboard' => 'Reativar conta',
-            'employee' => $this->findEnployeeById($decEmployee)
+            'employee' => $this->findEmployeeById($decEmployee)
         ];
 
         return view('adm/rh/employee/confirmReactivate', $this->dataView);
@@ -207,9 +207,8 @@ class EmployeeController extends BaseController
 
         $db->transBegin();
 
-        $this->employeeModel->protect(false)->insert($employeeData);
-        $this->activationTokensModel->protect(false)->insert($activationData);
-
+        $this->employeeModel->skipValidation()->insert($employeeData);
+        $this->activationTokensModel->insert($activationData);
 
         if ($db->transStatus() === false) {
             $db->transRollback();
@@ -231,7 +230,11 @@ class EmployeeController extends BaseController
         $this->mail->setFrom(env('email.fromEmail'), env('email.fromName'));
         $this->mail->setTo($employeeData['email']);
         $this->mail->setSubject('Email de teste');
-        $this->mail->setMessage('Apenas testando envio de email');
+
+        $employeeData['token'] = $this->token->getToken();
+        $message = view('adm/rh/employee/components/emailActivation', $employeeData);
+
+        $this->mail->setMessage($message);
         $this->mail->send();
     }
 
@@ -259,7 +262,7 @@ class EmployeeController extends BaseController
      * @param integer $employeeId
      * @return null|object
      */
-    private function findEnployeeById(int $employeeId): null|object
+    private function findEmployeeById(int $employeeId): null|object
     {
         return $this->employeeModel->find($employeeId);
     }

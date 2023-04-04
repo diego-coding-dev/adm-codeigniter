@@ -2887,3 +2887,277 @@ INFO - 2023-04-03 20:32:57 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-04-03 20:32:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
 INFO - 2023-04-03 20:33:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
 INFO - 2023-04-03 20:33:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:07:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:07:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:07:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:07:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:09:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:09:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:09:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:09:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:11:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:11:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:25:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:25:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:25:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:27:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:27:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:27:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:27:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:27:44 --> CSRF token verified.
+INFO - 2023-04-03 21:27:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:27:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:29:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:30:10 --> CSRF token verified.
+INFO - 2023-04-03 21:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:32:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:32:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:33:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 21:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2023-04-03 21:57:17 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;token_hash&quot; does not exist
+LINE 3: WHERE &quot;token_hash&quot; = '1b8c36dbe033cd2e57be2f8c52883994daaac1...
+              ^ in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT *\nFROM "...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#7 /home/diego/_PHP/adm-codeigniter/app/Controllers/Activation/EmployeeActivationController.php(43): CodeIgniter\BaseModel->first()
+#8 /home/diego/_PHP/adm-codeigniter/app/Controllers/Activation/EmployeeActivationController.php(28): App\Controllers\Activation\EmployeeActivationController->getDataActivationbyToken('ad1525e1850ef0a...')
+#9 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Activation\EmployeeActivationController->check('ad1525e1850ef0a...')
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Activation\EmployeeActivationController))
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#14 {main}
+CRITICAL - 2023-04-03 21:57:17 --> pg_query(): Query failed: ERROR:  column &quot;token_hash&quot; does not exist
+LINE 3: WHERE &quot;token_hash&quot; = '1b8c36dbe033cd2e57be2f8c52883994daaac1...
+              ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 147.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column &quot;token_hash&quot; does not exist
+LINE 3: WHERE &quot;token_hash&quot; = \'1b8c36dbe033cd2e57be2f8c52883994daaac1...
+              ^', '/home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php', 147)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT *
+FROM "employees"
+WHERE "token_hash" = \'1b8c36dbe033cd2e57be2f8c52883994daaac1b33a05b9b952893caf88c072ee\'
+AND "employees"."deleted_at" IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM "employees"
+WHERE "token_hash" = \'1b8c36dbe033cd2e57be2f8c52883994daaac1b33a05b9b952893caf88c072ee\'
+AND "employees"."deleted_at" IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM "employees"
+WHERE "token_hash" = \'1b8c36dbe033cd2e57be2f8c52883994daaac1b33a05b9b952893caf88c072ee\'
+AND "employees"."deleted_at" IS NULL
+ LIMIT 1')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "employees"
+WHERE "token_hash" = :token_hash:
+AND "employees"."deleted_at" IS NULL
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH/Controllers/Activation/EmployeeActivationController.php(43): CodeIgniter\BaseModel->first()
+ 9 APPPATH/Controllers/Activation/EmployeeActivationController.php(28): App\Controllers\Activation\EmployeeActivationController->getDataActivationbyToken('ad1525e1850ef0aef9c464db62840661')
+10 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Activation\EmployeeActivationController->check('ad1525e1850ef0aef9c464db62840661')
+11 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Activation\EmployeeActivationController))
+12 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-03 21:58:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2023-04-03 21:58:35 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;token_hash&quot; does not exist
+LINE 3: WHERE &quot;token_hash&quot; = 'ad1525e1850ef0aef9c464db62840661'
+              ^ in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT *\nFROM "...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#7 /home/diego/_PHP/adm-codeigniter/app/Controllers/Activation/EmployeeActivationController.php(43): CodeIgniter\BaseModel->first()
+#8 /home/diego/_PHP/adm-codeigniter/app/Controllers/Activation/EmployeeActivationController.php(28): App\Controllers\Activation\EmployeeActivationController->getDataActivationbyToken('ad1525e1850ef0a...')
+#9 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Activation\EmployeeActivationController->check('ad1525e1850ef0a...')
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Activation\EmployeeActivationController))
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#14 {main}
+CRITICAL - 2023-04-03 21:58:35 --> pg_query(): Query failed: ERROR:  column &quot;token_hash&quot; does not exist
+LINE 3: WHERE &quot;token_hash&quot; = 'ad1525e1850ef0aef9c464db62840661'
+              ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 147.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column &quot;token_hash&quot; does not exist
+LINE 3: WHERE &quot;token_hash&quot; = \'ad1525e1850ef0aef9c464db62840661\'
+              ^', '/home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php', 147)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT *
+FROM "employees"
+WHERE "token_hash" = \'ad1525e1850ef0aef9c464db62840661\'
+AND "employees"."deleted_at" IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM "employees"
+WHERE "token_hash" = \'ad1525e1850ef0aef9c464db62840661\'
+AND "employees"."deleted_at" IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM "employees"
+WHERE "token_hash" = \'ad1525e1850ef0aef9c464db62840661\'
+AND "employees"."deleted_at" IS NULL
+ LIMIT 1')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "employees"
+WHERE "token_hash" = :token_hash:
+AND "employees"."deleted_at" IS NULL
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH/Controllers/Activation/EmployeeActivationController.php(43): CodeIgniter\BaseModel->first()
+ 9 APPPATH/Controllers/Activation/EmployeeActivationController.php(28): App\Controllers\Activation\EmployeeActivationController->getDataActivationbyToken('ad1525e1850ef0aef9c464db62840661')
+10 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Activation\EmployeeActivationController->check('ad1525e1850ef0aef9c464db62840661')
+11 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Activation\EmployeeActivationController))
+12 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-03 21:58:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2023-04-03 21:58:41 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;token_hash&quot; does not exist
+LINE 3: WHERE &quot;token_hash&quot; = '1b8c36dbe033cd2e57be2f8c52883994daaac1...
+              ^ in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT *\nFROM "...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#7 /home/diego/_PHP/adm-codeigniter/app/Controllers/Activation/EmployeeActivationController.php(43): CodeIgniter\BaseModel->first()
+#8 /home/diego/_PHP/adm-codeigniter/app/Controllers/Activation/EmployeeActivationController.php(28): App\Controllers\Activation\EmployeeActivationController->getDataActivationbyToken('ad1525e1850ef0a...')
+#9 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Activation\EmployeeActivationController->check('ad1525e1850ef0a...')
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Activation\EmployeeActivationController))
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#14 {main}
+CRITICAL - 2023-04-03 21:58:41 --> pg_query(): Query failed: ERROR:  column &quot;token_hash&quot; does not exist
+LINE 3: WHERE &quot;token_hash&quot; = '1b8c36dbe033cd2e57be2f8c52883994daaac1...
+              ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 147.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column &quot;token_hash&quot; does not exist
+LINE 3: WHERE &quot;token_hash&quot; = \'1b8c36dbe033cd2e57be2f8c52883994daaac1...
+              ^', '/home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php', 147)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT *
+FROM "employees"
+WHERE "token_hash" = \'1b8c36dbe033cd2e57be2f8c52883994daaac1b33a05b9b952893caf88c072ee\'
+AND "employees"."deleted_at" IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM "employees"
+WHERE "token_hash" = \'1b8c36dbe033cd2e57be2f8c52883994daaac1b33a05b9b952893caf88c072ee\'
+AND "employees"."deleted_at" IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM "employees"
+WHERE "token_hash" = \'1b8c36dbe033cd2e57be2f8c52883994daaac1b33a05b9b952893caf88c072ee\'
+AND "employees"."deleted_at" IS NULL
+ LIMIT 1')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "employees"
+WHERE "token_hash" = :token_hash:
+AND "employees"."deleted_at" IS NULL
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH/Controllers/Activation/EmployeeActivationController.php(43): CodeIgniter\BaseModel->first()
+ 9 APPPATH/Controllers/Activation/EmployeeActivationController.php(28): App\Controllers\Activation\EmployeeActivationController->getDataActivationbyToken('ad1525e1850ef0aef9c464db62840661')
+10 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Activation\EmployeeActivationController->check('ad1525e1850ef0aef9c464db62840661')
+11 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Activation\EmployeeActivationController))
+12 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-03 21:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 22:38:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 22:39:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 22:40:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 22:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-03 22:40:22 --> Invalid file: "adm-main-public.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('adm-main-public.php')
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('adm-main-public', [], true)
+ 3 APPPATH/Controllers/Activation/EmployeeActivationController.php(44): view('adm-main-public', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Activation\EmployeeActivationController->check('ad1525e1850ef0aef9c464db62840661')
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Activation\EmployeeActivationController))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-03 22:40:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 22:40:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 22:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 22:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 22:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 22:44:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 22:46:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 22:46:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 22:46:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 22:46:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 22:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 22:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 22:47:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 22:47:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 22:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 22:47:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 22:49:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 22:49:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 22:55:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 22:55:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 22:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 22:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 22:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 22:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 22:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 22:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 23:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-03 23:00:16 --> Call to undefined method CodeIgniter\View\View::extends()
+in APPPATH/Views/activation/employeeActivation/setPassword.php on line 1.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('activation/employeeActivation/setPassword', [], true)
+ 4 APPPATH/Controllers/Activation/EmployeeActivationController.php(55): view('activation/employeeActivation/setPassword', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Activation\EmployeeActivationController->check('ad1525e1850ef0aef9c464db62840661')
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Activation\EmployeeActivationController))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-03 23:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 23:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 23:01:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 23:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 23:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 23:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-03 23:01:27 --> CSRF token verified.
