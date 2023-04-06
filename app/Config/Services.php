@@ -3,6 +3,7 @@
 namespace Config;
 
 use CodeIgniter\Config\BaseService;
+use Exception;
 
 /**
  * Services Configuration file.
@@ -29,4 +30,57 @@ class Services extends BaseService
      *     return new \CodeIgniter\Example();
      * }
      */
+
+    /**
+     * Retorna instância de um determinado model
+     *
+     * @param string $model
+     * @return object
+     */
+    public static function model(string $model): object
+    {
+        $modelClass = '\\App\\Models\\' . $model;
+
+        if (!class_exists($modelClass)) {
+            throw new Exception("Class {$modelClass} not exists!");
+        }
+
+        return new $modelClass();
+    }
+
+    /**
+     * Retorna instância de uma determinada library
+     *
+     * @param string $library
+     * @return object
+     */
+    public static function library(string $library): object
+    {
+        $libraryClass = '\\App\\Libraries\\' . $library;
+
+        if (!class_exists($libraryClass)) {
+            throw new Exception("Class {$libraryClass} not exists!");
+        }
+
+        return new $libraryClass();
+    }
+
+    /**
+     * Retorna instância de autenticação
+     *
+     * @param string $auth
+     * @return object
+     */
+    public static function auth(string $auth): object
+    {
+        $authClass = '\\App\\Libraries\\Authentication\\' . $auth;
+
+        if (!class_exists($authClass)) {
+            throw new Exception("Class {$authClass} not exists!");
+        }
+
+        return new $authClass(
+            new \App\Models\Employee()
+        );
+    }
 }

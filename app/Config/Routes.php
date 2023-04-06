@@ -29,7 +29,20 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index', ['as' => 'home']);
+
+/**
+ * rota raiz
+ */
+$routes->group('/', function ($routes) {
+    $routes->get('', 'Home::index', ['as' => 'home']);
+    /**
+     * rota authentication
+     */
+    $routes->group('authentication', function ($routes) {
+        $routes->get('', 'Authentication\EmployeeAuthenticationController::authentication', ['as' => 'authentication']);
+        $routes->post('authenticate', 'Authentication\EmployeeAuthenticationController::authenticate', ['as' => 'authenticate']);
+    });
+});
 
 /**
  * rota adm

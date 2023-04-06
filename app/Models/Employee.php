@@ -32,7 +32,7 @@ class Employee extends Model
     // Validation
     protected $validationRules      = [
         'name' => 'required|string|min_length[4]|max_length[220]',
-        'email' => 'required|valid_email|string|min_length[5]|max_length[100]',
+        'email' => 'required|valid_email|string|min_length[5]|max_length[100]|is_unique[employees.email]',
         'password' => 'required|string|min_length[8]|max_length[100]|regex_match[/^.*([a-zA-Z][0-9]).*$/]',
         'password_confirm' => 'required|matches[password]'
     ];
@@ -44,6 +44,7 @@ class Employee extends Model
             'max_length' => '* Este campo não atende aos requisitos mínimos!'
         ],
         'email' => [
+            'is_unique' => '* Este email já está em uso.',
             'required' => '* Este campo é obrigatório!',
             'valid_email' => '* Forneça um email válido!',
             'string' => '* Este campo não atende aos requisitos mínimos!',
@@ -93,5 +94,22 @@ class Employee extends Model
         $data['data']['password'] = password_hash($data['data']['password'], PASSWORD_DEFAULT);
 
         return $data;
+    }
+
+    /**
+     * Remove algumas regras necessárias para validar os dados do login
+     *
+     * @return object
+     */
+    public function forAuthValidation(): object
+    {
+        foreach ($this->validationRules as $key => $value) {
+            if (strpos($value, 'is_unique[employees.email]')) {
+                $this->validationRules[$key] = str_replace('|is_unique[employees.email]', '', $value);
+                break;
+            }
+        }
+
+        return $this;
     }
 }

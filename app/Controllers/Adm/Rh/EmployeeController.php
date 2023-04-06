@@ -3,11 +3,7 @@
 namespace App\Controllers\Adm\Rh;
 
 use App\Controllers\BaseController;
-use App\Models\Employee;
-use App\Models\ActivationTokens;
 use App\Libraries\ValidationsTrait\ValidOnlyNameTrait;
-use App\Libraries\Token;
-use Config\Services;
 
 class EmployeeController extends BaseController
 {
@@ -16,17 +12,21 @@ class EmployeeController extends BaseController
     private array $dataView;
     private object $employeeModel;
     private object $activationTokensModel;
-    private object $mail;
     private object $token;
+    private object $mail;
     private object $validation;
+    private object $encrypt;
+    private object $auth;
 
     public function __construct()
     {
-        $this->employeeModel = new Employee();
-        $this->activationTokensModel = new ActivationTokens();
-        $this->token = new Token();
-        $this->validation = Services::validation();
-        $this->mail = Services::email();
+        $this->employeeModel = service('model', 'Employee');
+        $this->activationTokensModel = service('model', 'ActivationTokens');
+        $this->token = service('library', 'Token');
+        $this->validation = service('validation');
+        $this->mail = service('email');
+        $this->encrypt = service('encrypter');
+        $this->auth = service('auth', 'EmployeeAuthentication');
     }
 
     /**
@@ -39,8 +39,10 @@ class EmployeeController extends BaseController
         // colocar filtro para saber se é ajax (middleware)
         $this->dataView = [
             'title' => 'ADM - Funcionários',
-            'dashboard' => 'Lista de funcionários'
+            'dashboard' => 'Lista de funcionários',
+            'account' => $this->auth->data()
         ];
+
         if (!is_null($name = $this->request->getGet('name'))) {
 
             $this->validation->setRules($this->nameRules());
@@ -246,8 +248,6 @@ class EmployeeController extends BaseController
      */
     private function decryptEmployeeId(string|array|null $employeeId): int
     {
-        $encrypt = Services::encrypter();
-
         try {
             return $encrypt->decrypt(hex2bin($employeeId));
         } catch (\Exception $th) {

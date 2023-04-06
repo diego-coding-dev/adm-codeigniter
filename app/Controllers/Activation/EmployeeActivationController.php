@@ -3,8 +3,6 @@
 namespace App\Controllers\Activation;
 
 use App\Controllers\BaseController;
-use App\Models\Employee;
-use App\Models\ActivationTokens;
 use App\Libraries\Token;
 
 class EmployeeActivationController extends BaseController
@@ -16,8 +14,9 @@ class EmployeeActivationController extends BaseController
 
     public function __construct()
     {
-        $this->employeeModel = new Employee();
-        $this->activationTokensModel = new ActivationTokens();
+        $this->employeeModel = service('model', 'Employee');
+        $this->activationTokensModel = service('model', 'ActivationTokens');
+        $this->token = service('library', 'Token');
         $this->encrypt = service('encrypter');
     }
 
@@ -121,8 +120,6 @@ class EmployeeActivationController extends BaseController
      */
     private function getActivationDataByToken(string $token): null|object
     {
-        $this->token = new Token($token);
-
         $tokenHash = $this->token->getTokenHash();
 
         return $this->activationTokensModel->where('token_hash', $tokenHash)->first();

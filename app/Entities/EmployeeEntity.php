@@ -13,16 +13,23 @@ class EmployeeEntity extends Entity
     protected $casts   = [];
 
     /**
-     * Retorna o id critptografado
+     * Verifica o password
      *
-     * @return string
+     * @param string $password
+     * @return bool
      */
-    public function getId(): string
+    public function verifyPassword(string $password): bool
     {
-        $encrypt = Services::encrypter();
+        return password_verify($password, $this->attributes['password']);
+    }
 
-        $this->attributes['id'] = $encrypt->encrypt($this->attributes['id']);
-
-        return bin2hex($this->attributes['id']);
+    /**
+     * Verifica se está ativado
+     *
+     * @return boolean
+     */
+    public function isActive(): bool
+    {
+        return $this->attributes['is_active'] == true;
     }
 }

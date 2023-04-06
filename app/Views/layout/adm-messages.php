@@ -1,3 +1,8 @@
+<!-- <div class="alert alert-warning bg-info text-dark border-0 alert-dismissible fade show" role="alert">
+    Teste de mensagem
+    <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="alert" aria-label="Close"></button>
+</div> -->
+
 <?php if (session()->has('info')) : ?>
     <div class="alert alert-info bg-info text-dark border-0 alert-dismissible fade show" role="alert">
         <?php echo session()->get('info'); ?>

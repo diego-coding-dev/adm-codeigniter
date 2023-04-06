@@ -25,9 +25,9 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
 
-                            <div class="card mb-3">
+                            <?php echo $this->include('layout/adm-messages'); ?>
 
-                                <?php echo $this->renderSection('content'); ?>
+                            <?php echo $this->renderSection('content'); ?>
 
                             <div class="credits">
                                 <!-- All the links in the footer should remain intact. -->

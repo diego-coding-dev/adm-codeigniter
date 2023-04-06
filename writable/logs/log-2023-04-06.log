@@ -1,0 +1,577 @@
+INFO - 2023-04-06 09:28:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 09:28:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 09:33:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 09:33:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 09:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 09:33:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 09:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 09:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-06 09:34:01 --> Cannot assign null to property App\Controllers\Adm\Rh\EmployeeController::$employeeModel of type object
+in APPPATH/Controllers/Adm/Rh/EmployeeController.php on line 25.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Adm\Rh\EmployeeController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-06 09:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 09:34:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 09:44:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-06 09:44:37 --> Class \App\Models\ActivationToken not exists!
+in APPPATH/Config/Services.php on line 39.
+ 1 SYSTEMPATH/Common.php(1016): Config\Services::model('ActivationToken')
+ 2 APPPATH/Controllers/Adm/Rh/EmployeeController.php(24): service('model', 'ActivationToken')
+ 3 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Adm\Rh\EmployeeController->__construct()
+ 4 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-06 09:45:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 09:45:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 09:45:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 09:45:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 09:45:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 09:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 09:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:00:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:00:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:08:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:08:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:09:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:09:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:09:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:09:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:10:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:10:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:12:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:12:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:14:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:14:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:14:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:14:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:16:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:16:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:17:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:17:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:17:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:17:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:17:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:17:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:18:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:19:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:19:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:20:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:20:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:20:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 10:20:03 --> CSRF token verified.
+ERROR - 2023-04-06 17:47:24 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;localhost&quot; (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections? in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:75
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/home/diego/_PH...', 75)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(75): pg_connect('host=localhost ...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /home/diego/_PHP/adm-codeigniter/system/Session/Handlers/DatabaseHandler.php(109): CodeIgniter\Database\BaseConnection->initialize()
+#4 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('adm-sessions', 'adm-session')
+#5 /home/diego/_PHP/adm-codeigniter/system/Session/Session.php(928): session_start()
+#6 /home/diego/_PHP/adm-codeigniter/system/Session/Session.php(250): CodeIgniter\Session\Session->startSession()
+#7 /home/diego/_PHP/adm-codeigniter/system/Config/Services.php(674): CodeIgniter\Session\Session->start()
+#8 /home/diego/_PHP/adm-codeigniter/system/Config/BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#9 /home/diego/_PHP/adm-codeigniter/system/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#10 /home/diego/_PHP/adm-codeigniter/system/Config/Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#11 /home/diego/_PHP/adm-codeigniter/system/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+#12 /home/diego/_PHP/adm-codeigniter/system/Security/Security.php(220): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#13 /home/diego/_PHP/adm-codeigniter/system/Security/Security.php(201): CodeIgniter\Security\Security->configureSession()
+#14 /home/diego/_PHP/adm-codeigniter/system/Config/Services.php(630): CodeIgniter\Security\Security->__construct(Object(Config\App))
+#15 /home/diego/_PHP/adm-codeigniter/system/Config/BaseService.php(252): CodeIgniter\Config\Services::security(Object(Config\App), false)
+#16 /home/diego/_PHP/adm-codeigniter/system/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('security', Array)
+#17 /home/diego/_PHP/adm-codeigniter/system/Config/Services.php(625): CodeIgniter\Config\BaseService::getSharedInstance('security', NULL)
+#18 /home/diego/_PHP/adm-codeigniter/system/Config/BaseService.php(252): CodeIgniter\Config\Services::security()
+#19 /home/diego/_PHP/adm-codeigniter/system/Filters/CSRF.php(52): CodeIgniter\Config\BaseService::__callStatic('security', Array)
+#20 /home/diego/_PHP/adm-codeigniter/system/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#21 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('authentication', 'before')
+#22 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#23 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#24 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#25 {main}
+CRITICAL - 2023-04-06 17:47:24 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;localhost&quot; (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Session/Handlers/DatabaseHandler.php(109): CodeIgniter\Database\BaseConnection->initialize()
+ 2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('adm-sessions', 'adm-session')
+ 3 SYSTEMPATH/Session/Session.php(928): session_start()
+ 4 SYSTEMPATH/Session/Session.php(250): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH/Config/Services.php(674): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 7 SYSTEMPATH/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH/Config/Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH/Security/Security.php(220): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 SYSTEMPATH/Security/Security.php(201): CodeIgniter\Security\Security->configureSession()
+12 SYSTEMPATH/Config/Services.php(630): CodeIgniter\Security\Security->__construct(Object(Config\App))
+13 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::security(Object(Config\App), false)
+14 SYSTEMPATH/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('security', [...])
+15 SYSTEMPATH/Config/Services.php(625): CodeIgniter\Config\BaseService::getSharedInstance('security', null)
+16 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::security()
+17 SYSTEMPATH/Filters/CSRF.php(52): CodeIgniter\Config\BaseService::__callStatic('security', [])
+18 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+19 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('authentication', 'before')
+20 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+21 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+22 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-06 17:48:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 17:48:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 17:48:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 17:48:09 --> CSRF token verified.
+INFO - 2023-04-06 18:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-06 18:42:45 --> Non-static method Config\Services::auth() cannot be called statically
+in SYSTEMPATH/Common.php on line 1016.
+ 1 APPPATH/Controllers/Authentication/EmployeeAuthenticationController.php(14): service('auth', 'EmployeeAuthentication')
+ 2 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Authentication\EmployeeAuthenticationController->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-06 18:44:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-06 18:44:08 --> Non-static method Config\Services::auth() cannot be called statically
+in SYSTEMPATH/Common.php on line 1016.
+ 1 APPPATH/Controllers/Authentication/EmployeeAuthenticationController.php(14): service('auth', 'EmployeeAuthentication')
+ 2 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Authentication\EmployeeAuthenticationController->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-06 18:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-06 18:44:09 --> Non-static method Config\Services::auth() cannot be called statically
+in SYSTEMPATH/Common.php on line 1016.
+ 1 APPPATH/Controllers/Authentication/EmployeeAuthenticationController.php(14): service('auth', 'EmployeeAuthentication')
+ 2 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Authentication\EmployeeAuthenticationController->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-06 18:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-06 18:44:33 --> Class \App\Libraries\AuthenticationEmployeeAuthentication not exists!
+in APPPATH/Config/Services.php on line 79.
+ 1 SYSTEMPATH/Common.php(1016): Config\Services::auth('EmployeeAuthentication')
+ 2 APPPATH/Controllers/Authentication/EmployeeAuthenticationController.php(14): service('auth', 'EmployeeAuthentication')
+ 3 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Authentication\EmployeeAuthenticationController->__construct()
+ 4 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-06 18:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:44:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:44:51 --> CSRF token verified.
+CRITICAL - 2023-04-06 18:44:51 --> Typed property App\Libraries\Authentication\EmployeeAuthentication::$employeeData must not be accessed before initialization
+in APPPATH/Libraries/Authentication/EmployeeAuthentication.php on line 19.
+ 1 APPPATH/Controllers/Authentication/EmployeeAuthenticationController.php(28): App\Libraries\Authentication\EmployeeAuthentication->authenticate([...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Authentication\EmployeeAuthenticationController->authenticate()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authentication\EmployeeAuthenticationController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-06 18:45:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:45:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:45:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:45:27 --> CSRF token verified.
+CRITICAL - 2023-04-06 18:45:27 --> Typed property App\Libraries\Authentication\EmployeeAuthentication::$employeeData must not be accessed before initialization
+in APPPATH/Libraries/Authentication/EmployeeAuthentication.php on line 19.
+ 1 APPPATH/Controllers/Authentication/EmployeeAuthenticationController.php(28): App\Libraries\Authentication\EmployeeAuthentication->authenticate([...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Authentication\EmployeeAuthenticationController->authenticate()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authentication\EmployeeAuthenticationController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-06 18:45:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:45:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:45:47 --> CSRF token verified.
+CRITICAL - 2023-04-06 18:45:47 --> Typed property App\Libraries\Authentication\EmployeeAuthentication::$employeeData must not be accessed before initialization
+in APPPATH/Libraries/Authentication/EmployeeAuthentication.php on line 19.
+ 1 APPPATH/Controllers/Authentication/EmployeeAuthenticationController.php(28): App\Libraries\Authentication\EmployeeAuthentication->authenticate([...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Authentication\EmployeeAuthenticationController->authenticate()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authentication\EmployeeAuthenticationController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-06 18:46:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:46:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:46:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:46:11 --> CSRF token verified.
+CRITICAL - 2023-04-06 18:46:11 --> Typed property App\Libraries\Authentication\EmployeeAuthentication::$employeeData must not be accessed before initialization
+in APPPATH/Libraries/Authentication/EmployeeAuthentication.php on line 19.
+ 1 APPPATH/Controllers/Authentication/EmployeeAuthenticationController.php(28): App\Libraries\Authentication\EmployeeAuthentication->authenticate([...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Authentication\EmployeeAuthenticationController->authenticate()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authentication\EmployeeAuthenticationController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-06 18:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-06 18:46:24 --> Default value for property of type object may not be null. Use the nullable type ?object to allow null default value
+in APPPATH/Libraries/Authentication/EmployeeAuthentication.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-04-06 18:46:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:46:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:46:31 --> CSRF token verified.
+CRITICAL - 2023-04-06 18:46:31 --> Call to a member function forAuthValidation() on null
+in APPPATH/Libraries/Authentication/EmployeeAuthentication.php on line 19.
+ 1 APPPATH/Controllers/Authentication/EmployeeAuthenticationController.php(28): App\Libraries\Authentication\EmployeeAuthentication->authenticate([...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Authentication\EmployeeAuthenticationController->authenticate()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authentication\EmployeeAuthenticationController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-06 18:47:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:47:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:47:23 --> CSRF token verified.
+CRITICAL - 2023-04-06 18:47:23 --> Call to undefined method App\Models\Employee::valid
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Libraries/Authentication/EmployeeAuthentication.php(19): CodeIgniter\Model->__call('valid', [...])
+ 2 APPPATH/Controllers/Authentication/EmployeeAuthenticationController.php(28): App\Libraries\Authentication\EmployeeAuthentication->authenticate([...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Authentication\EmployeeAuthenticationController->authenticate()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authentication\EmployeeAuthenticationController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-06 18:47:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:47:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:47:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:47:42 --> CSRF token verified.
+INFO - 2023-04-06 18:47:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:47:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:51:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:51:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:51:25 --> CSRF token verified.
+INFO - 2023-04-06 18:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:51:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:51:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:51:44 --> CSRF token verified.
+INFO - 2023-04-06 18:51:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:51:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:52:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:52:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:52:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:52:08 --> CSRF token verified.
+INFO - 2023-04-06 18:52:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:52:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:57:45 --> CSRF token verified.
+INFO - 2023-04-06 18:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:58:27 --> CSRF token verified.
+INFO - 2023-04-06 18:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:58:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:58:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:58:40 --> CSRF token verified.
+INFO - 2023-04-06 18:58:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 18:58:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:00:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:00:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:00:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:00:19 --> CSRF token verified.
+INFO - 2023-04-06 19:00:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:00:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:00:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:00:50 --> CSRF token verified.
+INFO - 2023-04-06 19:01:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:01:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:01:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:01:38 --> CSRF token verified.
+INFO - 2023-04-06 19:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:08:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:08:25 --> CSRF token verified.
+INFO - 2023-04-06 19:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:08:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:08:34 --> CSRF token verified.
+INFO - 2023-04-06 19:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:09:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:09:39 --> CSRF token verified.
+INFO - 2023-04-06 19:21:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:21:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:21:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:21:55 --> CSRF token verified.
+INFO - 2023-04-06 19:22:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:22:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:25:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:25:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:25:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:25:16 --> CSRF token verified.
+INFO - 2023-04-06 19:25:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:25:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:25:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:25:53 --> CSRF token verified.
+INFO - 2023-04-06 19:26:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:26:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:26:31 --> CSRF token verified.
+INFO - 2023-04-06 19:27:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:27:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:27:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:27:08 --> CSRF token verified.
+INFO - 2023-04-06 19:27:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:27:42 --> CSRF token verified.
+INFO - 2023-04-06 19:28:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:28:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:28:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:28:59 --> CSRF token verified.
+INFO - 2023-04-06 19:29:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:29:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:29:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:29:24 --> CSRF token verified.
+INFO - 2023-04-06 19:29:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:29:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:44:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:44:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:44:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:44:52 --> CSRF token verified.
+INFO - 2023-04-06 19:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:45:03 --> CSRF token verified.
+CRITICAL - 2023-04-06 19:45:03 --> Undefined array key "success"
+in APPPATH/Controllers/Authentication/EmployeeAuthenticationController.php on line 42.
+ 1 APPPATH/Controllers/Authentication/EmployeeAuthenticationController.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "success"', '/home/diego/_PHP/adm-codeigniter/app/Controllers/Authentication/EmployeeAuthenticationController.php', 42)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Authentication\EmployeeAuthenticationController->authenticate()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Authentication\EmployeeAuthenticationController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-06 19:45:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:45:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:45:23 --> CSRF token verified.
+INFO - 2023-04-06 19:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 19:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 20:18:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2023-04-06 20:18:21 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;391899edfbd7602e17cb497e4c01ff97f233e7f831d6522bfad2387b4c38ec86749e1bcb0bdd56c797e6a3bc9cb3fc1b7aa1cfe538fecffcf225080d0e7619046a3d5fe735bcda2fa83aa50dd748c2efb0&quot;
+LINE 4: AND &quot;id&quot; = '391899edfbd7602e17cb497e4c01ff97f233e7f831d6522b...
+                   ^ in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT *\nFROM "...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#7 /home/diego/_PHP/adm-codeigniter/app/Libraries/Authentication/EmployeeAuthentication.php(73): CodeIgniter\BaseModel->first()
+#8 /home/diego/_PHP/adm-codeigniter/app/Libraries/Authentication/EmployeeAuthentication.php(56): App\Libraries\Authentication\EmployeeAuthentication->getAuthDataFromSession()
+#9 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(31): App\Libraries\Authentication\EmployeeAuthentication->data()
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(906): App\Controllers\Adm\Rh\EmployeeController->__construct()
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+#12 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#15 {main}
+CRITICAL - 2023-04-06 20:18:21 --> pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;391899edfbd7602e17cb497e4c01ff97f233e7f831d6522bfad2387b4c38ec86749e1bcb0bdd56c797e6a3bc9cb3fc1b7aa1cfe538fecffcf225080d0e7619046a3d5fe735bcda2fa83aa50dd748c2efb0&quot;
+LINE 4: AND &quot;id&quot; = '391899edfbd7602e17cb497e4c01ff97f233e7f831d6522b...
+                   ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 147.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;391899edfbd7602e17cb497e4c01ff97f233e7f831d6522bfad2387b4c38ec86749e1bcb0bdd56c797e6a3bc9cb3fc1b7aa1cfe538fecffcf225080d0e7619046a3d5fe735bcda2fa83aa50dd748c2efb0&quot;
+LINE 4: AND &quot;id&quot; = \'391899edfbd7602e17cb497e4c01ff97f233e7f831d6522b...
+                   ^', '/home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php', 147)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT *
+FROM "employees"
+WHERE "is_active" = TRUE
+AND "id" = \'391899edfbd7602e17cb497e4c01ff97f233e7f831d6522bfad2387b4c38ec86749e1bcb0bdd56c797e6a3bc9cb3fc1b7aa1cfe538fecffcf225080d0e7619046a3d5fe735bcda2fa83aa50dd748c2efb0\'
+AND "employees"."deleted_at" IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM "employees"
+WHERE "is_active" = TRUE
+AND "id" = \'391899edfbd7602e17cb497e4c01ff97f233e7f831d6522bfad2387b4c38ec86749e1bcb0bdd56c797e6a3bc9cb3fc1b7aa1cfe538fecffcf225080d0e7619046a3d5fe735bcda2fa83aa50dd748c2efb0\'
+AND "employees"."deleted_at" IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM "employees"
+WHERE "is_active" = TRUE
+AND "id" = \'391899edfbd7602e17cb497e4c01ff97f233e7f831d6522bfad2387b4c38ec86749e1bcb0bdd56c797e6a3bc9cb3fc1b7aa1cfe538fecffcf225080d0e7619046a3d5fe735bcda2fa83aa50dd748c2efb0\'
+AND "employees"."deleted_at" IS NULL
+ LIMIT 1')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "employees"
+WHERE "is_active" = :is_active:
+AND "id" = :id:
+AND "employees"."deleted_at" IS NULL
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH/Libraries/Authentication/EmployeeAuthentication.php(73): CodeIgniter\BaseModel->first()
+ 9 APPPATH/Libraries/Authentication/EmployeeAuthentication.php(56): App\Libraries\Authentication\EmployeeAuthentication->getAuthDataFromSession()
+10 APPPATH/Controllers/Adm/Rh/EmployeeController.php(31): App\Libraries\Authentication\EmployeeAuthentication->data()
+11 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Adm\Rh\EmployeeController->__construct()
+12 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+13 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-06 20:20:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2023-04-06 20:20:31 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;391899edfbd7602e17cb497e4c01ff97f233e7f831d6522bfad2387b4c38ec86749e1bcb0bdd56c797e6a3bc9cb3fc1b7aa1cfe538fecffcf225080d0e7619046a3d5fe735bcda2fa83aa50dd748c2efb0&quot;
+LINE 4: AND &quot;id&quot; = '391899edfbd7602e17cb497e4c01ff97f233e7f831d6522b...
+                   ^ in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT *\nFROM "...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#7 /home/diego/_PHP/adm-codeigniter/app/Libraries/Authentication/EmployeeAuthentication.php(73): CodeIgniter\BaseModel->first()
+#8 /home/diego/_PHP/adm-codeigniter/app/Libraries/Authentication/EmployeeAuthentication.php(56): App\Libraries\Authentication\EmployeeAuthentication->getAuthDataFromSession()
+#9 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(31): App\Libraries\Authentication\EmployeeAuthentication->data()
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(906): App\Controllers\Adm\Rh\EmployeeController->__construct()
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+#12 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#15 {main}
+CRITICAL - 2023-04-06 20:20:31 --> pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;391899edfbd7602e17cb497e4c01ff97f233e7f831d6522bfad2387b4c38ec86749e1bcb0bdd56c797e6a3bc9cb3fc1b7aa1cfe538fecffcf225080d0e7619046a3d5fe735bcda2fa83aa50dd748c2efb0&quot;
+LINE 4: AND &quot;id&quot; = '391899edfbd7602e17cb497e4c01ff97f233e7f831d6522b...
+                   ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 147.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;391899edfbd7602e17cb497e4c01ff97f233e7f831d6522bfad2387b4c38ec86749e1bcb0bdd56c797e6a3bc9cb3fc1b7aa1cfe538fecffcf225080d0e7619046a3d5fe735bcda2fa83aa50dd748c2efb0&quot;
+LINE 4: AND &quot;id&quot; = \'391899edfbd7602e17cb497e4c01ff97f233e7f831d6522b...
+                   ^', '/home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php', 147)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT *
+FROM "employees"
+WHERE "is_active" = TRUE
+AND "id" = \'391899edfbd7602e17cb497e4c01ff97f233e7f831d6522bfad2387b4c38ec86749e1bcb0bdd56c797e6a3bc9cb3fc1b7aa1cfe538fecffcf225080d0e7619046a3d5fe735bcda2fa83aa50dd748c2efb0\'
+AND "employees"."deleted_at" IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM "employees"
+WHERE "is_active" = TRUE
+AND "id" = \'391899edfbd7602e17cb497e4c01ff97f233e7f831d6522bfad2387b4c38ec86749e1bcb0bdd56c797e6a3bc9cb3fc1b7aa1cfe538fecffcf225080d0e7619046a3d5fe735bcda2fa83aa50dd748c2efb0\'
+AND "employees"."deleted_at" IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM "employees"
+WHERE "is_active" = TRUE
+AND "id" = \'391899edfbd7602e17cb497e4c01ff97f233e7f831d6522bfad2387b4c38ec86749e1bcb0bdd56c797e6a3bc9cb3fc1b7aa1cfe538fecffcf225080d0e7619046a3d5fe735bcda2fa83aa50dd748c2efb0\'
+AND "employees"."deleted_at" IS NULL
+ LIMIT 1')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "employees"
+WHERE "is_active" = :is_active:
+AND "id" = :id:
+AND "employees"."deleted_at" IS NULL
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH/Libraries/Authentication/EmployeeAuthentication.php(73): CodeIgniter\BaseModel->first()
+ 9 APPPATH/Libraries/Authentication/EmployeeAuthentication.php(56): App\Libraries\Authentication\EmployeeAuthentication->getAuthDataFromSession()
+10 APPPATH/Controllers/Adm/Rh/EmployeeController.php(31): App\Libraries\Authentication\EmployeeAuthentication->data()
+11 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Adm\Rh\EmployeeController->__construct()
+12 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+13 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-06 20:20:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2023-04-06 20:20:33 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;391899edfbd7602e17cb497e4c01ff97f233e7f831d6522bfad2387b4c38ec86749e1bcb0bdd56c797e6a3bc9cb3fc1b7aa1cfe538fecffcf225080d0e7619046a3d5fe735bcda2fa83aa50dd748c2efb0&quot;
+LINE 4: AND &quot;id&quot; = '391899edfbd7602e17cb497e4c01ff97f233e7f831d6522b...
+                   ^ in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT *\nFROM "...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#7 /home/diego/_PHP/adm-codeigniter/app/Libraries/Authentication/EmployeeAuthentication.php(73): CodeIgniter\BaseModel->first()
+#8 /home/diego/_PHP/adm-codeigniter/app/Libraries/Authentication/EmployeeAuthentication.php(56): App\Libraries\Authentication\EmployeeAuthentication->getAuthDataFromSession()
+#9 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(31): App\Libraries\Authentication\EmployeeAuthentication->data()
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(906): App\Controllers\Adm\Rh\EmployeeController->__construct()
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+#12 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#15 {main}
+CRITICAL - 2023-04-06 20:20:33 --> pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;391899edfbd7602e17cb497e4c01ff97f233e7f831d6522bfad2387b4c38ec86749e1bcb0bdd56c797e6a3bc9cb3fc1b7aa1cfe538fecffcf225080d0e7619046a3d5fe735bcda2fa83aa50dd748c2efb0&quot;
+LINE 4: AND &quot;id&quot; = '391899edfbd7602e17cb497e4c01ff97f233e7f831d6522b...
+                   ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 147.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;391899edfbd7602e17cb497e4c01ff97f233e7f831d6522bfad2387b4c38ec86749e1bcb0bdd56c797e6a3bc9cb3fc1b7aa1cfe538fecffcf225080d0e7619046a3d5fe735bcda2fa83aa50dd748c2efb0&quot;
+LINE 4: AND &quot;id&quot; = \'391899edfbd7602e17cb497e4c01ff97f233e7f831d6522b...
+                   ^', '/home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php', 147)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT *
+FROM "employees"
+WHERE "is_active" = TRUE
+AND "id" = \'391899edfbd7602e17cb497e4c01ff97f233e7f831d6522bfad2387b4c38ec86749e1bcb0bdd56c797e6a3bc9cb3fc1b7aa1cfe538fecffcf225080d0e7619046a3d5fe735bcda2fa83aa50dd748c2efb0\'
+AND "employees"."deleted_at" IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM "employees"
+WHERE "is_active" = TRUE
+AND "id" = \'391899edfbd7602e17cb497e4c01ff97f233e7f831d6522bfad2387b4c38ec86749e1bcb0bdd56c797e6a3bc9cb3fc1b7aa1cfe538fecffcf225080d0e7619046a3d5fe735bcda2fa83aa50dd748c2efb0\'
+AND "employees"."deleted_at" IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM "employees"
+WHERE "is_active" = TRUE
+AND "id" = \'391899edfbd7602e17cb497e4c01ff97f233e7f831d6522bfad2387b4c38ec86749e1bcb0bdd56c797e6a3bc9cb3fc1b7aa1cfe538fecffcf225080d0e7619046a3d5fe735bcda2fa83aa50dd748c2efb0\'
+AND "employees"."deleted_at" IS NULL
+ LIMIT 1')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "employees"
+WHERE "is_active" = :is_active:
+AND "id" = :id:
+AND "employees"."deleted_at" IS NULL
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH/Libraries/Authentication/EmployeeAuthentication.php(73): CodeIgniter\BaseModel->first()
+ 9 APPPATH/Libraries/Authentication/EmployeeAuthentication.php(56): App\Libraries\Authentication\EmployeeAuthentication->getAuthDataFromSession()
+10 APPPATH/Controllers/Adm/Rh/EmployeeController.php(31): App\Libraries\Authentication\EmployeeAuthentication->data()
+11 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Adm\Rh\EmployeeController->__construct()
+12 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+13 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-06 20:20:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 20:20:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 20:20:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 20:20:40 --> CSRF token verified.
+INFO - 2023-04-06 20:20:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 20:25:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 20:25:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 20:25:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 20:25:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 20:25:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 20:25:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 20:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-06 20:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
