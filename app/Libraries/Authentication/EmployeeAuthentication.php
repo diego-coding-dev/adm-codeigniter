@@ -59,18 +59,21 @@ class EmployeeAuthentication implements AuthenticationInterface
         return $this->employeeData;
     }
 
-    /**
-     * Solicita os dados da conta com base no id registrado na sessão
-     *
-     * @return null|object
-     */
-    private function getAuthDataFromSession(): null|object
+    public function id(): int
     {
-        if (!session()->has('employee_id')) {
-            return null;
-        }
+        return session()->get('employee_id');
+    }
 
-        return $this->employeeModel->where('is_active', true)->where('id', session()->get('employee_id'))->first();
+    /**
+     * Realiza o logout da conta
+     *
+     * @return boolean
+     */
+    public function logout(): bool
+    {
+        session()->destroy();
+
+        return true;
     }
 
     /**
@@ -85,5 +88,19 @@ class EmployeeAuthentication implements AuthenticationInterface
         session()->set('employee_id', $account->id);
 
         return true;
+    }
+
+    /**
+     * Solicita os dados da conta com base no id registrado na sessão
+     *
+     * @return null|object
+     */
+    private function getAuthDataFromSession(): null|object
+    {
+        if (!session()->has('employee_id')) {
+            return null;
+        }
+
+        return $this->employeeModel->where('is_active', true)->where('id', session()->get('employee_id'))->first();
     }
 }

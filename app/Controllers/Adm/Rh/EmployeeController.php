@@ -72,7 +72,8 @@ class EmployeeController extends BaseController
         // colocar filtro para checar se é get (middleware)
         $this->dataView = [
             'title' => 'ADM - Funcionário',
-            'dashboard' => 'Adicionando novo funcionário'
+            'dashboard' => 'Adicionando novo funcionário',
+            'account' => $this->auth->data()
         ];
 
         return view('adm/rh/employee/adding', $this->dataView);
@@ -115,6 +116,7 @@ class EmployeeController extends BaseController
         $this->dataView = [
             'title' => 'ADM - Funcionário',
             'dashboard' => 'Dados informacionais',
+            'account' => $this->auth->data(),
             'employee' => $this->findEmployeeById($decEmployee)
         ];
 
@@ -134,6 +136,7 @@ class EmployeeController extends BaseController
         $this->dataView = [
             'title' => 'ADM - Funcionário',
             'dashboard' => 'Desativar conta',
+            'account' => $this->auth->data(),
             'employee' => $this->findEmployeeById($decEmployee)
         ];
 
@@ -169,6 +172,7 @@ class EmployeeController extends BaseController
         $this->dataView = [
             'title' => 'ADM - Funcionário',
             'dashboard' => 'Reativar conta',
+            'account' => $this->auth->data(),
             'employee' => $this->findEmployeeById($decEmployee)
         ];
 

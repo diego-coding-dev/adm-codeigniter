@@ -34,7 +34,8 @@ class Employee extends Model
         'name' => 'required|string|min_length[4]|max_length[220]',
         'email' => 'required|valid_email|string|min_length[5]|max_length[100]|is_unique[employees.email]',
         'password' => 'required|string|min_length[8]|max_length[100]|regex_match[/^.*([a-zA-Z][0-9]).*$/]',
-        'password_confirm' => 'required|matches[password]'
+        'password_confirm' => 'required|matches[password]',
+        'current_password' => 'required|string|min_length[8]|max_length[100]|regex_match[/^.*([a-zA-Z][0-9]).*$/]'
     ];
     protected $validationMessages   = [
         'name' => [
@@ -61,7 +62,14 @@ class Employee extends Model
         'password_confirm' => [
             'required' => '* Este campo é obrigatório!',
             'matches' => '* A senha não é igual!'
-        ]
+        ],
+        'current_password' => [
+            'required' => '* Este campo é obrigatório!',
+            'string' => '* Este campo não atende aos requisitos mínimos!',
+            'min_length' => '* Este campo não atende aos requisitos mínimos!',
+            'max_length' => '* Este campo não atende aos requisitos mínimos!',
+            'regex_match' => '* Este campo não atende aos requisitos mínimos!'
+        ],
     ];
     protected $skipValidation       = false;
     protected $cleanValidationRules = true;
