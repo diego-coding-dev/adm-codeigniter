@@ -58,28 +58,37 @@ $routes->group('adm', function ($routes) {
          * rota employee
          */
         $routes->group('employee', function ($routes) {
-            $routes->group('', function ($routes) {
-                $routes->get('list-search', 'Adm\Rh\EmployeeController::listSearch', ['as' => 'employee.list-search']);
-                $routes->get('adding', 'Adm\Rh\EmployeeController::adding', ['as' => 'employee.adding']);
-                $routes->post('add', 'Adm\Rh\EmployeeController::add', ['as' => 'employee.add']);
-                $routes->get('show/(:hash)', 'Adm\Rh\EmployeeController::show/$1', ['as' => 'employee.show']);
-                $routes->get('disable/(:hash)', 'Adm\Rh\EmployeeController::disable/$1', ['as' => 'employee.disable']);
-                $routes->post('confirm-disable', 'Adm\Rh\EmployeeController::confirmDisable', ['as' => 'employee.confirm-disable']);
-                $routes->get('reactivate/(:hash)', 'Adm\Rh\EmployeeController::reactivate/$1', ['as' => 'employee.reactivate']);
-                $routes->post('confirm-reactivate', 'Adm\Rh\EmployeeController::confirmReactivate', ['as' => 'employee.confirm-reactivate']);
-            });
-            /**
-             * rota profile
-             */
-            $routes->group('profile', function ($routes) {
-                $routes->get('', 'Adm\ProfileController::myProfile', ['as' => 'profile.my-profile']);
-                $routes->get('edit', 'Adm\ProfileController::edit', ['as' => 'profile.edit']);
-                $routes->post('save-edit', 'Adm\ProfileController::saveEdit', ['as' => 'profile.save-edit']);
-                $routes->get('password', 'Adm\ProfileController::password', ['as' => 'profile.password']);
-                $routes->post('save-password', 'Adm\ProfileController::savePassword', ['as' => 'profile.save-password']);
-                $routes->get('logout', 'Adm\ProfileController::logout', ['as' => 'profile.logout']);
-            });
+            $routes->get('list-search', 'Adm\Rh\EmployeeController::listSearch', ['as' => 'employee.list-search']);
+            $routes->get('adding', 'Adm\Rh\EmployeeController::adding', ['as' => 'employee.adding']);
+            $routes->post('add', 'Adm\Rh\EmployeeController::add', ['as' => 'employee.add']);
+            $routes->get('show/(:hash)', 'Adm\Rh\EmployeeController::show/$1', ['as' => 'employee.show']);
+            $routes->get('disable/(:hash)', 'Adm\Rh\EmployeeController::disable/$1', ['as' => 'employee.disable']);
+            $routes->post('confirm-disable', 'Adm\Rh\EmployeeController::confirmDisable', ['as' => 'employee.confirm-disable']);
+            $routes->get('reactivate/(:hash)', 'Adm\Rh\EmployeeController::reactivate/$1', ['as' => 'employee.reactivate']);
+            $routes->post('confirm-reactivate', 'Adm\Rh\EmployeeController::confirmReactivate', ['as' => 'employee.confirm-reactivate']);
         });
+        /**
+         * rota client
+         */
+        $routes->group('client', function ($routes) {
+            $routes->get('list-search', 'Adm\Rh\ClientController::listSearch', ['as' => 'client.list-search']);
+            $routes->get('adding', 'Adm\Rh\ClientController::adding', ['as' => 'client.adding']);
+            $routes->post('add', 'Adm\Rh\ClientController::add', ['as' => 'client.add']);
+            $routes->get('show/(:hash)', 'Adm\Rh\ClientController::show/$1', ['as' => 'client.show']);
+            $routes->get('remove/(:hash)', 'Adm\Rh\ClientController::remove/$1', ['as' => 'client.remove']);
+            $routes->post('confirm-remove', 'Adm\Rh\ClientController::confirmRemove', ['as' => 'client.confirm-remove']);
+        });
+    });
+    /**
+     * rota profile
+     */
+    $routes->group('profile', function ($routes) {
+        $routes->get('', 'Adm\ProfileController::myProfile', ['as' => 'profile.my-profile']);
+        $routes->get('edit', 'Adm\ProfileController::edit', ['as' => 'profile.edit']);
+        $routes->post('save-edit', 'Adm\ProfileController::saveEdit', ['as' => 'profile.save-edit']);
+        $routes->get('password', 'Adm\ProfileController::password', ['as' => 'profile.password']);
+        $routes->post('save-password', 'Adm\ProfileController::savePassword', ['as' => 'profile.save-password']);
+        $routes->get('logout', 'Adm\ProfileController::logout', ['as' => 'profile.logout']);
     });
 });
 

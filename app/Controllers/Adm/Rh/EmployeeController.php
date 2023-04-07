@@ -3,19 +3,14 @@
 namespace App\Controllers\Adm\Rh;
 
 use App\Controllers\BaseController;
-use App\Libraries\ValidationsTrait\ValidOnlyNameTrait;
 
 class EmployeeController extends BaseController
 {
-    use ValidOnlyNameTrait;
-
     private array $dataView;
     private object $employeeModel;
     private object $activationTokensModel;
     private object $token;
     private object $mail;
-    private object $validation;
-    private object $encrypt;
     private object $auth;
 
     public function __construct()
@@ -23,10 +18,8 @@ class EmployeeController extends BaseController
         $this->employeeModel = service('model', 'Employee');
         $this->activationTokensModel = service('model', 'ActivationTokens');
         $this->token = service('library', 'Token');
-        $this->validation = service('validation');
-        $this->mail = service('email');
-        $this->encrypt = service('encrypter');
         $this->auth = service('auth', 'EmployeeAuthentication');
+        $this->mail = service('email');
     }
 
     /**
@@ -45,10 +38,8 @@ class EmployeeController extends BaseController
 
         if (!is_null($name = $this->request->getGet('name'))) {
 
-            $this->validation->setRules($this->nameRules());
-
-            if (!$this->validation->run($this->request->getGet())) {
-                return redirect()->back()->with('errors', $this->validation->getErrors());
+            if (!$this->employeeModel->forSearchEmployee()->validate($this->request->getGet())) {
+                return redirect()->back()->with('errors', $this->employeeModel->errors());
             }
 
             $this->dataView['name'] = $name;
@@ -111,13 +102,13 @@ class EmployeeController extends BaseController
      */
     public function show(string $employeeId = null): string
     {
-        $decEmployee = $this->decryptEmployeeId($employeeId);
+        $decEmployeeId = $this->decryptEmployeeId($employeeId);
 
         $this->dataView = [
             'title' => 'ADM - Funcionário',
             'dashboard' => 'Dados informacionais',
             'account' => $this->auth->data(),
-            'employee' => $this->findEmployeeById($decEmployee)
+            'employee' => $this->findEmployeeById($decEmployeeId)
         ];
 
         return view('adm/rh/employee/show', $this->dataView);
@@ -131,13 +122,14 @@ class EmployeeController extends BaseController
      */
     public function disable(string $employeeId = null): string
     {
-        $decEmployee = $this->decryptEmployeeId($employeeId);
+        $decEmployeeId = $this->decryptEmployeeId($employeeId);
 
         $this->dataView = [
             'title' => 'ADM - Funcionário',
             'dashboard' => 'Desativar conta',
+            'employeeId' => $employeeId,
             'account' => $this->auth->data(),
-            'employee' => $this->findEmployeeById($decEmployee)
+            'employee' => $this->findEmployeeById($decEmployeeId)
         ];
 
         return view('adm/rh/employee/confirmDisable', $this->dataView);
@@ -150,11 +142,11 @@ class EmployeeController extends BaseController
      */
     public function confirmDisable(): object
     {
-        $decEmployee = $this->decryptEmployeeId(
+        $decEmployeeId = $this->decryptEmployeeId(
             $this->request->getPost('employee_id')
         );
 
-        $this->employeeModel->where('id', $decEmployee)->set(['is_active' => false])->update();
+        $this->employeeModel->where('id', $decEmployeeId)->set(['is_active' => false])->update();
 
         return redirect()->route('employee.list-search')->with('success', 'Operação realizada com sucesso!');
     }
@@ -167,13 +159,14 @@ class EmployeeController extends BaseController
      */
     public function reactivate(string $employeeId = null): string
     {
-        $decEmployee = $this->decryptEmployeeId($employeeId);
+        $decEmployeeId = $this->decryptEmployeeId($employeeId);
 
         $this->dataView = [
             'title' => 'ADM - Funcionário',
             'dashboard' => 'Reativar conta',
+            'employeeId' => $employeeId,
             'account' => $this->auth->data(),
-            'employee' => $this->findEmployeeById($decEmployee)
+            'employee' => $this->findEmployeeById($decEmployeeId)
         ];
 
         return view('adm/rh/employee/confirmReactivate', $this->dataView);
@@ -186,11 +179,11 @@ class EmployeeController extends BaseController
      */
     public function confirmReactivate(): object
     {
-        $decEmployee = $this->decryptEmployeeId(
+        $decEmployeeId = $this->decryptEmployeeId(
             $this->request->getPost('employee_id')
         );
 
-        $this->employeeModel->where('id', $decEmployee)->set(['is_active' => true])->update();
+        $this->employeeModel->where('id', $decEmployeeId)->set(['is_active' => true])->update();
 
         return redirect()->route('employee.list-search')->with('success', 'Operação realizada com sucesso!');
     }
@@ -253,7 +246,7 @@ class EmployeeController extends BaseController
     private function decryptEmployeeId(string|array|null $employeeId): int
     {
         try {
-            return $encrypt->decrypt(hex2bin($employeeId));
+            return decrypt($employeeId);
         } catch (\Exception $th) {
             // echo $th->getMessage();
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Serviço não encontrado!');

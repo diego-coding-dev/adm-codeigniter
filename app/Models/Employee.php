@@ -120,4 +120,18 @@ class Employee extends Model
 
         return $this;
     }
+
+    /**
+     * Seleciona somente as rules necessárias para buscar o nome do funcionário
+     *
+     * @return object
+     */
+    public function forSearchEmployee(): object
+    {
+        unset($this->validationRules['email']);
+
+        $this->validationRules['name'] = str_replace('required|', 'permit_empty|', $this->validationRules['name']);
+
+        return $this;
+    }
 }

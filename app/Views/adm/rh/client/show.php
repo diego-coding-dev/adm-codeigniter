@@ -14,20 +14,9 @@
 
 <?php echo $this->section('content'); ?>
 
-
 <div class="col-xl-8">
 
-    <a href="<?php echo route_to('employee.list-search') ?>" type="button" class="btn btn-secondary btn-sm">Voltar</a>
-
-    <?php if ($employee->is_active === 't') : ?>
-
-        <a href="<?php echo route_to('employee.disable', encrypt($employee->id)); ?>" type="button" class="btn btn-danger btn-sm">Desativar conta</a>
-
-    <?php else : ?>
-
-        <a href="<?php echo route_to('employee.reactivate', encrypt($employee->id)); ?>" type="button" class="btn btn-success btn-sm">Ativar conta</a>
-
-    <?php endif; ?>
+    <a href="<?php echo route_to('client.list-search') ?>" type="button" class="btn btn-secondary btn-sm">Voltar</a>
 
     <div class="card">
         <div class="card-body">
@@ -39,22 +28,17 @@
 
                     <div class="row mb-2">
                         <div class="col-lg-3 col-md-4 label ">Nome</div>
-                        <div class="col-lg-9 col-md-8"><?php echo esc($employee->name); ?></div>
+                        <div class="col-lg-9 col-md-8"><?php echo esc($client->name); ?></div>
                     </div>
 
                     <div class="row mb-2">
                         <div class="col-lg-3 col-md-4 label">Email</div>
-                        <div class="col-lg-9 col-md-8"><?php echo esc($employee->email); ?></div>
+                        <div class="col-lg-9 col-md-8"><?php echo esc($client->email); ?></div>
                     </div>
 
                     <div class="row mb-2">
                         <div class="col-lg-3 col-md-4 label">Registrado em</div>
-                        <div class="col-lg-9 col-md-8"><?php echo esc(date('d/m/Y', strtotime($employee->created_at))); ?></div>
-                    </div>
-
-                    <div class="row mb-2">
-                        <div class="col-lg-3 col-md-4 label">Status</div>
-                        <div class="col-lg-9 col-md-8"><?php echo ($employee->is_active === 't') ? 'Ativado' : 'Não ativado'; ?></div>
+                        <div class="col-lg-9 col-md-8"><?php echo esc(date('d/m/Y', strtotime($client->created_at))); ?></div>
                     </div>
 
                 </div>

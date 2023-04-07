@@ -18,7 +18,7 @@
     <div class="card-body">
 
         <!-- Multi Columns Form -->
-        <form class="row g-3 mt-1" method="post" action="<?php echo url_to('employee.add') ?>">
+        <form class="row g-3 mt-1" method="post" action="<?php echo url_to('client.add') ?>">
 
             <input type="hidden" name="<?php echo csrf_token(); ?>" value="<?php echo csrf_hash(); ?>">
 
@@ -38,7 +38,7 @@
             </div>
             <div class="text-left">
                 <button type="submit" class="btn btn-primary" style="margin-top: 30px;">Salvar</button>
-                <a href="<?php echo url_to('employee.list-search'); ?>" type="button" class="btn btn-danger" style="margin-top: 30px;">Cancelar</a>
+                <a href="<?php echo url_to('client.list-search'); ?>" type="button" class="btn btn-danger" style="margin-top: 30px;">Cancelar</a>
             </div>
         </form><!-- End Multi Columns Form -->
 

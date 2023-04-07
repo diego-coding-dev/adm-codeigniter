@@ -16,11 +16,11 @@
 
 <div class="col-lg-12">
 
-    <form class="user" method="get" action="<?php echo url_to('employee.list-search') ?>">
+    <form class="user" method="get" action="<?php echo url_to('client.list-search') ?>">
         <div class="form-group row">
             <div class="col-sm-5 col-md-4 mb-3 mb-sm-0">
                 <div class="input-group">
-                    <input type="text" class="form-control bg-light border-2 small" name="name" value="<?php echo isset($name) ? esc($name) : null ?>" placeholder="Buscar funcionário..." aria-describedby="basic-addon2">
+                    <input type="text" class="form-control bg-light border-2 small" name="name" value="<?php echo isset($name) ? esc($name) : null ?>" placeholder="Buscar cliente..." aria-describedby="basic-addon2">
                     <div class="input-group-append">
                         <button type="submit" class="btn btn-secondary"><i class="bi bi-search"></i></button>
                     </div>
@@ -32,7 +32,7 @@
         </div>
     </form>
 
-    <?php if (count($employeeList) < 1) : ?>
+    <?php if (count($clientList) < 1) : ?>
 
         <h4 class="text-center mt-5">Nenhum registro foi encontrado!</h4>
 
@@ -46,22 +46,23 @@
                         <tr>
                             <th scope="col">Name</th>
                             <th scope="col">Email</th>
-                            <th style="width: 150px;" scope="col">Situação</th>
-                            <th class="text-center" style="width: 100px;" scope="col">Ação</th>
+                            <th style="width: 150px;" scope="col">Registrado há</th>
+                            <th class="text-center" scope="col" style="width: 100px;">Ação</th>
                         </tr>
                     </thead>
                     <tbody>
 
-                        <?php foreach ($employeeList as $employee) : ?>
+                        <?php foreach ($clientList as $cliente) : ?>
 
                             <tr>
-                                <td><?php echo esc($employee->name); ?></td>
-                                <td><?php echo esc($employee->email); ?></td>
+                                <td><?php echo esc($cliente->name); ?></td>
+                                <td><?php echo esc($cliente->email); ?></td>
                                 <td style="width: 150px;">
-                                    <?php echo ($employee->is_active === 't') ? 'Ativado' : 'Não ativado'; ?>
+                                    <?php echo esc($cliente->created_at->humanize()); ?>
                                 </td>
                                 <th class="text-center" style="width: 100px;">
-                                    <a href="<?php echo route_to('employee.show', encrypt($employee->id)); ?>" type="button" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                                    <a href="<?php echo route_to('client.show', encrypt($cliente->id)); ?>" type="button" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                                    <a href="<?php echo route_to('client.remove', encrypt($cliente->id)); ?>" type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></a>
                                 </th>
                             </tr>
 

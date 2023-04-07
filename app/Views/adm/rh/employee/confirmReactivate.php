@@ -25,10 +25,10 @@
             <form class="user" method="post" action="<?php echo route_to('employee.confirm-reactivate'); ?>">
 
                 <input type="hidden" name="<?php echo csrf_token(); ?>" value="<?php echo csrf_hash(); ?>">
-                <input type="hidden" name="employee_id" value="<?php echo $employee->id; ?>">
+                <input type="hidden" name="employee_id" value="<?php echo $employeeId; ?>">
 
-                <button type="submit" class="btn btn-primary" type="submit">Sim, reativar conta</button>
-                <a href="<?php echo route_to('employee.list-search'); ?>" type="button" class="btn btn-danger" type="submit">Não, cancelar operação</a>
+                <button type="submit" class="btn btn-danger" type="submit">Sim, reativar conta</button>
+                <a href="<?php echo route_to('employee.list-search'); ?>" type="button" class="btn btn-secondary" type="submit">Não, cancelar operação</a>
 
             </form>
 
