@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <?php if (session()->has('errors')) : ?>
-                    <h6 class="mt-1 text-danger" style="margin-bottom: -23px;">&nbsp;*&nbsp;<?php echo session()->get('errors.name'); ?></h6>
+                    <h6 class="mt-1 text-danger" style="margin-bottom: -23px;"><?php echo session()->get('errors.name'); ?></h6>
                 <?php endif; ?>
             </div>
         </div>

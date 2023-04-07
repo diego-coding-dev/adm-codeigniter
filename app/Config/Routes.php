@@ -80,6 +80,22 @@ $routes->group('adm', function ($routes) {
         });
     });
     /**
+     * rota storage
+     */
+    $routes->group('storage', function ($routes) {
+        /**
+         * rota type-product
+         */
+        $routes->group('type-product', function ($routes) {
+            $routes->get('list-search', 'Adm\Storage\TypeProductController::listSearch', ['as' => 'type-product.list-search']);
+            $routes->get('adding', 'Adm\Storage\TypeProductController::adding', ['as' => 'type-product.adding']);
+            $routes->post('add', 'Adm\Storage\TypeProductController::add', ['as' => 'type-product.add']);
+            $routes->get('show/(:hash)', 'Adm\Storage\TypeProductController::show/$1', ['as' => 'type-product.show']);
+            $routes->get('remove/(:hash)', 'Adm\Storage\TypeProductController::remove/$1', ['as' => 'type-product.remove']);
+            $routes->post('confirm-remove', 'Adm\Storage\TypeProductController::confirmRemove', ['as' => 'type-product.confirm-remove']);
+        });
+    });
+    /**
      * rota profile
      */
     $routes->group('profile', function ($routes) {

@@ -23,14 +23,14 @@
             <input type="hidden" name="<?php echo csrf_token(); ?>" value="<?php echo csrf_hash(); ?>">
 
             <div class="col-md-6">
-                <label for="inputName5" class="form-label">Nome</label>
+                <label for="name" class="form-label">Nome</label>
                 <input type="text" class="form-control" name="name">
                 <?php if (session()->has('errors')) : ?>
                     <h6 class="mt-1 text-danger" style="margin-bottom: -23px;"><?php echo session()->get('errors.name'); ?></h6>
                 <?php endif; ?>
             </div>
             <div class="col-md-6">
-                <label for="inputEmail5" class="form-label">Email</label>
+                <label for="email" class="form-label">Email</label>
                 <input type="email" class="form-control" name="email">
                 <?php if (session()->has('errors')) : ?>
                     <h6 class="mt-1 text-danger" style="margin-bottom: -23px;"><?php echo session()->get('errors.email'); ?></h6>

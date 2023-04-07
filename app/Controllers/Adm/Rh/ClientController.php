@@ -16,6 +16,11 @@ class ClientController extends BaseController
         $this->auth = service('auth', 'EmployeeAuthentication');
     }
 
+    /**
+     * Exibe tela com a lista de clientes
+     *
+     * @return string|object
+     */
     public function listSearch()
     {
         // colocar filtro para saber se é ajax (middleware)
@@ -82,18 +87,18 @@ class ClientController extends BaseController
      /**
      * Exibe tela com dados do cliente
      *
-     * @param string|null $employeeId
+     * @param string|null $clientId
      * @return string
      */
-    public function show(string $employeeId = null): string
+    public function show(string $clientId = null): string
     {
-        $decClientID = $this->decryptClientId($employeeId);
+        $decClientId = $this->decryptClientId($clientId);
 
         $this->dataView = [
             'title' => 'ADM - Funcionário',
             'dashboard' => 'Dados informacionais',
             'account' => $this->auth->data(),
-            'client' => $this->findClientById($decClientID)
+            'client' => $this->findClientById($decClientId)
         ];
 
         return view('adm/rh/client/show', $this->dataView);
@@ -127,7 +132,7 @@ class ClientController extends BaseController
     public function confirmRemove(): object
     {
         $encClientId = $this->request->getPost('client_id');
-        $decClientID = decrypt($encClientId);
+        $decClientID = $this->decryptClientId($encClientId);
 
         $this->clientModel->where('id', $decClientID)->delete();
 
@@ -137,13 +142,13 @@ class ClientController extends BaseController
     /**
      * Função para decriptografar o id do cliente
      *
-     * @param string $employeeId
+     * @param string $clientId
      * @return int
      */
-    private function decryptClientId(string|array|null $employeeId): int
+    private function decryptClientId(string|array|null $clientId): int
     {
         try {
-            return decrypt($employeeId);
+            return decrypt($clientId);
         } catch (\Exception $th) {
             // echo $th->getMessage();
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Serviço não encontrado!');
