@@ -86,6 +86,24 @@
             </ul>
         </li><!-- End Components Nav -->
 
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#storages" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-menu-button-wide"></i><span>Estoque</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="storages" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="<?php echo route_to('storage.list-search'); ?>">
+                        <i class="bi bi-circle"></i><span>Listar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo route_to('product.adding'); ?>">
+                        <i class="bi bi-circle"></i><span>Adicionar novo</span>
+                    </a>
+                </li>
+            </ul>
+        </li><!-- End Components Nav -->
+
     </ul>
 
 </aside><!-- End Sidebar-->

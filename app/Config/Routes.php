@@ -83,6 +83,9 @@ $routes->group('adm', function ($routes) {
      * rota storage
      */
     $routes->group('storage', function ($routes) {
+        $routes->group('', function ($routes) {
+            $routes->get('', 'Adm\Storage\StorageController::listSearch', ['as' => 'storage.list-search']);
+        });
         /**
          * rota type-product
          */
