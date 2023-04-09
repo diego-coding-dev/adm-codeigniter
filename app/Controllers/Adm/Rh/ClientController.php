@@ -21,7 +21,7 @@ class ClientController extends BaseController
      *
      * @return string|object
      */
-    public function listSearch()
+    public function listSearch(): string|object
     {
         // colocar filtro para saber se é ajax (middleware)
         $this->dataView = [
@@ -84,7 +84,7 @@ class ClientController extends BaseController
         return redirect()->route('client.list-search')->with('success', 'Cliente registrado com sucesso!');
     }
 
-     /**
+    /**
      * Exibe tela com dados do cliente
      *
      * @param string|null $clientId
@@ -95,7 +95,7 @@ class ClientController extends BaseController
         $decClientId = $this->decryptClientId($clientId);
 
         $this->dataView = [
-            'title' => 'ADM - Funcionário',
+            'title' => 'ADM - Cliente',
             'dashboard' => 'Dados informacionais',
             'account' => $this->auth->data(),
             'client' => $this->findClientById($decClientId)
@@ -115,7 +115,7 @@ class ClientController extends BaseController
         $decClientID = $this->decryptClientId($clientId);
 
         $this->dataView = [
-            'title' => 'ADM - Funcionário',
+            'title' => 'ADM - Cliente',
             'dashboard' => 'Desativar conta',
             'account' => $this->auth->data(),
             'client' => $this->findClientById($decClientID)

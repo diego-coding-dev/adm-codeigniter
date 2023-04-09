@@ -41,7 +41,7 @@
         <div class="card" style="margin-top: 40px;">
             <div class="card-body">
                 <!-- Default Table -->
-                <table class="table">
+                <table class="table" style="margin-top: 20px;">
                     <thead>
                         <tr>
                             <th scope="col">Categoria</th>

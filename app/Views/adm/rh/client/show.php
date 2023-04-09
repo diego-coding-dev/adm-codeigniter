@@ -18,7 +18,7 @@
 
     <a href="<?php echo route_to('client.list-search') ?>" type="button" class="btn btn-secondary btn-sm">Voltar</a>
 
-    <div class="card">
+    <div class="card" style="margin-top: 20px;">
         <div class="card-body">
             <div class="tab-content">
 

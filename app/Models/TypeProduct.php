@@ -35,7 +35,7 @@ class TypeProduct extends Model
             'string' => '* Este campo não atende aos requisitos mínimos!',
             'min_length' => '* Este campo não atende aos requisitos mínimos!',
             'max_length' => '* Este campo não atende aos requisitos mínimos!'
-        ],
+        ]
     ];
     protected $skipValidation       = false;
     protected $cleanValidationRules = true;

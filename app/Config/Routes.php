@@ -94,6 +94,20 @@ $routes->group('adm', function ($routes) {
             $routes->get('remove/(:hash)', 'Adm\Storage\TypeProductController::remove/$1', ['as' => 'type-product.remove']);
             $routes->post('confirm-remove', 'Adm\Storage\TypeProductController::confirmRemove', ['as' => 'type-product.confirm-remove']);
         });
+        /**
+         * rota product
+         */
+        $routes->group('product', function ($routes) {
+            $routes->get('list-search', 'Adm\Storage\ProductController::listSearch', ['as' => 'product.list-search']);
+            $routes->get('product-image/(:segment)', 'Adm\Storage\ProductController::image/$1', ['as' => 'product.image']);
+            $routes->get('adding', 'Adm\Storage\ProductController::adding', ['as' => 'product.adding']);
+            $routes->post('add', 'Adm\Storage\ProductController::add', ['as' => 'product.add']);
+            $routes->get('show/(:hash)', 'Adm\Storage\ProductController::show/$1', ['as' => 'product.show']);
+            $routes->get('change-image/(:hash)', 'Adm\Storage\ProductController::changeImage/$1', ['as' => 'product.change-image']);
+            $routes->post('save-image/(:hash)', 'Adm\Storage\ProductController::saveImage/$1', ['as' => 'product.save-image']);
+            $routes->get('remove/(:hash)', 'Adm\Storage\ProductController::remove/$1', ['as' => 'product.remove']);
+            $routes->post('confirm-remove/(:hash)', 'Adm\Storage\ProductController::confirmRemove/$1', ['as' => 'product.confirm-remove']);
+        });
     });
     /**
      * rota profile

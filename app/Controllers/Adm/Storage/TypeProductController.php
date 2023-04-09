@@ -21,7 +21,12 @@ class TypeProductController extends BaseController
         $this->auth = service('auth', 'EmployeeAuthentication');
     }
 
-    public function listSearch()
+    /**
+     * Exibe tela com a lista de categoria de produtos
+     *
+     * @return string|object
+     */
+    public function listSearch(): string| object
     {
         // colocar filtro para saber se é ajax (middleware)
         $this->dataView = [

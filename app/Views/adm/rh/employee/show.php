@@ -29,7 +29,7 @@
 
     <?php endif; ?>
 
-    <div class="card">
+    <div class="card" style="margin-top: 20px;">
         <div class="card-body">
             <div class="tab-content">
 

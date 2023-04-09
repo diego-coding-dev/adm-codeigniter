@@ -66,6 +66,29 @@ class Services extends BaseService
     }
 
     /**
+     * Retorna instância de uma determinada library
+     *
+     * @param string $library
+     * @return object
+     */
+    public static function core(string $class): object
+    {
+        $explodedClass = explode(',', $class);
+        $core = [
+            'FileCollection' => '\\CodeIgniter\\Files\\FileCollection',
+            'File' => '\\CodeIgniter\\Files\\File'
+        ];
+
+        $coreClass = $core[$explodedClass];
+
+        if (!class_exists($coreClass)) {
+            throw new Exception("Class {$coreClass} not exists!");
+        }
+
+        return new $coreClass();
+    }
+
+    /**
      * Retorna instância de autenticação
      *
      * @param string $auth
