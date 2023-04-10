@@ -7,13 +7,15 @@ use App\Controllers\BaseController;
 class ClientController extends BaseController
 {
     private array $dataView;
-    private object $clientModel;
+    private object $clientRepository;
+    private object $validation;
     private object $auth;
 
     public function __construct()
     {
-        $this->clientModel = service('model', 'Client');
-        $this->auth = service('auth', 'EmployeeAuthentication');
+        $this->clientRepository = service('repository', 'client');
+        $this->validation = service('validationForm', 'client');
+        $this->auth = service('auth', 'employee');
     }
 
     /**
@@ -32,17 +34,17 @@ class ClientController extends BaseController
 
         if (!is_null($name = $this->request->getGet('name'))) {
 
-            if (!$this->clientModel->forSearchCliente()->validate($this->request->getGet())) {
-                return redirect()->back()->with('errors', $this->clientModel->errors());
+            if (is_array($errors = $this->validation->forSearchCliente()->run($this->request->getGet()))) {
+                return redirect()->back()->with('errors', $errors);
             }
 
             $this->dataView['name'] = $name;
-            $this->dataView['clientList'] = $this->clientModel->where('type_user_id', 1)->like('name', $name)->orderBy('id', 'asc')->paginate(10);
+            $this->dataView['clientList'] = $this->clientRepository->getByNameLike($name);
         } else {
-            $this->dataView['clientList'] = $this->clientModel->where('type_user_id', 1)->orderBy('id', 'asc')->paginate(10);
+            $this->dataView['clientList'] = $this->clientRepository->all();
         }
 
-        $this->dataView['pager'] = $this->clientModel->pager;
+        $this->dataView['pager'] = $this->clientRepository->pager();
 
         return view('adm/rh/client/listSearch', $this->dataView);
     }
@@ -75,11 +77,11 @@ class ClientController extends BaseController
         $dataForm = $this->request->getPost();
         $dataForm['type_user_id'] = 1;
 
-        if (!$this->clientModel->validate($dataForm)) {
-            return redirect()->back()->with('errors', $this->clientModel->errors());
+        if (is_array($errors = $this->validation->run($dataForm))) {
+            return redirect()->back()->with('errors', $errors);
         }
 
-        $this->clientModel->insert($dataForm);
+        $this->clientRepository->add($dataForm);
 
         return redirect()->route('client.list-search')->with('success', 'Cliente registrado com sucesso!');
     }
@@ -98,7 +100,7 @@ class ClientController extends BaseController
             'title' => 'ADM - Cliente',
             'dashboard' => 'Dados informacionais',
             'account' => $this->auth->data(),
-            'client' => $this->findClientById($decClientId)
+            'client' => $this->clientRepository->find($decClientId)
         ];
 
         return view('adm/rh/client/show', $this->dataView);
@@ -112,13 +114,13 @@ class ClientController extends BaseController
      */
     public function remove(string $clientId = null): string
     {
-        $decClientID = $this->decryptClientId($clientId);
+        $decClientId = $this->decryptClientId($clientId);
 
         $this->dataView = [
             'title' => 'ADM - Cliente',
             'dashboard' => 'Desativar conta',
             'account' => $this->auth->data(),
-            'client' => $this->findClientById($decClientID)
+            'client' => $this->clientRepository->find($decClientId)
         ];
 
         return view('adm/rh/client/confirmRemove', $this->dataView);
@@ -134,7 +136,7 @@ class ClientController extends BaseController
         $encClientId = $this->request->getPost('client_id');
         $decClientID = $this->decryptClientId($encClientId);
 
-        $this->clientModel->where('id', $decClientID)->delete();
+        $this->clientRepository->remove($decClientID);
 
         return redirect()->route('client.list-search')->with('success', 'Operação realizada com sucesso!');
     }
@@ -153,16 +155,5 @@ class ClientController extends BaseController
             // echo $th->getMessage();
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Serviço não encontrado!');
         }
-    }
-
-    /**
-     * Recupera dados do cliente pelo id
-     *
-     * @param integer $clientId
-     * @return null|object
-     */
-    private function findClientById(int $clientId): null|object
-    {
-        return $this->clientModel->find($clientId);
     }
 }

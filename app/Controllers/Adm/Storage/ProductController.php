@@ -4,23 +4,21 @@ namespace App\Controllers\Adm\Storage;
 
 use App\Controllers\BaseController;
 use CodeIgniter\Files\Exceptions\FileNotFoundException;
-use CodeIgniter\Files\File;
-use Exception;
 
 class ProductController extends BaseController
 {
     private array $dataView;
-    private object $productModel;
-    private object $typeProductModel;
-    private object $image;
+    private object $productRepository;
+    private object $validation;
+    private object $file;
     private object $auth;
 
     public function __construct()
     {
-        $this->productModel = service('model', 'Product');
-        $this->typeProductModel = service('model', 'TypeProduct');
+        $this->productRepository = service('repository', 'product');
+        $this->validation = service('validationForm', 'product');
+        $this->file = service('file', 'images');
         $this->auth = service('auth', 'EmployeeAuthentication');
-        $this->image = service('image', 'gd');
     }
 
     /**
@@ -39,17 +37,17 @@ class ProductController extends BaseController
 
         if (!is_null($description = $this->request->getGet('description'))) {
 
-            if (!$this->productModel->forSearchProduct()->validate($this->request->getGet())) {
-                return redirect()->back()->with('errors', $this->productModel->errors());
+            if (is_array($errors = $this->validation->forSearchProduct()->run($this->request->getGet()))) {
+                return redirect()->back()->with('errors', $errors);
             }
 
             $this->dataView['description'] = $description;
-            $this->dataView['productList'] = $this->productModel->like('description', $description)->orderBy('id', 'asc')->paginate(10);
+            $this->dataView['productList'] = $this->productRepository->getLike($description);
         } else {
-            $this->dataView['productList'] = $this->productModel->orderBy('id', 'asc')->paginate(10);
+            $this->dataView['productList'] = $this->productRepository->all();
         }
 
-        $this->dataView['pager'] = $this->productModel->pager;
+        $this->dataView['pager'] = $this->productRepository->pager();
 
         return view('adm/storage/product/listSearch', $this->dataView);
     }
@@ -66,7 +64,7 @@ class ProductController extends BaseController
             'title' => 'ADM - Produtos',
             'dashboard' => 'Adicionando novo produto',
             'account' => $this->auth->data(),
-            'typeProductList' => $this->typeProductModel->findAll()
+            'typeProductList' => $this->productRepository->allCategories()
         ];
 
         return view('adm/storage/product/adding', $this->dataView);
@@ -81,27 +79,26 @@ class ProductController extends BaseController
     {
         // colocar filtro para checar se é post (middleware)
         $file = $this->request->getFile('image');
-        $imageValidationRules = $this->productModel->imagesValidationRules();
 
-        if (!$this->productModel->validate($imageValidationRules)) {
-            return redirect()->back()->with('errors', $this->productModel->errors());
+        $imageValidationRules = $this->validation->imagesValidationRules();
+
+        if (!$this->validate($imageValidationRules)) {
+            return redirect()->back()->with('errors', $this->validator->getErrors());
         }
 
         $dataForm = $this->request->getPost();
 
-        if (!$this->productModel->fieldsValidationRules()->validate($dataForm)) {
-            return redirect()->back()->with('errors', $this->productModel->errors());
+        if (is_array($errors = $this->validation->fieldsValidationRules()->run($dataForm))) {
+            return redirect()->back()->with('errors', $errors);
         }
 
-        try {
-            $dataForm['image'] = $this->storeProductImage($file);
-            $this->persistProductDb($dataForm);
+        $dataForm['file'] = $file;
 
-            return redirect()->route('product.list-search')->with('success', 'Produto registrado com sucesso!');
-        } catch (Exception $e) {
-            unlink(WRITEPATH . 'uploads/' . $dataForm['image']);
+        if (!$this->addProduct($dataForm)) {
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Operação não realizada, contacte o administrador!');
         }
+
+        return redirect()->route('product.list-search')->with('success', 'Produto registrado com sucesso!');
     }
 
     /**
@@ -114,7 +111,7 @@ class ProductController extends BaseController
     {
         $decProductId = $this->decryptTypeProductId($productId);
 
-        $product = $this->findProductById($decProductId);
+        $product = $this->productRepository->find($decProductId);
 
         $this->dataView = [
             'title' => 'ADM - Produtos',
@@ -122,7 +119,7 @@ class ProductController extends BaseController
             'product' => $product,
             'active' => 'show',
             'productId' => $productId,
-            'typeProduct' => $this->findTypeProductById($product->type_product_id),
+            'typeProduct' => $this->productRepository->category($product->type_product_id),
             'account' => $this->auth->data()
         ];
 
@@ -139,7 +136,7 @@ class ProductController extends BaseController
     {
         $decProductId = $this->decryptTypeProductId($productId);
 
-        $product = $this->findProductById($decProductId);
+        $product = $this->productRepository->find($decProductId);
 
         $this->dataView = [
             'title' => 'ADM - Produtos',
@@ -147,8 +144,8 @@ class ProductController extends BaseController
             'product' => $product,
             'active' => 'image',
             'productId' => $productId,
-            'typeProduct' => $this->findTypeProductById($product->type_product_id),
-            'typeProductList' => $this->typeProductModel->findAll(),
+            'typeProduct' => $this->productRepository->category($product->type_product_id),
+            'typeProductList' => $this->productRepository->allCategories(),
             'account' => $this->auth->data()
         ];
 
@@ -163,29 +160,26 @@ class ProductController extends BaseController
      */
     public function saveImage(string $productId = null): object
     {
+        $file = $this->request->getFile('image');
+
+        $imageValidationRules = $this->validation->imagesValidationRules();
+
+        if (!$this->validate($imageValidationRules)) {
+            return redirect()->back()->with('errors', $this->validator->getErrors());
+        }
+
         $decProductId = $this->decryptTypeProductId($productId);
+        $product = $this->productRepository->find($decProductId);
 
-        $product = $this->findProductById($decProductId);
+        $dataProduct['file'] = $file;
+        $dataProduct['id'] = $product->id;
+        $dataProduct['current_image'] = $product->image;
 
-        $image = $this->request->getFile('image');
-
-        $imageValidation = $this->productModel->imagesValidationRules();
-
-        if (!$this->productModel->validate($imageValidation)) {
-            return redirect()->back()->with('errors', $this->productModel->errors());
+        if (!$this->updateProduct($dataProduct)) {
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Operação não realizada, contacte o administrador!');
         }
 
-        try {
-            $imageData['image'] = $this->storeProductImage($image);
-            $imageData['product_id'] = $decProductId;
-
-            $this->updateProductDb($imageData);
-            $this->removeProductImage($product->image);
-
-            return redirect()->route('product.list-search')->with('success', 'Produto atualizado com sucesso');
-        } catch (FileNotFoundException $th) {
-            dd($th->getMessage());
-        }
+        return redirect()->route('product.list-search')->with('success', 'Produto atualizado com sucesso');
     }
 
     /**
@@ -196,14 +190,12 @@ class ProductController extends BaseController
      */
     public function image(string $image = null): void
     {
-        $imagePath = WRITEPATH . env('storage.root') . env('storage.product') . DIRECTORY_SEPARATOR . $image;
+       $data = $this->file->retrieve($image);
 
-        $file = new File($imagePath);
+        header('Conten-Type:' . $data['type']);
+        header('Content-Length:' . $data['length']);
 
-        header('Conten-Type:' . $file->getMimeType());
-        header('Content-Length:' . $file->getSize());
-
-        readfile($imagePath);
+        readfile($data['file']);
 
         exit();
     }
@@ -223,7 +215,7 @@ class ProductController extends BaseController
             'dashboard' => 'Remover produto',
             'productId' => $productId,
             'account' => $this->auth->data(),
-            'product' => $this->findProductById($decProductId)
+            'product' => $this->productRepository->find($decProductId)
         ];
 
         return view('adm/storage/product/confirmRemove', $this->dataView);
@@ -239,95 +231,57 @@ class ProductController extends BaseController
     {
         $decProductId = $this->decryptTypeProductId($productId);
 
-        $this->productModel->where('id', $decProductId)->delete();
+        $this->productRepository->remove($decProductId);
 
         return redirect()->route('product.list-search')->with('success', 'Produto removido com sucesso');
     }
 
     /**
-     * Realiza o storage do imagem do produto no diretório
-     *
-     * @param object $file
-     * @return string
-     */
-    private function storeProductImage(object $file): string
-    {
-        if (!$file->hasMoved()) {
-            $filePath = WRITEPATH . 'uploads/' . $file->store(env('storage.product'));
-        }
-
-        $this->image->withFile($filePath)->fit(100, 100, 'center')->save($filePath);
-
-        $filePathName = explode(DIRECTORY_SEPARATOR, $filePath);
-
-        return end($filePathName);
-    }
-
-    /**
-     * Remove a antiga imagem do produto
-     *
-     * @param string $image
-     * @return void
-     */
-    private function removeProductImage(string $image)
-    {
-        $imagePath = WRITEPATH . env('storage.root') . env('storage.product') . DIRECTORY_SEPARATOR . $image;
-
-        if (!file_exists($imagePath)) {
-            throw new FileNotFoundException();
-        }
-
-        unlink($imagePath);
-
-        return true;
-    }
-
-    /**
-     * Persisti dados dps produto no banco de dados
+     * Registra o novo produto no sistema
      *
      * @param array $product
      * @return boolean
      */
-    private function persistProductDb(array $product): bool
+    private function addProduct(array $product): bool
     {
-        $this->productModel->skipValidation()->insert($product);
+        try {
+            $product['image'] = $this->file->store($product['file'], env('storage.product'));
 
-        return true;
+            unset($product['file']);
+
+            $this->productRepository->add($product);
+
+            return true;
+        } catch (\Exception $e) {
+            $this->file->remove($product['image'], env('storage.product'));
+            return false;
+        }
     }
 
     /**
-     * Atualiza dados dps produto no banco de dados
+     * Atualiza dados do produto
      *
      * @param array $product
      * @return boolean
      */
-    private function updateProductDb(array $product): bool
+    private function updateProduct(array $product): bool
     {
-        $this->productModel->skipValidation()->where('id', $product['product_id'])->set(['image' => $product['image']])->update();
+        try {
+            $newDataProduct['image'] = $this->file->store($product['file'], env('storage.product'));
 
-        return true;
-    }
+            $this->file->remove($product['current_image'], env('storage.product'));
 
-    /**
-     * Recupera dados do produto pelo id
-     *
-     * @param integer $productId
-     * @return null|object
-     */
-    private function findProductById(int $productId): null|object
-    {
-        return $this->productModel->find($productId);
-    }
+            unset($product['file']);
+            unset($product['product']);
 
-    /**
-     * Recupera dados da categoria do produto pelo id
-     *
-     * @param integer $typeProductId
-     * @return null|object
-     */
-    private function findTypeProductById(int $typeProductId): null|object
-    {
-        return $this->typeProductModel->find($typeProductId);
+            $this->productRepository->update($product['id'], $newDataProduct);
+
+            return true;
+        } catch (FileNotFoundException $th) {
+            $this->file->remove($product['image'], env('storage.product'));
+
+            return false;
+        }
     }
 
     /**

@@ -7,7 +7,9 @@ use App\Controllers\BaseController;
 class TypeProductController extends BaseController
 {
     private array $dataView;
+    private object $typeProductRepository;
     private object $typeProductModel;
+    private object $validation;
     private object $auth;
 
     /**
@@ -17,6 +19,9 @@ class TypeProductController extends BaseController
      */
     public function __construct()
     {
+        $this->typeProductRepository = service('repository', 'typeProduct');
+        $this->validation = service('validationForm', 'typeProduct');
+
         $this->typeProductModel = service('model', 'TypeProduct');
         $this->auth = service('auth', 'EmployeeAuthentication');
     }
@@ -37,17 +42,17 @@ class TypeProductController extends BaseController
 
         if (!is_null($typeProduct = $this->request->getGet('type_product'))) {
 
-            if (!$this->typeProductModel->forSearchTypeProduct()->validate($this->request->getGet())) {
-                return redirect()->back()->with('errors', $this->typeProductModel->errors());
+            if (is_array($errors = $this->validation->forSearchTypeProduct()->run($this->request->getGet()))) {
+                return redirect()->back()->with('errors', $errors);
             }
 
             $this->dataView['typeProduct'] = $typeProduct;
-            $this->dataView['typeProductList'] = $this->typeProductModel->like('type_product', $typeProduct)->orderBy('id', 'asc')->paginate(10);
+            $this->dataView['typeProductList'] = $this->typeProductRepository->getLike($typeProduct);
         } else {
-            $this->dataView['typeProductList'] = $this->typeProductModel->orderBy('id', 'asc')->paginate(10);
+            $this->dataView['typeProductList'] = $this->typeProductRepository->all();
         }
 
-        $this->dataView['pager'] = $this->typeProductModel->pager;
+        $this->dataView['pager'] = $this->typeProductRepository->pager();
 
         return view('adm/storage/typeProduct/listSearch', $this->dataView);
     }
@@ -79,11 +84,11 @@ class TypeProductController extends BaseController
         // colocar filtro para checar se é post (middleware)
         $dataForm = $this->request->getPost();
 
-        if (!$this->typeProductModel->validate($dataForm)) {
-            return redirect()->back()->with('errors', $this->typeProductModel->errors());
+        if (is_array($errors = $this->validation->run($dataForm))) {
+            return redirect()->back()->with('errors', $errors);
         }
 
-        $this->typeProductModel->insert($dataForm);
+        $this->typeProductRepository->add($dataForm);
 
         return redirect()->route('type-product.list-search')->with('success', 'Categoria registrada com sucesso!');
     }
@@ -102,7 +107,7 @@ class TypeProductController extends BaseController
             'title' => 'ADM - Categorias de produto',
             'dashboard' => 'Dados informacionais',
             'account' => $this->auth->data(),
-            'typeProduct' => $this->findTypeProductById($decTypeProductId)
+            'typeProduct' => $this->typeProductRepository->find($decTypeProductId)
         ];
 
         return view('adm/storage/typeProduct/show', $this->dataView);
@@ -122,7 +127,7 @@ class TypeProductController extends BaseController
             'title' => 'ADM - Categorias de produto',
             'dashboard' => 'Remover categoria',
             'account' => $this->auth->data(),
-            'typeProduct' => $this->findTypeProductById($decTypeProductId)
+            'typeProduct' => $this->typeProductRepository->find($decTypeProductId)
         ];
 
         return view('adm/storage/typeProduct/confirmRemove', $this->dataView);
@@ -138,7 +143,7 @@ class TypeProductController extends BaseController
         $encTypeProductId = $this->request->getPost('type_product_id');
         $decTypeProductId = $this->decryptTypeProductId($encTypeProductId);
 
-        $this->typeProductModel->where('id', $decTypeProductId)->delete();
+        $this->typeProductRepository->remove($decTypeProductId);
 
         return redirect()->route('type-product.list-search')->with('success', 'Operação realizada com sucesso!');
     }
@@ -157,16 +162,5 @@ class TypeProductController extends BaseController
             // echo $th->getMessage();
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Serviço não encontrado!');
         }
-    }
-
-    /**
-     * Recupera dados da categoria do produto pelo id
-     *
-     * @param integer $typeProductId
-     * @return null|object
-     */
-    private function findTypeProductById(int $typeProductId): null|object
-    {
-        return $this->typeProductModel->find($typeProductId);
     }
 }

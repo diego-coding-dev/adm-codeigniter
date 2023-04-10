@@ -34,41 +34,117 @@ class Services extends BaseService
     /**
      * Retorna instância de um determinado model
      *
-     * @param string $model
+     * @param string $emailClass
      * @return object
      */
-    public static function model(string $model): object
+    public static function mail(string $emailClass)
     {
-        $modelClass = '\\App\\Models\\' . $model;
+        $emailClass = str_replace('Mail', '', $emailClass);
 
-        if (!class_exists($modelClass)) {
-            throw new Exception("Class {$modelClass} not exists!");
+        $class =  '\\App\\Mail\\' . ucfirst($emailClass) . 'Mail';
+
+        if (!class_exists($class)) {
+            throw new Exception("Class {$class} not exists!");
         }
 
-        return new $modelClass();
+        return new $class();
+    }
+
+    /**
+     * Retorna instância de um determinado model
+     *
+     * @param string $validationClass
+     * @return object
+     */
+    public static function validationForm(string $validationClass)
+    {
+        $validationClass = str_replace('Validation', '', $validationClass);
+
+        $class = '\\App\\Validations\\' . ucfirst($validationClass) . 'Validation';
+
+        if (!class_exists($class)) {
+            throw new Exception("Class {$class} not exists!");
+        }
+
+        return new $class();
+    }
+
+    /**
+     * Retorna instância de um determinado model
+     *
+     * @param string $repositoryClass
+     * @return object
+     */
+    public static function repository(string $repositoryClass)
+    {
+        $repositoryClass = str_replace('Repository', '', $repositoryClass);
+
+        $class = '\\App\\Repository\\ORMdefault\\' . ucfirst($repositoryClass) . 'Repository';
+
+        if (!class_exists($class)) {
+            throw new Exception("Class {$class} not exists!");
+        }
+
+        return new $class();
+    }
+
+    /**
+     * Retorna instância de um determinado model
+     *
+     * @param string $modelClass
+     * @return object
+     */
+    public static function model(string $modelClass): object
+    {
+        $modelClass = str_replace('Model', '', $modelClass);
+
+        $class = '\\App\\Models\\' . ucfirst($modelClass);
+
+        if (!class_exists($class)) {
+            throw new Exception("Class {$class} not exists!");
+        }
+
+        return new $class();
     }
 
     /**
      * Retorna instância de uma determinada library
      *
-     * @param string $library
+     * @param string $libraryClass
      * @return object
      */
-    public static function library(string $library): object
+    public static function library(string $libraryClass): object
     {
-        $libraryClass = '\\App\\Libraries\\' . $library;
+        $class = '\\App\\Libraries\\' . ucfirst($libraryClass);
 
-        if (!class_exists($libraryClass)) {
-            throw new Exception("Class {$libraryClass} not exists!");
+        if (!class_exists($class)) {
+            throw new Exception("Class {$class} not exists!");
         }
 
-        return new $libraryClass();
+        return new $class();
     }
 
     /**
      * Retorna instância de uma determinada library
      *
-     * @param string $library
+     * @param string $fileClass
+     * @return object
+     */
+    public static function file(string $fileClass): object
+    {
+        $class = '\\App\\Libraries\\Files\\' . ucfirst($fileClass);
+
+        if (!class_exists($class)) {
+            throw new Exception("Class {$class} not exists!");
+        }
+
+        return new $class();
+    }
+
+    /**
+     * Retorna instância de uma determinada library
+     *
+     * @param string $class
      * @return object
      */
     public static function core(string $class): object
@@ -94,15 +170,17 @@ class Services extends BaseService
      * @param string $auth
      * @return object
      */
-    public static function auth(string $auth): object
+    public static function auth(string $authClass): object
     {
-        $authClass = '\\App\\Libraries\\Authentication\\' . $auth;
+        $authClass = str_replace('Authentication', '', $authClass);
 
-        if (!class_exists($authClass)) {
-            throw new Exception("Class {$authClass} not exists!");
+        $class = '\\App\\Libraries\\Authentication\\' . ucfirst($authClass) . 'Authentication';
+
+        if (!class_exists($class)) {
+            throw new Exception("Class {$class} not exists!");
         }
 
-        return new $authClass(
+        return new $class(
             new \App\Models\Employee()
         );
     }

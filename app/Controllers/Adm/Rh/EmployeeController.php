@@ -7,19 +7,17 @@ use App\Controllers\BaseController;
 class EmployeeController extends BaseController
 {
     private array $dataView;
-    private object $employeeModel;
-    private object $activationTokensModel;
-    private object $token;
-    private object $mail;
+    private object $employeeRepository;
+    private object $validation;
+    private object $email;
     private object $auth;
 
     public function __construct()
     {
-        $this->employeeModel = service('model', 'Employee');
-        $this->activationTokensModel = service('model', 'ActivationTokens');
-        $this->token = service('library', 'Token');
-        $this->auth = service('auth', 'EmployeeAuthentication');
-        $this->mail = service('email');
+        $this->employeeRepository = service('repository', 'employee');
+        $this->validation = service('validationForm', 'employee');
+        $this->email = service('mail', 'employee');
+        $this->auth = service('auth', 'employee');
     }
 
     /**
@@ -38,17 +36,17 @@ class EmployeeController extends BaseController
 
         if (!is_null($name = $this->request->getGet('name'))) {
 
-            if (!$this->employeeModel->forSearchEmployee()->validate($this->request->getGet())) {
-                return redirect()->back()->with('errors', $this->employeeModel->errors());
+            if (is_array($errors = $this->validation->forSearchEmployee()->run($this->request->getGet()))) {
+                return redirect()->back()->with('errors', $errors);
             }
 
             $this->dataView['name'] = $name;
-            $this->dataView['employeeList'] = $this->employeeModel->where('type_user_id', 2)->like('name', $name)->orderBy('id', 'asc')->paginate(10);
+            $this->dataView['employeeList'] = $this->employeeRepository->getByNameLike($name);
         } else {
-            $this->dataView['employeeList'] = $this->employeeModel->where('type_user_id', 2)->orderBy('id', 'asc')->paginate(10);
+            $this->dataView['employeeList'] = $this->employeeRepository->all();
         }
 
-        $this->dataView['pager'] = $this->employeeModel->pager;
+        $this->dataView['pager'] = $this->employeeRepository->pager();
 
         return view('adm/rh/employee/listSearch', $this->dataView);
     }
@@ -81,15 +79,19 @@ class EmployeeController extends BaseController
         $dataForm = $this->request->getPost();
         $dataForm['type_user_id'] = 2;
 
-        if (!$this->employeeModel->validate($dataForm)) {
-            return redirect()->back()->with('errors', $this->employeeModel->errors());
+        if (is_array($errors = $this->validation->forAddEmployee()->run($dataForm))) {
+            return redirect()->back()->with('errors', $errors);
         }
 
-        if (!$this->persistNewEmployee($dataForm)) {
+        $result = $this->employeeRepository->add($dataForm);
+
+        if (!$result) {
             return redirect()->route('employee.list-search')->with('danger', 'Registro não realizado, contacte o administrador!');
         }
 
-        $this->sendActivationEmail($dataForm);
+        $dataForm['token'] = $result;
+
+        $this->email->sendActivationEmail($dataForm);
 
         return redirect()->route('employee.list-search')->with('success', 'Funcionário registrado com sucesso!');
     }
@@ -108,7 +110,7 @@ class EmployeeController extends BaseController
             'title' => 'ADM - Funcionário',
             'dashboard' => 'Dados informacionais',
             'account' => $this->auth->data(),
-            'employee' => $this->findEmployeeById($decEmployeeId)
+            'employee' => $this->employeeRepository->find($decEmployeeId)
         ];
 
         return view('adm/rh/employee/show', $this->dataView);
@@ -129,7 +131,7 @@ class EmployeeController extends BaseController
             'dashboard' => 'Desativar conta',
             'employeeId' => $employeeId,
             'account' => $this->auth->data(),
-            'employee' => $this->findEmployeeById($decEmployeeId)
+            'employee' => $this->employeeRepository->find($decEmployeeId)
         ];
 
         return view('adm/rh/employee/confirmDisable', $this->dataView);
@@ -146,7 +148,7 @@ class EmployeeController extends BaseController
             $this->request->getPost('employee_id')
         );
 
-        $this->employeeModel->where('id', $decEmployeeId)->set(['is_active' => false])->update();
+        $this->employeeRepository->update($decEmployeeId, ['is_active' => false]);
 
         return redirect()->route('employee.list-search')->with('success', 'Operação realizada com sucesso!');
     }
@@ -166,7 +168,7 @@ class EmployeeController extends BaseController
             'dashboard' => 'Reativar conta',
             'employeeId' => $employeeId,
             'account' => $this->auth->data(),
-            'employee' => $this->findEmployeeById($decEmployeeId)
+            'employee' =>$this->employeeRepository->find($decEmployeeId)
         ];
 
         return view('adm/rh/employee/confirmReactivate', $this->dataView);
@@ -183,58 +185,9 @@ class EmployeeController extends BaseController
             $this->request->getPost('employee_id')
         );
 
-        $this->employeeModel->where('id', $decEmployeeId)->set(['is_active' => true])->update();
+        $this->employeeRepository->update($decEmployeeId, ['is_active' => true]);
 
         return redirect()->route('employee.list-search')->with('success', 'Operação realizada com sucesso!');
-    }
-
-    /**
-     * Persiste os dados do novo funcionário usando transaction
-     *
-     * @param array $employeeData
-     * @return boolean
-     */
-    private function persistNewEmployee(array $employeeData): bool
-    {
-        $db = db_connect('default');
-
-        $activationData = [
-            'email' => $employeeData['email'],
-            'token_hash' => $this->token->getTokenHash(),
-            'created_at' => Date('Y-m-d H:i:s', time() + 3600)
-        ];
-
-        $db->transBegin();
-
-        $this->employeeModel->skipValidation()->insert($employeeData);
-        $this->activationTokensModel->insert($activationData);
-
-        if ($db->transStatus() === false) {
-            $db->transRollback();
-            return false;
-        }
-
-        $db->transCommit();
-        return true;
-    }
-
-    /**
-     * Envia o email com link para ativação da conta
-     *
-     * @param [type] $employeeData
-     * @return void
-     */
-    private function sendActivationEmail($employeeData)
-    {
-        $this->mail->setFrom(env('email.fromEmail'), env('email.fromName'));
-        $this->mail->setTo($employeeData['email']);
-        $this->mail->setSubject('Email de teste');
-
-        $employeeData['token'] = $this->token->getToken();
-        $message = view('adm/rh/employee/components/emailActivation', $employeeData);
-
-        $this->mail->setMessage($message);
-        $this->mail->send();
     }
 
     /**
@@ -251,16 +204,5 @@ class EmployeeController extends BaseController
             // echo $th->getMessage();
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Serviço não encontrado!');
         }
-    }
-
-    /**
-     * Recupera dados do funcionário pelo id
-     *
-     * @param integer $employeeId
-     * @return null|object
-     */
-    private function findEmployeeById(int $employeeId): null|object
-    {
-        return $this->employeeModel->find($employeeId);
     }
 }

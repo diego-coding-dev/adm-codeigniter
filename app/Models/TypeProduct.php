@@ -26,17 +26,8 @@ class TypeProduct extends Model
     protected $deletedField  = 'deleted_at';
 
     // Validation
-    protected $validationRules      = [
-        'type_product' => 'required|string|min_length[4]|max_length[30]'
-    ];
-    protected $validationMessages   = [
-        'type_product' => [
-            'required' => '* Este campo é obrigatório!',
-            'string' => '* Este campo não atende aos requisitos mínimos!',
-            'min_length' => '* Este campo não atende aos requisitos mínimos!',
-            'max_length' => '* Este campo não atende aos requisitos mínimos!'
-        ]
-    ];
+    protected $validationRules      = [];
+    protected $validationMessages   = [];
     protected $skipValidation       = false;
     protected $cleanValidationRules = true;
 
@@ -50,16 +41,4 @@ class TypeProduct extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
-
-     /**
-     * Seleciona somente as rules necessárias para buscar a categoria do produto
-     *
-     * @return object
-     */
-    public function forSearchTypeProduct(): object
-    {
-        $this->validationRules['type_product'] = str_replace('required|', 'permit_empty|', $this->validationRules['type_product']);
-
-        return $this;
-    }
 }

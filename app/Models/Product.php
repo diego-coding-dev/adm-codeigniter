@@ -28,26 +28,8 @@ class Product extends Model
     protected $deletedField  = 'deleted_at';
 
     // Validation
-    protected $validationRules      = [
-        'type_product_id' => 'required|string|min_length[1]|max_length[3]',
-        'description' => 'required|string|min_length[4]|max_length[150]',
-        'image' => 'uploaded[image]|max_size[image, 1024]|mime_in[image,image/png,image/jpeg]|ext_in[image,png,jpg,jpeg]'
-    ];
-    protected $validationMessages   = [
-        'type_product_id' => [
-            'required' => '* Este campo é obrigatório!',
-            'integer' => '* Este campo não atende aos requisitos mínimos!'
-        ],
-        'description' => [
-            'required' => '* Este campo é obrigatório!',
-            'string' => '* Este campo não atende aos requisitos mínimos!1',
-            'min_length' => '* Este campo não atende aos requisitos mínimos!2',
-            'max_length' => '* Este campo não atende aos requisitos mínimos!3'
-        ],
-        'image' => [
-            'uploaded' => '* Nenhum arquivo carregado'
-        ]
-    ];
+    protected $validationRules      = [];
+    protected $validationMessages   = [];
     protected $skipValidation       = false;
     protected $cleanValidationRules = true;
 
@@ -61,35 +43,4 @@ class Product extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
-
-    public function imagesValidationRules()
-    {
-        $validations = $this->validationRules;
-        unset($validations['type_product_id']);
-        unset($validations['description']);
-
-        return $validations;
-    }
-
-    public function fieldsValidationRules()
-    {
-        unset($this->validationRules['image']);
-
-        return $this;
-    }
-
-    public function forSearchProduct()
-    {
-        unset($this->validationRules['type_product_id']);
-        unset($this->validationRules['image']);
-
-        $this->validationRules['description'] = str_replace('required|', 'permit_empty|', $this->validationRules['description']);
-
-        return $this;
-    }
-
-    public function rules()
-    {
-        return $this->validationRules;
-    }
 }

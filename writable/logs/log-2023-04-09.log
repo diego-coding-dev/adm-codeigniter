@@ -2318,3 +2318,654 @@ INFO - 2023-04-09 18:45:05 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-04-09 18:45:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
 INFO - 2023-04-09 18:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
 INFO - 2023-04-09 18:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 19:36:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-09 19:36:02 --> Class \App\Repository\ORMdefault\EmployeeRepository not exists!
+in APPPATH/Config/Services.php on line 45.
+ 1 SYSTEMPATH/Common.php(1016): Config\Services::repository('EmployeeRepository')
+ 2 APPPATH/Controllers/Adm/Rh/EmployeeController.php(19): service('repository', 'EmployeeRepository')
+ 3 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Adm\Rh\EmployeeController->__construct()
+ 4 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 19:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-09 19:37:08 --> Too few arguments to function App\Repository\ORMdefault\EmployeeRepository::__construct(), 0 passed in /home/diego/_PHP/adm-codeigniter/app/Config/Services.php on line 48 and exactly 1 expected
+in APPPATH/Repository/ORMdefault/EmployeeRepository.php on line 10.
+ 1 APPPATH/Config/Services.php(48): App\Repository\ORMdefault\EmployeeRepository->__construct()
+ 2 SYSTEMPATH/Common.php(1016): Config\Services::repository('EmployeeRepository')
+ 3 APPPATH/Controllers/Adm/Rh/EmployeeController.php(19): service('repository', 'EmployeeRepository')
+ 4 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Adm\Rh\EmployeeController->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 19:37:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-09 19:37:32 --> Call to a member function links() on null
+in APPPATH/Views/adm/rh/employee/listSearch.php on line 73.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('adm/rh/employee/listSearch', [], true)
+ 4 APPPATH/Controllers/Adm/Rh/EmployeeController.php(55): view('adm/rh/employee/listSearch', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->listSearch()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 19:41:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-09 19:41:35 --> Call to a member function links() on null
+in APPPATH/Views/adm/rh/employee/listSearch.php on line 73.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('adm/rh/employee/listSearch', [], true)
+ 4 APPPATH/Controllers/Adm/Rh/EmployeeController.php(55): view('adm/rh/employee/listSearch', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->listSearch()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 19:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-09 19:42:51 --> Undefined property: App\Repository\ORMdefault\EmployeeRepository::$pager
+in APPPATH/Controllers/Adm/Rh/EmployeeController.php on line 53.
+ 1 APPPATH/Controllers/Adm/Rh/EmployeeController.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Repository\\ORMdefault\\EmployeeRepository::$pager', '/home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php', 53)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->listSearch()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 19:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 19:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 19:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 19:44:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 19:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 19:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 19:44:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 19:44:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 19:44:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 19:44:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 19:44:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 19:44:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-09 20:24:25 --> Class \App\Validations\ not exists!
+in APPPATH/Config/Services.php on line 43.
+ 1 SYSTEMPATH/Common.php(1016): Config\Services::validationForm('Employee')
+ 2 APPPATH/Controllers/Adm/Rh/EmployeeController.php(23): service('validationForm', 'Employee')
+ 3 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Adm\Rh\EmployeeController->__construct()
+ 4 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 20:26:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-09 20:26:52 --> Call to undefined method App\Validations\Employee::run()
+in APPPATH/Controllers/Adm/Rh/EmployeeController.php on line 49.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->listSearch()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 20:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:27:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:28:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:28:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:28:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:28:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:28:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:28:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:28:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:28:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:28:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:28:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:28:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:29:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:29:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:29:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:32:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-09 20:32:57 --> Call to undefined method CodeIgniter\Validation\Validation::setMessage()
+in APPPATH/Validations/Employee.php on line 59.
+ 1 APPPATH/Controllers/Adm/Rh/EmployeeController.php(49): App\Validations\Employee->run([...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->listSearch()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 20:39:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:39:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-09 20:39:04 --> Undefined array key "name"
+in APPPATH/Validations/Employee.php on line 78.
+ 1 APPPATH/Validations/Employee.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', '/home/diego/_PHP/adm-codeigniter/app/Validations/Employee.php', 78)
+ 2 APPPATH/Controllers/Adm/Rh/EmployeeController.php(49): App\Validations\Employee->forSearchEmployee()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->listSearch()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 20:39:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:39:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-09 20:39:40 --> "permit_empty|string|min_length" is not a valid rule.
+in SYSTEMPATH/Validation/Validation.php on line 320.
+ 1 SYSTEMPATH/Validation/Validation.php(320): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('permit_empty|string|min_length')
+ 2 SYSTEMPATH/Validation/Validation.php(170): CodeIgniter\Validation\Validation->processRules('0', '0', null, [...], [...])
+ 3 APPPATH/Validations/Employee.php(62): CodeIgniter\Validation\Validation->run([...])
+ 4 APPPATH/Controllers/Adm/Rh/EmployeeController.php(49): App\Validations\Employee->run([...])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->listSearch()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 20:40:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:40:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:40:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:40:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-09 20:40:52 --> Undefined array key "name"
+in APPPATH/Validations/Employee.php on line 78.
+ 1 APPPATH/Validations/Employee.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', '/home/diego/_PHP/adm-codeigniter/app/Validations/Employee.php', 78)
+ 2 APPPATH/Controllers/Adm/Rh/EmployeeController.php(49): App\Validations\Employee->forSearchEmployee()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->listSearch()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 20:41:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:41:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:41:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-09 20:41:14 --> "permit_empty|string|min_length" is not a valid rule.
+in SYSTEMPATH/Validation/Validation.php on line 320.
+ 1 SYSTEMPATH/Validation/Validation.php(320): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('permit_empty|string|min_length')
+ 2 SYSTEMPATH/Validation/Validation.php(170): CodeIgniter\Validation\Validation->processRules('0', '0', null, [...], [...])
+ 3 APPPATH/Validations/Employee.php(62): CodeIgniter\Validation\Validation->run([...])
+ 4 APPPATH/Controllers/Adm/Rh/EmployeeController.php(49): App\Validations\Employee->run([...])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->listSearch()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 20:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:55:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:55:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:55:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:55:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:56:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:56:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:57:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:57:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:57:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:57:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:58:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 20:58:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:01:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:01:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:01:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:01:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:01:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:01:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:01:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:01:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:01:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:01:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:05:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:06:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:07:55 --> CSRF token verified.
+INFO - 2023-04-09 21:07:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:07:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:08:28 --> CSRF token verified.
+INFO - 2023-04-09 21:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:08:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:08:34 --> CSRF token verified.
+INFO - 2023-04-09 21:08:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:08:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:08:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:08:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:08:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:08:46 --> CSRF token verified.
+INFO - 2023-04-09 21:08:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:08:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:08:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:08:50 --> CSRF token verified.
+INFO - 2023-04-09 21:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:08:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:25:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:25:02 --> CSRF token verified.
+ERROR - 2023-04-09 21:25:02 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;email_1&quot; of relation &quot;employees&quot; does not exist
+LINE 1: INSERT INTO &quot;employees&quot; (&quot;name&quot;, &quot;type_user_id&quot;, &quot;email_1&quot;) ...
+                                                         ^ in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "em...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "em...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "em...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "em...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/app/Repository/ORMdefault/EmployeeRepository.php(34): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(96): App\Repository\ORMdefault\EmployeeRepository->add(Array)
+#7 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+#8 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+#9 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#12 {main}
+ERROR - 2023-04-09 21:25:02 --> ErrorException: pg_query(): Query failed: ERROR:  current transaction is aborted, commands ignored until end of transaction block in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "ac...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ac...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ac...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ac...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/app/Repository/ORMdefault/EmployeeRepository.php(35): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/EmployeeController.php(96): App\Repository\ORMdefault\EmployeeRepository->add(Array)
+#7 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+#8 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+#9 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#12 {main}
+INFO - 2023-04-09 21:25:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:25:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:26:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:26:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:26:34 --> CSRF token verified.
+INFO - 2023-04-09 21:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:26:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:41:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 21:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-09 21:44:26 --> Cannot access offset of type string on string
+in APPPATH/Config/Services.php on line 72.
+ 1 SYSTEMPATH/Common.php(1016): Config\Services::repository('Employee')
+ 2 APPPATH/Controllers/Adm/Rh/EmployeeController.php(22): service('repository', 'EmployeeRepository')
+ 3 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Adm\Rh\EmployeeController->__construct()
+ 4 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 21:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-09 21:44:53 --> Cannot access offset of type string on string
+in APPPATH/Config/Services.php on line 70.
+ 1 SYSTEMPATH/Common.php(1016): Config\Services::repository('Employee')
+ 2 APPPATH/Controllers/Adm/Rh/EmployeeController.php(22): service('repository', 'EmployeeRepository')
+ 3 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Adm\Rh\EmployeeController->__construct()
+ 4 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 21:44:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-09 21:44:56 --> Cannot access offset of type string on string
+in APPPATH/Config/Services.php on line 70.
+ 1 SYSTEMPATH/Common.php(1016): Config\Services::repository('Employee')
+ 2 APPPATH/Controllers/Adm/Rh/EmployeeController.php(22): service('repository', 'EmployeeRepository')
+ 3 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Adm\Rh\EmployeeController->__construct()
+ 4 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 21:45:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-09 21:45:06 --> Typed property App\Controllers\Adm\Rh\EmployeeController::$mail must not be accessed before initialization
+in APPPATH/Controllers/Adm/Rh/EmployeeController.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Adm\Rh\EmployeeController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 21:45:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:08:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:09:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:09:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:09:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:09:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:10:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:14:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-09 22:14:00 --> Class \App\Libraries\token not exists!
+in APPPATH/Config/Services.php on line 105.
+ 1 SYSTEMPATH/Common.php(1016): Config\Services::library('token')
+ 2 APPPATH/Repository/ORMdefault/EmployeeRepository.php(14): service('library', 'token')
+ 3 APPPATH/Config/Services.php(70): App\Repository\ORMdefault\EmployeeRepository->__construct()
+ 4 SYSTEMPATH/Common.php(1016): Config\Services::repository('employee')
+ 5 APPPATH/Controllers/Adm/Rh/EmployeeController.php(22): service('repository', 'employee')
+ 6 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Adm\Rh\EmployeeController->__construct()
+ 7 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 22:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:14:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:17:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-09 22:17:21 --> Too few arguments to function Config\Services::email(), 0 passed in /home/diego/_PHP/adm-codeigniter/system/Common.php on line 1016 and exactly 1 expected
+in APPPATH/Config/Services.php on line 34.
+ 1 SYSTEMPATH/Common.php(1016): Config\Services::email()
+ 2 APPPATH/Mail/EmployeeMail.php(11): service('email')
+ 3 APPPATH/Config/Services.php(44): App\Mail\EmployeeMail->__construct()
+ 4 SYSTEMPATH/Common.php(1016): Config\Services::email('employee')
+ 5 APPPATH/Controllers/Adm/Rh/EmployeeController.php(24): service('email', 'employee')
+ 6 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Adm\Rh\EmployeeController->__construct()
+ 7 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 22:18:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-09 22:18:49 --> Too few arguments to function Config\Services::email(), 0 passed in /home/diego/_PHP/adm-codeigniter/system/Common.php on line 1016 and exactly 1 expected
+in APPPATH/Config/Services.php on line 34.
+ 1 SYSTEMPATH/Common.php(1016): Config\Services::email()
+ 2 APPPATH/Mail/EmployeeMail.php(11): service('email')
+ 3 APPPATH/Config/Services.php(44): App\Mail\EmployeeMail->__construct()
+ 4 SYSTEMPATH/Common.php(1016): Config\Services::email('employee')
+ 5 APPPATH/Controllers/Adm/Rh/EmployeeController.php(24): service('email', 'employee')
+ 6 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Adm\Rh\EmployeeController->__construct()
+ 7 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 22:20:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:20:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:21:22 --> CSRF token verified.
+INFO - 2023-04-09 22:21:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:21:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:28:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:28:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:28:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:28:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:33:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:33:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:33:42 --> CSRF token verified.
+INFO - 2023-04-09 22:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:33:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:33:50 --> CSRF token verified.
+INFO - 2023-04-09 22:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:36:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:36:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:36:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:36:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:36:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:36:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:36:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 22:45:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-09 22:45:18 --> Class \App\Repository\ORMdefault\ClientRepository not exists!
+in APPPATH/Config/Services.php on line 67.
+ 1 SYSTEMPATH/Common.php(1016): Config\Services::repository('client')
+ 2 APPPATH/Controllers/Adm/Rh/ClientController.php(16): service('repository', 'client')
+ 3 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Adm\Rh\ClientController->__construct()
+ 4 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 22:45:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:06:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:07:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:07:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:07:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-09 23:07:33 --> Array to string conversion
+in APPPATH/Validations/ClientValidation.php on line 49.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', '/home/diego/_PHP/adm-codeigniter/app/Validations/ClientValidation.php', 49)
+ 2 APPPATH/Validations/ClientValidation.php(49): str_replace('required|', 'permit_empty|', [...])
+ 3 APPPATH/Controllers/Adm/Rh/ClientController.php(43): App\Validations\ClientValidation->forSearchCliente()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\ClientController->listSearch()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\ClientController))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 23:08:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:08:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-09 23:08:15 --> Array callback must have exactly two elements
+in APPPATH/Controllers/Adm/Rh/ClientController.php on line 44.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\ClientController->listSearch()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\ClientController))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 23:08:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:08:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:08:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:08:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:08:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-09 23:08:55 --> Typed property App\Validations\BaseValidation::$validation must not be accessed before initialization
+in APPPATH/Validations/BaseValidation.php on line 16.
+ 1 APPPATH/Validations/EmployeeValidation.php(66): App\Validations\BaseValidation->validate([...], [...])
+ 2 APPPATH/Controllers/Adm/Rh/EmployeeController.php(39): App\Validations\EmployeeValidation->run([...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->listSearch()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 23:10:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-09 23:10:14 --> Typed property App\Validations\BaseValidation::$validation must not be accessed before initialization
+in APPPATH/Validations/BaseValidation.php on line 16.
+ 1 APPPATH/Validations/EmployeeValidation.php(66): App\Validations\BaseValidation->validate([...], [...])
+ 2 APPPATH/Controllers/Adm/Rh/EmployeeController.php(39): App\Validations\EmployeeValidation->run([...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->listSearch()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 23:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-09 23:10:20 --> Call to a member function setRules() on null
+in APPPATH/Validations/BaseValidation.php on line 16.
+ 1 APPPATH/Validations/EmployeeValidation.php(66): App\Validations\BaseValidation->validate([...], [...])
+ 2 APPPATH/Controllers/Adm/Rh/EmployeeController.php(39): App\Validations\EmployeeValidation->run([...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->listSearch()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 23:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-09 23:11:16 --> Call to a member function setRules() on null
+in APPPATH/Validations/BaseValidation.php on line 16.
+ 1 APPPATH/Validations/EmployeeValidation.php(66): App\Validations\BaseValidation->validate([...], [...])
+ 2 APPPATH/Controllers/Adm/Rh/EmployeeController.php(39): App\Validations\EmployeeValidation->run([...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->listSearch()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 23:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:12:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:12:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:13:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:13:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:13:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:13:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:14:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:14:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:14:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:14:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:14:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:14:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:14:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-09 23:14:30 --> Array callback must have exactly two elements
+in APPPATH/Controllers/Adm/Rh/ClientController.php on line 44.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\ClientController->listSearch()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\ClientController))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 23:14:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:14:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:14:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:14:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:14:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:14:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:14:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:15:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:15:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:15:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:15:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:29:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:29:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:31:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-09 23:31:03 --> Call to a member function links() on null
+in APPPATH/Views/adm/rh/client/listSearch.php on line 74.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('adm/rh/client/listSearch', [], true)
+ 4 APPPATH/Controllers/Adm/Rh/ClientController.php(55): view('adm/rh/client/listSearch', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\ClientController->listSearch()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\ClientController))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 23:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-09 23:31:22 --> Undefined property: App\Repository\ORMdefault\ClientRepository::$pager
+in APPPATH/Controllers/Adm/Rh/ClientController.php on line 53.
+ 1 APPPATH/Controllers/Adm/Rh/ClientController.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Repository\\ORMdefault\\ClientRepository::$pager', '/home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/ClientController.php', 53)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\ClientController->listSearch()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\ClientController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 23:31:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:39:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:39:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:39:39 --> CSRF token verified.
+INFO - 2023-04-09 23:39:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:39:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:39:42 --> CSRF token verified.
+INFO - 2023-04-09 23:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:39:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:40:05 --> CSRF token verified.
+ERROR - 2023-04-09 23:40:05 --> ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;clients_email_key&quot;
+DETAIL:  Key (email)=(cliente3@mail.com) already exists. in /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/diego/_PH...', 147)
+#1 /home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "cl...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "cl...')
+#3 /home/diego/_PHP/adm-codeigniter/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "cl...')
+#4 /home/diego/_PHP/adm-codeigniter/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "cl...', Array, false)
+#5 /home/diego/_PHP/adm-codeigniter/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/diego/_PHP/adm-codeigniter/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 /home/diego/_PHP/adm-codeigniter/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 /home/diego/_PHP/adm-codeigniter/app/Repository/ORMdefault/ClientRepository.php(20): CodeIgniter\Model->insert(Array)
+#9 /home/diego/_PHP/adm-codeigniter/app/Controllers/Adm/Rh/ClientController.php(90): App\Repository\ORMdefault\ClientRepository->add(Array)
+#10 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(934): App\Controllers\Adm\Rh\ClientController->add()
+#11 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\ClientController))
+#12 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#15 {main}
+CRITICAL - 2023-04-09 23:40:05 --> pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;clients_email_key&quot;
+DETAIL:  Key (email)=(cliente3@mail.com) already exists.
+in SYSTEMPATH/Database/Postgre/Connection.php on line 147.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;clients_email_key&quot;
+DETAIL:  Key (email)=(cliente3@mail.com) already exists.', '/home/diego/_PHP/adm-codeigniter/system/Database/Postgre/Connection.php', 147)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "clients" ("name", "email", "type_user_id", "created_at", "updated_at") VALUES (\'cliente 3\', \'cliente3@mail.com\', 1, \'2023-04-09 23:40:05\', \'2023-04-09 23:40:05\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "clients" ("name", "email", "type_user_id", "created_at", "updated_at") VALUES (\'cliente 3\', \'cliente3@mail.com\', 1, \'2023-04-09 23:40:05\', \'2023-04-09 23:40:05\')')
+ 4 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "clients" ("name", "email", "type_user_id", "created_at", "updated_at") VALUES (\'cliente 3\', \'cliente3@mail.com\', 1, \'2023-04-09 23:40:05\', \'2023-04-09 23:40:05\')')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "clients" ("name", "email", "type_user_id", "created_at", "updated_at") VALUES (:name:, :email:, :type_user_id:, :created_at:, :updated_at:)', [...], false)
+ 6 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 9 APPPATH/Repository/ORMdefault/ClientRepository.php(20): CodeIgniter\Model->insert([...])
+10 APPPATH/Controllers/Adm/Rh/ClientController.php(90): App\Repository\ORMdefault\ClientRepository->add([...])
+11 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\ClientController->add()
+12 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\ClientController))
+13 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-09 23:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:40:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:40:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:40:56 --> CSRF token verified.
+INFO - 2023-04-09 23:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:41:33 --> CSRF token verified.
+INFO - 2023-04-09 23:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:43:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:43:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:43:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:43:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:43:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:46:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:46:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:46:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:46:26 --> CSRF token verified.
+INFO - 2023-04-09 23:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:47:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:49:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-09 23:49:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.

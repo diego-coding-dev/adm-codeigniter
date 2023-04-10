@@ -34,7 +34,7 @@
                     </div>
                 </div>
 
-                <div class="row mb-3">
+                <div class="row mb-3" style="margin-top: 30px;">
                     <label for="description" class="col-md-4 col-lg-3 col-form-label">Produto</label>
                     <div class="col-md-8 col-lg-9">
                         <input name="description" type="text" class="form-control">
@@ -44,7 +44,7 @@
                     </div>
                 </div>
 
-                <div class="row mb-3">
+                <div class="row mb-3" style="margin-top: 30px;">
                     <label for="type_product_id" class="col-md-4 col-lg-3 col-form-label">Categoria</label>
                     <div class="col-md-8 col-lg-9">
                         <select class="form-select" name="type_product_id" aria-label="Default select example">
