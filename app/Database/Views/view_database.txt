@@ -1,0 +1,16 @@
+-- public.storage_view source
+
+CREATE OR REPLACE VIEW public.storage_view
+AS SELECT storages.id,
+    storages.product_id,
+    storages.quantity,
+    storages.price,
+    storages.created_at,
+    storages.updated_at,
+    storages.deleted_at,
+    products.description,
+    products.image
+   FROM storages
+     JOIN products ON storages.product_id = products.id;
+
+---------------------------------------------------------------------------

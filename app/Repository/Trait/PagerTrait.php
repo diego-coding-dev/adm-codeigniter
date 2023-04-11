@@ -7,8 +7,38 @@ namespace App\Repository\Trait;
  */
 trait PagerTrait
 {
-    public function pager(): object
+    /**
+     * Gerador dos links de paginação
+     *
+     * @param boolean $useView
+     * @return object
+     */
+    public function pager(bool $useView = false): object
     {
-        return $this->model->pager;
+        if (!$useView) {
+            return $this->model->pager;
+        }
+
+        return $this->view->pager;
     }
+
+    /**
+     * Gerador dos links de paginação em caso de paginação manual
+     *
+     * @param integer $page
+     * @param string|null $like
+     * @return void
+     */
+    // public function createPagerLinks(int $page, string $like = null)
+    // {
+    //     $perPage = $this->limit; // como se fosse limit
+
+    //     if (!$like) {
+    //         $total = $this->total();
+    //     } else {
+    //         $total = $this->totalWithLike($like, $page);
+    //     }
+
+    //     return $this->pager->makeLinks($page, $perPage, $total);
+    // }
 }

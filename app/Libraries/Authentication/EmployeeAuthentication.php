@@ -7,11 +7,13 @@ use App\Libraries\Authentication\AuthenticationInterface;
 class EmployeeAuthentication implements AuthenticationInterface
 {
     private ?object $employeeData = null;
-    private object $employeeModel;
+    private object $employeeRepository;
+    private object $validation;
 
-    public function __construct(\CodeIgniter\Model $model)
+    public function __construct()
     {
-        $this->employeeModel = $model;
+        $this->employeeRepository =\Config\Services::repository('employee');
+        $this->validation =\Config\Services::validationForm('employee');
     }
 
     /**
@@ -22,11 +24,14 @@ class EmployeeAuthentication implements AuthenticationInterface
      */
     public function authenticate(array $credentials): array
     {
-        if (!$this->employeeModel->forAuthValidation()->validate($credentials)) {
-            return ['errors' => $this->employeeModel->errors()];
+        if (is_array($errors = $this->validation->forAuthValidation()->run($credentials))) {
+            dd($errors);
+            return ['errors' => $errors];
         }
 
-        $accountData = $this->employeeModel->where('email', $credentials['email'])->first();
+        $accountData = $this->employeeRepository->getWhere([
+            'email' => $credentials['email']
+        ], true);
 
         if (!$accountData) {
             return ['not_found' => true];
@@ -59,6 +64,11 @@ class EmployeeAuthentication implements AuthenticationInterface
         return $this->employeeData;
     }
 
+    /**
+     * Retorna o id da conta logada
+     *
+     * @return integer
+     */
     public function id(): int
     {
         return session()->get('employee_id');
@@ -101,6 +111,9 @@ class EmployeeAuthentication implements AuthenticationInterface
             return null;
         }
 
-        return $this->employeeModel->where('is_active', true)->where('id', session()->get('employee_id'))->first();
+        return $this->employeeRepository->getWhere([
+            'is_active' => true,
+            'id' => session()->get('employee_id')
+        ], true);
     }
 }

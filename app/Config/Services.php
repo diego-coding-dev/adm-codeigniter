@@ -91,6 +91,25 @@ class Services extends BaseService
     /**
      * Retorna instância de um determinado model
      *
+     * @param string $repositoryClass
+     * @return object
+     */
+    public static function repositoryView(string $repositoryViewClass)
+    {
+        $repositoryViewClass = str_replace('View', '', $repositoryViewClass);
+
+        $class = '\\App\\Repository\\Views\\' . ucfirst($repositoryViewClass) . 'View';
+
+        if (!class_exists($class)) {
+            throw new Exception("Class {$class} not exists!");
+        }
+
+        return new $class();
+    }
+
+    /**
+     * Retorna instância de um determinado model
+     *
      * @param string $modelClass
      * @return object
      */
@@ -113,7 +132,7 @@ class Services extends BaseService
      * @param string $libraryClass
      * @return object
      */
-    public static function library(string $libraryClass): object
+    public static function library(string $libraryClass, mixed $paramContructor = null): object
     {
         $class = '\\App\\Libraries\\' . ucfirst($libraryClass);
 
@@ -121,7 +140,11 @@ class Services extends BaseService
             throw new Exception("Class {$class} not exists!");
         }
 
-        return new $class();
+        if(!$paramContructor){
+            return new $class();
+        }
+
+        return new $class($paramContructor);
     }
 
     /**
@@ -180,8 +203,6 @@ class Services extends BaseService
             throw new Exception("Class {$class} not exists!");
         }
 
-        return new $class(
-            new \App\Models\Employee()
-        );
+        return new $class();
     }
 }

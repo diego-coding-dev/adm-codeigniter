@@ -8,7 +8,6 @@ class TypeProductController extends BaseController
 {
     private array $dataView;
     private object $typeProductRepository;
-    private object $typeProductModel;
     private object $validation;
     private object $auth;
 
@@ -19,11 +18,9 @@ class TypeProductController extends BaseController
      */
     public function __construct()
     {
-        $this->typeProductRepository = service('repository', 'typeProduct');
-        $this->validation = service('validationForm', 'typeProduct');
-
-        $this->typeProductModel = service('model', 'TypeProduct');
-        $this->auth = service('auth', 'EmployeeAuthentication');
+        $this->typeProductRepository =\Config\Services::repository('typeProduct');
+        $this->validation =\Config\Services::validationForm('typeProduct');
+        $this->auth =\Config\Services::auth('EmployeeAuthentication');
     }
 
     /**
@@ -40,14 +37,16 @@ class TypeProductController extends BaseController
             'account' => $this->auth->data()
         ];
 
-        if (!is_null($typeProduct = $this->request->getGet('type_product'))) {
+        $typeProduct = strval($this->request->getGet('type_product'));
+
+        if (strlen($typeProduct) > 0) {
 
             if (is_array($errors = $this->validation->forSearchTypeProduct()->run($this->request->getGet()))) {
                 return redirect()->back()->with('errors', $errors);
             }
 
             $this->dataView['typeProduct'] = $typeProduct;
-            $this->dataView['typeProductList'] = $this->typeProductRepository->getLike($typeProduct);
+            $this->dataView['typeProductList'] = $this->typeProductRepository->getLike(['type_product' => $typeProduct]);
         } else {
             $this->dataView['typeProductList'] = $this->typeProductRepository->all();
         }
@@ -126,6 +125,7 @@ class TypeProductController extends BaseController
         $this->dataView = [
             'title' => 'ADM - Categorias de produto',
             'dashboard' => 'Remover categoria',
+            'typeCategoryId' => $typeCategoryId,
             'account' => $this->auth->data(),
             'typeProduct' => $this->typeProductRepository->find($decTypeProductId)
         ];
@@ -138,10 +138,9 @@ class TypeProductController extends BaseController
      *
      * @return object
      */
-    public function confirmRemove(): object
+    public function confirmRemove(string $typeCategoryId = null): object
     {
-        $encTypeProductId = $this->request->getPost('type_product_id');
-        $decTypeProductId = $this->decryptTypeProductId($encTypeProductId);
+        $decTypeProductId = $this->decryptTypeProductId($typeCategoryId);
 
         $this->typeProductRepository->remove($decTypeProductId);
 
@@ -160,7 +159,7 @@ class TypeProductController extends BaseController
             return decrypt($typeProductId);
         } catch (\Exception $th) {
             // echo $th->getMessage();
-            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Serviço não encontrado!');
+            throw \CodeIgniter\Encryption\Exceptions\EncryptionException::forEncryptionFailed();
         }
     }
 }

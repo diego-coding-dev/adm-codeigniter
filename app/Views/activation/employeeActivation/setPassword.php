@@ -21,7 +21,7 @@
 
             <input type="hidden" name="<?php echo csrf_token(); ?>" value="<?php echo csrf_hash(); ?>">
 
-            <input type="hidden" name="employee_id" value="<?php echo $employee->id; ?>">
+            <input type="hidden" name="employee_id" value="<?php echo encrypt($employeeId); ?>">
 
             <div class="col-12">
                 <label for="Senha" class="form-label">Senha</label>

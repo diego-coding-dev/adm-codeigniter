@@ -14,10 +14,10 @@ class EmployeeController extends BaseController
 
     public function __construct()
     {
-        $this->employeeRepository = service('repository', 'employee');
-        $this->validation = service('validationForm', 'employee');
-        $this->email = service('mail', 'employee');
-        $this->auth = service('auth', 'employee');
+        $this->employeeRepository = \Config\Services::repository('employee');
+        $this->validation = \Config\Services::validationForm('employee');
+        $this->email = \Config\Services::mail('employee');
+        $this->auth = \Config\Services::auth('employee');
     }
 
     /**
@@ -34,14 +34,16 @@ class EmployeeController extends BaseController
             'account' => $this->auth->data()
         ];
 
-        if (!is_null($name = $this->request->getGet('name'))) {
+        $name = strval($this->request->getGet('name'));
+
+        if (strlen($name) > 0) {
 
             if (is_array($errors = $this->validation->forSearchEmployee()->run($this->request->getGet()))) {
                 return redirect()->back()->with('errors', $errors);
             }
 
             $this->dataView['name'] = $name;
-            $this->dataView['employeeList'] = $this->employeeRepository->getByNameLike($name);
+            $this->dataView['employeeList'] = $this->employeeRepository->getLike(['name' => $name]);
         } else {
             $this->dataView['employeeList'] = $this->employeeRepository->all();
         }
@@ -83,10 +85,10 @@ class EmployeeController extends BaseController
             return redirect()->back()->with('errors', $errors);
         }
 
-        $result = $this->employeeRepository->add($dataForm);
+        $result = $result = $this->employeeRepository->add($dataForm);
 
         if (!$result) {
-            return redirect()->route('employee.list-search')->with('danger', 'Registro não realizado, contacte o administrador!');
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
         }
 
         $dataForm['token'] = $result;
@@ -142,11 +144,9 @@ class EmployeeController extends BaseController
      *
      * @return object
      */
-    public function confirmDisable(): object
+    public function confirmDisable(string $employeeId = null): object
     {
-        $decEmployeeId = $this->decryptEmployeeId(
-            $this->request->getPost('employee_id')
-        );
+        $decEmployeeId = $this->decryptEmployeeId($employeeId);
 
         $this->employeeRepository->update($decEmployeeId, ['is_active' => false]);
 
@@ -168,7 +168,7 @@ class EmployeeController extends BaseController
             'dashboard' => 'Reativar conta',
             'employeeId' => $employeeId,
             'account' => $this->auth->data(),
-            'employee' =>$this->employeeRepository->find($decEmployeeId)
+            'employee' => $this->employeeRepository->find($decEmployeeId)
         ];
 
         return view('adm/rh/employee/confirmReactivate', $this->dataView);
@@ -179,11 +179,9 @@ class EmployeeController extends BaseController
      *
      * @return object
      */
-    public function confirmReactivate(): object
+    public function confirmReactivate(string $employeeId = null): object
     {
-        $decEmployeeId = $this->decryptEmployeeId(
-            $this->request->getPost('employee_id')
-        );
+        $decEmployeeId = $this->decryptEmployeeId($employeeId);
 
         $this->employeeRepository->update($decEmployeeId, ['is_active' => true]);
 

@@ -14,7 +14,11 @@ class Storage extends Model
     protected $returnType       = \App\Entities\StorageEntity::class;
     protected $useSoftDeletes   = true;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = [
+        'product_id',
+        'quantity',
+        'price'
+    ];
 
     // Dates
     protected $useTimestamps = true;

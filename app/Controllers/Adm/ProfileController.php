@@ -7,13 +7,15 @@ use App\Controllers\BaseController;
 class ProfileController extends BaseController
 {
     private array $dataView;
-    private object $employeeModel;
+    private object $employeeRepository;
+    private object $validation;
     private object $auth;
 
     public function __construct()
     {
-        $this->auth = service('auth', 'EmployeeAuthentication');
-        $this->employeeModel = service('model', 'Employee');
+        $this->auth =\Config\Services::auth('employee');
+        $this->employeeRepository =\Config\Services::repository('employee');
+        $this->validation =\Config\Services::validationForm('employee');
     }
 
     /**
@@ -81,11 +83,11 @@ class ProfileController extends BaseController
             return redirect()->back()->with('warning', 'Não há dados para atualizar!');
         }
 
-        if (!$this->employeeModel->validate($dataForm)) {
-            return redirect()->back()->with('errors', $this->employeeModel->errors());
+        if (is_array($errors = $this->validation->onlyEmail()->run($dataForm))) {
+            return redirect()->back()->with('errors', $errors);
         }
 
-        $this->employeeModel->where('id', $this->auth->id())->set($dataForm)->update();
+        $this->employeeRepository->update($this->auth->id(), $dataForm);
 
         return redirect()->back()->with('success', 'Dados atualizados com sucesso!');
     }
@@ -117,17 +119,17 @@ class ProfileController extends BaseController
     {
         $dataForm = $this->request->getPost();
 
-        $account = $this->employeeModel->where('id', $this->auth->id())->first();
+        $account = $this->employeeRepository->find($this->auth->id());
 
-        if (!$this->employeeModel->validate($dataForm)) {
-            return redirect()->back()->with('errors', $this->employeeModel->errors());
+        if (is_array($errors = $this->validation->onlyPassword()->run($dataForm))) {
+            return redirect()->back()->with('errors', $errors);
         }
 
         if (!$account->verifyPassword($dataForm['current_password'])) {
             return redirect()->back()->with('errors', ['current_password' => '* Senha atual não é igual!']);
         }
 
-        $this->employeeModel->where('id', $account->id)->set(['password' => $dataForm['password']])->update();
+        $this->employeeRepository->update($account->id, ['password' => $dataForm['password']]);
 
         return redirect()->back()->with('success', 'Senha atualizada com sucesso!');
     }

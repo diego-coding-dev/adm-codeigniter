@@ -25,8 +25,8 @@ class TypeProductRepository extends BaseRepository implements DefaulRepositoryIn
         return $this->model->orderBy('id', 'asc')->paginate(10);
     }
 
-    public function getLike(string $like): array
+    public function getLike(array $like): array
     {
-        return $this->model->like('type_product', $like)->orderBy('id', 'asc')->paginate(10);
+        return $this->model->like($like)->orderBy('id', 'asc')->paginate(10);
     }
 }

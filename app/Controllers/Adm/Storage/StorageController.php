@@ -6,84 +6,118 @@ use App\Controllers\BaseController;
 
 class StorageController extends BaseController
 {
+
     private array $dataView;
-    private object $storageModel;
-    private object $typeProductModel;
-    private object $image;
+    private object $storageRepository;
+    private object $validation;
     private object $auth;
-    private object $pager;
 
     public function __construct()
     {
-        $this->storageModel = service('model', 'Storage');
-        $this->auth = service('auth', 'EmployeeAuthentication');
-        $this->pager = service('pager');
+        $this->storageRepository = \Config\Services::repository('storage');
+        $this->validation = \Config\Services::validationForm('storage');
+        $this->auth = \Config\Services::auth('employee');
     }
 
+    /**
+     * Exibe tela com a lista de produtos no estoque
+     *
+     * @return string|object
+     */
     public function listSearch()
     {
         // colocar filtro para saber se é ajax (middleware)
         $this->dataView = [
-            'title' => 'ADM - Produtos',
-            'dashboard' => 'Lista de produtos',
+            'title' => 'ADM - Estoque',
+            'dashboard' => 'Lista de itens no estoque',
             'account' => $this->auth->data()
         ];
 
-        if (!is_null($description = $this->request->getGet('description'))) {
+        $description = strval($this->request->getGet('description'));
 
-            // if (!$this->productModel->forSearchProduct()->validate($this->request->getGet())) {
-            //     return redirect()->back()->with('errors', $this->productModel->errors());
-            // }
+        if (strlen($description) > 0) {
+
+            if (is_array($errors = $this->validation->onlyDescription(true)->run($this->request->getGet()))) {
+                return redirect()->back()->with('errors', $errors);
+            }
 
             $this->dataView['description'] = $description;
-            $this->dataView['storageList'] = $this->getItensFromStorage($description);
+            $this->dataView['storageList'] = $this->storageRepository->getLike($description);
+            $this->dataView['pager'] = $this->storageRepository->pager(true);
         } else {
-            $this->dataView['storageList'] = $this->getItensFromStorage();
-        }
 
-        $this->dataView['pager'] = $this->createPagerLinks();
+            $this->dataView['storageList'] = $this->storageRepository->all();
+            $this->dataView['pager'] = $this->storageRepository->pager(true);
+        }
 
         return view('adm/storage/storage/listSearch', $this->dataView);
     }
 
-    private function getItensFromStorage(string $description = null)
+    public function show(string $storageId = null)
     {
-        $db = db_connect('default');
+        $decStorageId = $this->decryptTypeProductId($storageId);
 
-        $page = (int)($this->request->getGet('page') ?? 1);
+        $storage = $this->storageRepository->find($decStorageId, true);
 
-        $offset = abs(($page - 1) * 2);
+        $this->dataView = [
+            'title' => 'ADM - Produtos',
+            'dashboard' => 'Dados informacionais',
+            'storage' => $storage,
+            'active' => 'show',
+            'storageId' => $storageId,
+            'typeProduct' => $this->storageRepository->category($storage->type_product_id),
+            'account' => $this->auth->data()
+        ];
 
-        if (!$description) {
-            return $db->table('storages')
-                ->select('storages.*, products.description, products.image')
-                ->join('products', 'products.id = storages.product_id')
-                ->limit(2)
-                ->orderBy('storages.product_id', 'asc')
-                ->offset($offset)
-                ->get()
-                ->getResultObject();
+        return view('adm/storage/storage/show', $this->dataView);
+    }
+
+    function add(string $storageId)
+    {
+        $decStorageId = $this->decryptTypeProductId($storageId);
+
+        $storage = $this->storageRepository->find($decStorageId, true);
+
+        $this->dataView = [
+            'title' => 'ADM - Produtos',
+            'dashboard' => 'Dados informacionais',
+            'storage' => $storage,
+            'active' => 'add',
+            'storageId' => $storageId,
+            'typeProduct' => $this->storageRepository->category($storage->type_product_id),
+            'account' => $this->auth->data()
+        ];
+
+        return view('adm/storage/storage/add', $this->dataView);
+    }
+
+    public function addUnits(string $storageId)
+    {
+        $decStorageId = $this->decryptTypeProductId($storageId);
+        $dataForm = $this->request->getPost();
+
+        if (is_array($errors = $this->validation->onlyQuantity()->run($dataForm))) {
+            return redirect()->back()->with('errors', $errors);
         }
 
-        return $db->table('storages')
-            ->select('storages.*, products.description, products.image')
-            ->join('products', 'products.id = storages.product_id')
-            ->like('description', $description)
-            ->orderBy('storages.product_id', 'asc')
-            ->limit(2)
-            ->offset($offset)
-            ->get()
-            ->getResultObject();
+        $this->storageRepository->update($decStorageId, $dataForm);
+
+        return redirect()->route('storage.list-search')->with('success', '* Estoque adicionado com sucesso!');
     }
 
-    private function createPagerLinks()
+    /**
+     * Função para decriptografar o id do produto
+     *
+     * @param string $productId
+     * @return int
+     */
+    private function decryptTypeProductId(string|array|null $productId): int
     {
-        $page = (int)($this->request->getGet('page') ?? 1);
-
-        $perPage = 2; // como se fosse offset
-
-        $total = 5; // recuperar o total de registros baseado na cláusula da consulta
-
-        return $this->pager->makeLinks($page, $perPage, $total);
+        try {
+            return decrypt($productId);
+        } catch (\Exception $th) {
+            throw \CodeIgniter\Encryption\Exceptions\EncryptionException::forEncryptionFailed();
+        }
     }
+
 }

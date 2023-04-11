@@ -65,6 +65,41 @@ class EmployeeValidation extends BaseValidation
     }
 
     /**
+     * Retorna regras para cadastrar senha na atiavação
+     *
+     * @return object
+     */
+    public function forActivation(): object
+    {
+        unset($this->rules['name']);
+        unset($this->rules['email']);
+        unset($this->rules['current_password']);
+
+        return $this;
+    }
+
+    /**
+     * Remove algumas regras necessárias para validar os dados do login
+     *
+     * @return object
+     */
+    public function forAuthValidation(): object
+    {
+        foreach ($this->rules as $key => $value) {
+            if (strpos($value['rules'], 'is_unique[employees.email]')) {
+                $this->rules[$key]['rules'] = str_replace('|is_unique[employees.email]', '', $value['rules']);
+                break;
+            }
+        }
+
+        unset($this->rules['name']);
+        unset($this->rules['password_confirm']);
+        unset($this->rules['current_password']);
+
+        return $this;
+    }
+
+    /**
      * Seleciona somente as rules necessárias para registrar novo funcionário
      *
      * @return object
@@ -91,6 +126,34 @@ class EmployeeValidation extends BaseValidation
         unset($this->rules['current_password']);
 
         $this->rules['name']['rules'] = str_replace('required|', 'permit_empty|', $this->rules['name']['rules']);
+
+        return $this;
+    }
+
+    /**
+     * Seleciona somente a rule de email
+     *
+     * @return object
+     */
+    public function onlyEmail(): object
+    {
+        unset($this->rules['name']);
+        unset($this->rules['password']);
+        unset($this->rules['password_confirm']);
+        unset($this->rules['current_password']);
+
+        return $this;
+    }
+
+    /**
+     * Seleciona somente a rule de password
+     *
+     * @return object
+     */
+    public function onlyPassword(): object
+    {
+        unset($this->rules['name']);
+        unset($this->rules['email']);
 
         return $this;
     }

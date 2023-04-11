@@ -15,10 +15,10 @@ class ProductController extends BaseController
 
     public function __construct()
     {
-        $this->productRepository = service('repository', 'product');
-        $this->validation = service('validationForm', 'product');
-        $this->file = service('file', 'images');
-        $this->auth = service('auth', 'EmployeeAuthentication');
+        $this->productRepository = \Config\Services::repository('product');
+        $this->validation = \Config\Services::validationForm('product');
+        $this->file = \Config\Services::file('images');
+        $this->auth = \Config\Services::auth('EmployeeAuthentication');
     }
 
     /**
@@ -35,14 +35,16 @@ class ProductController extends BaseController
             'account' => $this->auth->data()
         ];
 
-        if (!is_null($description = $this->request->getGet('description'))) {
+        $description = strval($this->request->getGet('description'));
+
+        if (strlen($description) > 0) {
 
             if (is_array($errors = $this->validation->forSearchProduct()->run($this->request->getGet()))) {
                 return redirect()->back()->with('errors', $errors);
             }
 
             $this->dataView['description'] = $description;
-            $this->dataView['productList'] = $this->productRepository->getLike($description);
+            $this->dataView['productList'] = $this->productRepository->getLike(['description' => $description]);
         } else {
             $this->dataView['productList'] = $this->productRepository->all();
         }
@@ -94,9 +96,7 @@ class ProductController extends BaseController
 
         $dataForm['file'] = $file;
 
-        if (!$this->addProduct($dataForm)) {
-            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Operação não realizada, contacte o administrador!');
-        }
+        $this->addProduct($dataForm);
 
         return redirect()->route('product.list-search')->with('success', 'Produto registrado com sucesso!');
     }
@@ -190,7 +190,7 @@ class ProductController extends BaseController
      */
     public function image(string $image = null): void
     {
-       $data = $this->file->retrieve($image);
+        $data = $this->file->retrieve($image);
 
         header('Conten-Type:' . $data['type']);
         header('Content-Length:' . $data['length']);
@@ -254,7 +254,7 @@ class ProductController extends BaseController
             return true;
         } catch (\Exception $e) {
             $this->file->remove($product['image'], env('storage.product'));
-            return false;
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Operações temporáriamente indisponível!');
         }
     }
 
@@ -277,7 +277,11 @@ class ProductController extends BaseController
             $this->productRepository->update($product['id'], $newDataProduct);
 
             return true;
-        } catch (FileNotFoundException $th) {
+        } catch (\Exception $e) {
+            $this->file->remove($product['image'], env('storage.product'));
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Operações temporáriamente indisponível!');
+        } catch (\CodeIgniter\Files\Exceptions\FileNotFoundException $th) {
+            throw \CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('Operações temporáriamente indisponível!');
             $this->file->remove($product['image'], env('storage.product'));
 
             return false;
@@ -295,8 +299,7 @@ class ProductController extends BaseController
         try {
             return decrypt($productId);
         } catch (\Exception $th) {
-            // echo $th->getMessage();
-            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Operação não realizada, contacte o administrado!');
+            throw \CodeIgniter\Encryption\Exceptions\EncryptionException::forEncryptionFailed();
         }
     }
 }

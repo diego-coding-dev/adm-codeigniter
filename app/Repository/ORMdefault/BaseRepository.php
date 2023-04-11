@@ -8,17 +8,18 @@ use CodeIgniter\Model;
 abstract class BaseRepository implements BaseRepositoryInterface
 {
     protected Model $model;
+    protected Model $view;
 
     public function __construct(Model $model)
     {
         $this->model = $model;
     }
 
-    public abstract function getLike(string $like): array;
+    // public abstract function getLike(string $like): array;
 
-    public abstract function all(): array;
+    // public abstract function all(): array;
 
-    public abstract function add(array $data): bool|string;
+    // public abstract function add(array $data): bool|string;
 
     public function find(int $id): object
     {

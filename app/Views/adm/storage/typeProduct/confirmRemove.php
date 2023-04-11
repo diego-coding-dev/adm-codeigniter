@@ -22,10 +22,9 @@
 
         <div class="text-center mt-4">
 
-            <form class="user" method="post" action="<?php echo route_to('type-product.confirm-remove'); ?>">
+            <form class="user" method="post" action="<?php echo route_to('type-product.confirm-remove', $typeCategoryId); ?>">
 
                 <input type="hidden" name="<?php echo csrf_token(); ?>" value="<?php echo csrf_hash(); ?>">
-                <input type="hidden" name="type_product_id" value="<?php echo encrypt($typeProduct->id); ?>">
 
                 <button type="submit" class="btn btn-danger" type="submit">Sim, remover</button>
                 <a href="<?php echo route_to('type-product.list-search'); ?>" type="button" class="btn btn-secondary" type="submit">Não, cancelar operação</a>

@@ -39,13 +39,14 @@
     <?php else : ?>
 
         <div class="card" style="margin-top: 40px;">
+
             <div class="card-body">
                 <!-- Default Table -->
                 <table class="table" style="margin-top: 20px;">
                     <thead>
                         <tr>
                             <th scope="col">Produto</th>
-                            <th style="width: 150px;" scope="col">Registrado há</th>
+                            <th style="width: 150px;" scope="col">Quantidade</th>
                             <th class="text-center" scope="col" style="width: 100px;">Ação</th>
                         </tr>
                     </thead>
@@ -59,11 +60,12 @@
                                     <?php echo esc($storage->description); ?>
                                 </td>
                                 <td style="width: 150px;">
-                                    <?php echo esc($storage->created_at); ?>
+                                    <p style="margin-top: 15px;">
+                                        <?php echo esc($storage->quantity); ?>&nbsp;un.
+                                    </p>
                                 </td>
                                 <th class="text-center" style="width: 100px;">
-                                    <a href="<?php echo route_to('product.show', encrypt($storage->id)); ?>" type="button" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
-                                    <a href="<?php echo route_to('product.remove', encrypt($storage->id)); ?>" type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></a>
+                                    <a style="margin-top: 10px;" href="<?php echo route_to('storage.show', encrypt($storage->id)); ?>" type="button" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
                                 </th>
                             </tr>
 
@@ -72,11 +74,11 @@
                 </table>
                 <!-- End Default Table Example -->
 
-                <?php echo $pager; ?>
+                <?php echo $pager->links(); ?>
 
             </div>
         </div>
-</div>
+    </div>
 
 <?php endif; ?>
 

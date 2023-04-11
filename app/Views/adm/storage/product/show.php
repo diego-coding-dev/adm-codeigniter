@@ -43,7 +43,7 @@
 
                     <div class="row">
                         <div class="col-lg-3 col-md-4 label">Registrado em</div>
-                        <div class="col-lg-9 col-md-8"><?php echo esc(date('d/m/Y', strtotime($product->created_at))); ?></div>
+                        <div class="col-lg-9 col-md-8"><?php echo esc(format($typeProduct->created_at)); ?></div>
                     </div>
 
                 </div>

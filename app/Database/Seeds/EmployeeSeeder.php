@@ -15,6 +15,7 @@ class EmployeeSeeder extends Seeder
             'type_user_id' => 2,
             'name' => 'funcionario 1',
             'email' => 'funcionario1@mail.com',
+            'password' => password_hash('radeonhd4850', PASSWORD_DEFAULT),
             'is_active' => true
         ];
 

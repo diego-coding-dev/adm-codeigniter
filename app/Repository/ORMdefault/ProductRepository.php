@@ -17,12 +17,34 @@ class ProductRepository extends BaseRepository implements DefaulRepositoryInterf
 
     public function add(array $data): bool|string
     {
-        return $this->model->insert($data);
+        $db = db_connect('default');
+
+        $db->transBegin();
+
+        $this->model->insert($data);
+
+        $date = Date('Y-m-d H:i:s', time());
+        
+        $db->table('storages')->insert([
+            'product_id' => $this->model->getInsertID(),
+            'quantity' => 0,
+            'created_at' => $date,
+            'updated_at' => $date
+        ]);
+
+        if ($db->transStatus() === false) {
+
+            $db->transRollback();
+            return false;
+        }
+
+        $db->transCommit();
+        return true;
     }
 
-    public function getLike(string $like): array
+    public function getLike(array $like): array
     {
-        return $this->model->like('description', $like)->orderBy('id', 'asc')->paginate(10);
+        return $this->model->like($like)->orderBy('id', 'asc')->paginate(10);
     }
 
     public function all(): array

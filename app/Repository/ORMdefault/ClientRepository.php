@@ -20,9 +20,9 @@ class ClientRepository extends BaseRepository implements DefaulRepositoryInterfa
         return $this->model->insert($data);
     }
 
-    public function getLike(string $like): array
+    public function getLike(array $like): array
     {
-        return $this->model->where('type_user_id', 1)->like('name', $like)->orderBy('id', 'asc')->paginate(10);
+        return $this->model->where('type_user_id', 1)->like($like)->orderBy('id', 'asc')->paginate(10);
     }
 
     public function all(): array

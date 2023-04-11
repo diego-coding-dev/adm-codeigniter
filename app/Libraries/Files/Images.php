@@ -10,9 +10,16 @@ class Images
 
     public function __construct()
     {
-        $this->image = service('image', 'gd');
+        $this->image = \Config\Services::image('gd');
     }
 
+    /**
+     * Realiza o store de um dado arquivo
+     *
+     * @param object $image
+     * @param string $directory
+     * @return string
+     */
     public function store(object $image, string $directory): string
     {
         if (!$image->hasMoved()) {
@@ -26,9 +33,18 @@ class Images
         return end($filePathName);
     }
 
-    public function remove(string $file, string $directory)
+    /**
+     * Undocumented function
+     *
+     * @param string $file
+     * @param string $directory
+     * @return void
+     */
+    public function remove(string $file, string $directory): void
     {
-        unlink(WRITEPATH . 'uploads/' . $directory . DIRECTORY_SEPARATOR . $file);
+        if (!unlink(WRITEPATH . 'uploads/' . $directory . DIRECTORY_SEPARATOR . $file)) {
+            throw new \CodeIgniter\Files\Exceptions\FileNotFoundException();
+        }
     }
 
     public function retrieve(string $image): array

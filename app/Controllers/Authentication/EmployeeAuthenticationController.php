@@ -11,7 +11,7 @@ class EmployeeAuthenticationController extends BaseController
 
     public function __construct()
     {
-        $this->auth = service('auth', 'EmployeeAuthentication');
+        $this->auth = \Config\Services::auth('employee');
     }
 
     /**

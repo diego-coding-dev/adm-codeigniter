@@ -13,9 +13,9 @@ class ClientController extends BaseController
 
     public function __construct()
     {
-        $this->clientRepository = service('repository', 'client');
-        $this->validation = service('validationForm', 'client');
-        $this->auth = service('auth', 'employee');
+        $this->clientRepository = \Config\Services::repository('client');
+        $this->validation = \Config\Services::validationForm('client');
+        $this->auth = \Config\Services::auth('employee');
     }
 
     /**
@@ -31,15 +31,16 @@ class ClientController extends BaseController
             'dashboard' => 'Lista de clientes',
             'account' => $this->auth->data()
         ];
+        $name = strval($this->request->getGet('name'));
 
-        if (!is_null($name = $this->request->getGet('name'))) {
+        if (strlen($name) > 0) {
 
             if (is_array($errors = $this->validation->forSearchCliente()->run($this->request->getGet()))) {
                 return redirect()->back()->with('errors', $errors);
             }
 
             $this->dataView['name'] = $name;
-            $this->dataView['clientList'] = $this->clientRepository->getByNameLike($name);
+            $this->dataView['clientList'] = $this->clientRepository->getLike(['name' => $name]);
         } else {
             $this->dataView['clientList'] = $this->clientRepository->all();
         }
@@ -119,6 +120,7 @@ class ClientController extends BaseController
         $this->dataView = [
             'title' => 'ADM - Cliente',
             'dashboard' => 'Desativar conta',
+            'clientId' => $clientId,
             'account' => $this->auth->data(),
             'client' => $this->clientRepository->find($decClientId)
         ];
@@ -131,10 +133,9 @@ class ClientController extends BaseController
      *
      * @return object
      */
-    public function confirmRemove(): object
+    public function confirmRemove(string $clientId = null): object
     {
-        $encClientId = $this->request->getPost('client_id');
-        $decClientID = $this->decryptClientId($encClientId);
+        $decClientID = $this->decryptClientId($clientId);
 
         $this->clientRepository->remove($decClientID);
 

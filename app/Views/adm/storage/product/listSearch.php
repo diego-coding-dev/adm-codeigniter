@@ -59,11 +59,13 @@
                                     <?php echo esc($product->description); ?>
                                 </td>
                                 <td style="width: 150px;">
-                                    <?php echo esc($product->created_at->humanize()); ?>
+                                    <p style="margin-top: 15px;">
+                                        <?php echo esc($product->created_at->humanize()); ?>
+                                    </p>
                                 </td>
                                 <th class="text-center" style="width: 100px;">
-                                    <a href="<?php echo route_to('product.show', encrypt($product->id)); ?>" type="button" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
-                                    <a href="<?php echo route_to('product.remove', encrypt($product->id)); ?>" type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></a>
+                                    <a style="margin-top: 10px;" href="<?php echo route_to('product.show', encrypt($product->id)); ?>" type="button" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                                    <a style="margin-top: 10px;" href="<?php echo route_to('product.remove', encrypt($product->id)); ?>" type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></a>
                                 </th>
                             </tr>
 

@@ -11,6 +11,12 @@ class EmployeeMail
         $this->mail = service('email');
     }
 
+    /**
+     * Função para enviar o email de ativação
+     *
+     * @param array $mailData
+     * @return boolean
+     */
     public function sendActivationEmail(array $mailData): bool
     {
         $this->mail->setFrom(env('email.fromEmail'), env('email.fromName'));

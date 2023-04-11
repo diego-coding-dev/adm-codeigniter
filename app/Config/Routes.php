@@ -63,9 +63,9 @@ $routes->group('adm', function ($routes) {
             $routes->post('add', 'Adm\Rh\EmployeeController::add', ['as' => 'employee.add']);
             $routes->get('show/(:hash)', 'Adm\Rh\EmployeeController::show/$1', ['as' => 'employee.show']);
             $routes->get('disable/(:hash)', 'Adm\Rh\EmployeeController::disable/$1', ['as' => 'employee.disable']);
-            $routes->post('confirm-disable', 'Adm\Rh\EmployeeController::confirmDisable', ['as' => 'employee.confirm-disable']);
+            $routes->post('confirm-disable/(:hash)', 'Adm\Rh\EmployeeController::confirmDisable/$1', ['as' => 'employee.confirm-disable']);
             $routes->get('reactivate/(:hash)', 'Adm\Rh\EmployeeController::reactivate/$1', ['as' => 'employee.reactivate']);
-            $routes->post('confirm-reactivate', 'Adm\Rh\EmployeeController::confirmReactivate', ['as' => 'employee.confirm-reactivate']);
+            $routes->post('confirm-reactivate/(:hash)', 'Adm\Rh\EmployeeController::confirmReactivate/$1', ['as' => 'employee.confirm-reactivate']);
         });
         /**
          * rota client
@@ -76,7 +76,7 @@ $routes->group('adm', function ($routes) {
             $routes->post('add', 'Adm\Rh\ClientController::add', ['as' => 'client.add']);
             $routes->get('show/(:hash)', 'Adm\Rh\ClientController::show/$1', ['as' => 'client.show']);
             $routes->get('remove/(:hash)', 'Adm\Rh\ClientController::remove/$1', ['as' => 'client.remove']);
-            $routes->post('confirm-remove', 'Adm\Rh\ClientController::confirmRemove', ['as' => 'client.confirm-remove']);
+            $routes->post('confirm-remove/(:hash)', 'Adm\Rh\ClientController::confirmRemove/$1', ['as' => 'client.confirm-remove']);
         });
     });
     /**
@@ -85,6 +85,9 @@ $routes->group('adm', function ($routes) {
     $routes->group('storage', function ($routes) {
         $routes->group('', function ($routes) {
             $routes->get('', 'Adm\Storage\StorageController::listSearch', ['as' => 'storage.list-search']);
+            $routes->get('show/(:hash)', 'Adm\Storage\StorageController::show/$1', ['as' => 'storage.show']);
+            $routes->get('add/(:hash)', 'Adm\Storage\StorageController::add/$1', ['as' => 'storage.add']);
+            $routes->post('add-inits/(:hash)', 'Adm\Storage\StorageController::addUnits/$1', ['as' => 'storage.add-units']);
         });
         /**
          * rota type-product
@@ -95,7 +98,7 @@ $routes->group('adm', function ($routes) {
             $routes->post('add', 'Adm\Storage\TypeProductController::add', ['as' => 'type-product.add']);
             $routes->get('show/(:hash)', 'Adm\Storage\TypeProductController::show/$1', ['as' => 'type-product.show']);
             $routes->get('remove/(:hash)', 'Adm\Storage\TypeProductController::remove/$1', ['as' => 'type-product.remove']);
-            $routes->post('confirm-remove', 'Adm\Storage\TypeProductController::confirmRemove', ['as' => 'type-product.confirm-remove']);
+            $routes->post('confirm-remove/(:hash)', 'Adm\Storage\TypeProductController::confirmRemove/$1', ['as' => 'type-product.confirm-remove']);
         });
         /**
          * rota product

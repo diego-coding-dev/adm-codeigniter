@@ -66,35 +66,4 @@ class Employee extends Model
 
         return $data;
     }
-
-    /**
-     * Remove algumas regras necessárias para validar os dados do login
-     *
-     * @return object
-     */
-    public function forAuthValidation(): object
-    {
-        foreach ($this->validationRules as $key => $value) {
-            if (strpos($value, 'is_unique[employees.email]')) {
-                $this->validationRules[$key] = str_replace('|is_unique[employees.email]', '', $value);
-                break;
-            }
-        }
-
-        return $this;
-    }
-
-    /**
-     * Seleciona somente as rules necessárias para buscar o nome do funcionário
-     *
-     * @return object
-     */
-    public function forSearchEmployee(): object
-    {
-        unset($this->validationRules['email']);
-
-        $this->validationRules['name'] = str_replace('required|', 'permit_empty|', $this->validationRules['name']);
-
-        return $this;
-    }
 }

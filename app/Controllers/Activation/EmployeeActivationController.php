@@ -7,21 +7,24 @@ use App\Libraries\Token;
 
 class EmployeeActivationController extends BaseController
 {
-    private object $employeeModel;
-    private object $activationTokensModel;
+    private object $employeeRepository;
+    private object $activationTokensRepository;
     private object $token;
     private object $encrypt;
+    private object $validation;
+    private object $authentication;
 
     public function __construct()
     {
-        $this->employeeModel = service('model', 'Employee');
-        $this->activationTokensModel = service('model', 'ActivationTokens');
-        $this->token = service('library', 'Token');
-        $this->encrypt = service('encrypter');
+        $this->employeeRepository = \Config\Services::repository('employee');
+        $this->activationTokensRepository = \Config\Services::repository('activationToken');
+        $this->validation = \Config\Services::validationForm('employee');
+        $this->encrypt = \Config\Services::encrypter();
+        $this->authentication = \Config\Services::auth('employee');
     }
 
     /**
-     * Inicia verificações antes de ativar a conta
+     * Inicia verificações para ativar a conta
      *
      * @param string|null $token
      * @return string
@@ -45,52 +48,65 @@ class EmployeeActivationController extends BaseController
         $employee = $this->getEmployeeDataByEmail($account);
 
         if (!$employee) {
-            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Operação não concluída, contacte o administrador!');
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Operação abortada!');
         }
 
         $viewData = [
             'title' => 'ADM - Ativando conta',
-            'employee' => $employee
+            'employeeId' => $employee->id
         ];
 
         return view('activation/employeeActivation/setPassword', $viewData);
     }
+
 
     public function setPassword(): object
     {
         $dataForm = $this->request->getPost();
         $dataForm['employee_id'] = $this->encrypt->decrypt(hex2bin($dataForm['employee_id']));
 
-        if (!$this->employeeModel->validate($dataForm)) {
-            return redirect()->back()->with('errors', $this->employeeModel->errors());
+        if (is_array($errors = $this->validation->forActivation()->run($dataForm))) {
+            return redirect()->back()->with('errors', $errors);
         }
 
-        if (!$this->activate($dataForm)) {
-            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Operação não concluída, contacte o administrador!');
+        $result = $this->activate($dataForm);
+
+        if (!$result) {
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Operação abortada!');
         }
 
-        dd('usuário ativado, fazer o login');
+        $this->authentication->authenticate([
+            'password' => $dataForm['password'],
+            'email' => $result
+        ]);
+
+        return redirect()->route('employee.list-search')->with('success', 'Conta ativada, seja bem vindo(a)');
     }
 
     /**
-     * Persisti os dados da ativação no banco de dados
+     * Persiste os dados da ativação no banco de dados
      *
      * @param [type] $employeeData
-     * @return boolean
+     * @return string|boolean
      */
-    private function activate($employeeData): bool
+    private function activate($employeeData): string|bool
     {
         $db = db_connect('default');
-        $employee = $this->employeeModel->where('id', $employeeData['employee_id'])->first();
+
+        $employee = $this->employeeRepository->getBy([
+            'id' => $employeeData['employee_id']
+        ], true);
 
         $db->transBegin();
 
-        $this->employeeModel->where('id', $employeeData['employee_id'])->set([
+        $this->employeeRepository->update($employee->id, [
             'password' => $employeeData['password'],
             'is_active' => true
-        ])->update();
+        ]);
 
-        $this->activationTokensModel->where('email', $employee->email)->delete();
+        $this->activationTokensRepository->removeBy([
+            'email' => $employee->email
+        ]);
 
         if ($db->transStatus() === false) {
             $db->transRollback();
@@ -98,7 +114,7 @@ class EmployeeActivationController extends BaseController
         }
 
         $db->transCommit();
-        return true;
+        return $employee->email;
     }
 
     /**
@@ -109,7 +125,9 @@ class EmployeeActivationController extends BaseController
      */
     private function getEmployeeDataByEmail(object $account): null|object
     {
-        return $this->employeeModel->where('email', $account->email)->first();
+        return $this->employeeRepository->getBy([
+            'email' => $account->email
+        ], true);
     }
 
     /**
@@ -120,9 +138,13 @@ class EmployeeActivationController extends BaseController
      */
     private function getActivationDataByToken(string $token): null|object
     {
+        $this->token = \Config\Services::library('token', $token);
+
         $tokenHash = $this->token->getTokenHash();
 
-        return $this->activationTokensModel->where('token_hash', $tokenHash)->first();
+        return $this->activationTokensRepository->getBy([
+            'token_hash' => $tokenHash
+        ], true);
     }
 
     /**

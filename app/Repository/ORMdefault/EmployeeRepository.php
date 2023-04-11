@@ -42,9 +42,18 @@ class EmployeeRepository extends BaseRepository implements DefaulRepositoryInter
         return $this->token->getToken();
     }
 
-    public function getLike(string $like): array
+    public function getLike(array $like): array
     {
-        return $this->model->where('type_user_id', 2)->like('name', $like)->orderBy('id', 'asc')->paginate(10);
+        return $this->model->where('type_user_id', 2)->like($like)->orderBy('id', 'asc')->paginate(10);
+    }
+
+    public function getWhere(array $data, $first = false): array|object
+    {
+        if (!$first) {
+            return $this->model->where($data)->findAll();
+        }
+
+        return $this->model->where($data)->first();
     }
 
     public function all(): array

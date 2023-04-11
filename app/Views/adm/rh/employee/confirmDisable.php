@@ -22,10 +22,9 @@
 
         <div class="text-center mt-4">
 
-            <form class="user" method="post" action="<?php echo route_to('employee.confirm-disable'); ?>">
+            <form class="user" method="post" action="<?php echo route_to('employee.confirm-disable', $employeeId); ?>">
 
                 <input type="hidden" name="<?php echo csrf_token(); ?>" value="<?php echo csrf_hash(); ?>">
-                <input type="hidden" name="employee_id" value="<?php echo $employeeId; ?>">
 
                 <button type="submit" class="btn btn-danger" type="submit">Sim, desativar conta</button>
                 <a href="<?php echo route_to('employee.list-search'); ?>" type="button" class="btn btn-secondaryp" type="submit">Não, cancelar operação</a>
