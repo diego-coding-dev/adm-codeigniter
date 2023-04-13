@@ -30,7 +30,7 @@
 
                     <div class="col-sm-4 mb-3 mb-sm-0">
                         <label>Quantidade</label>
-                        <div class="input-group">
+                        <div class="input-group mt-2">
                             <!--<span class="input-group-text" id="inputGroupPrepend"><i class="ri-add-circle-line"></i></span>-->
                             <input type="text" name="quantity" class="form-control" onkeypress="isNumber(event)">
                             <span class="input-group-text" id="inputGroupPrepend">un.</span>
@@ -41,7 +41,7 @@
                     </div>
 
                     <div style="margin-top: 30px;">
-                        <button type="submit" class="btn btn-primary">Atualizar</button>
+                        <button type="submit" class="btn btn-primary">Adicionar</button>
                     </div>
                 </form>
                 <script>

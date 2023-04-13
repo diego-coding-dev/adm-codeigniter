@@ -6,14 +6,15 @@ use App\Libraries\Authentication\AuthenticationInterface;
 
 class EmployeeAuthentication implements AuthenticationInterface
 {
+
     private ?object $employeeData = null;
     private object $employeeRepository;
     private object $validation;
 
     public function __construct()
     {
-        $this->employeeRepository =\Config\Services::repository('employee');
-        $this->validation =\Config\Services::validationForm('employee');
+        $this->employeeRepository = \Config\Services::repository('employee');
+        $this->validation = \Config\Services::validationForm('employee');
     }
 
     /**
@@ -29,9 +30,9 @@ class EmployeeAuthentication implements AuthenticationInterface
             return ['errors' => $errors];
         }
 
-        $accountData = $this->employeeRepository->getWhere([
+        $accountData = $this->employeeRepository->getWhereFirst([
             'email' => $credentials['email']
-        ], true);
+        ]);
 
         if (!$accountData) {
             return ['not_found' => true];
@@ -111,9 +112,10 @@ class EmployeeAuthentication implements AuthenticationInterface
             return null;
         }
 
-        return $this->employeeRepository->getWhere([
-            'is_active' => true,
-            'id' => session()->get('employee_id')
-        ], true);
+        return $this->employeeRepository->getWhereFirst([
+                    'is_active' => true,
+                    'id' => session()->get('employee_id')
+        ]);
     }
+
 }

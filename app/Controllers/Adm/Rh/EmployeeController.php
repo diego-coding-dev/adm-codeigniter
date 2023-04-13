@@ -6,6 +6,7 @@ use App\Controllers\BaseController;
 
 class EmployeeController extends BaseController
 {
+
     private array $dataView;
     private object $employeeRepository;
     private object $validation;
@@ -34,16 +35,15 @@ class EmployeeController extends BaseController
             'account' => $this->auth->data()
         ];
 
-        $name = strval($this->request->getGet('name'));
+        $dataForm = $this->request->getGet();
 
-        if (strlen($name) > 0) {
-
-            if (is_array($errors = $this->validation->forSearchEmployee()->run($this->request->getGet()))) {
+        if (count($dataForm) > 0) {
+            if (is_array($errors = $this->validation->forSearchEmployee()->run($dataForm))) {
                 return redirect()->back()->with('errors', $errors);
             }
 
-            $this->dataView['name'] = $name;
-            $this->dataView['employeeList'] = $this->employeeRepository->getLike(['name' => $name]);
+            $this->dataView['name'] = $dataForm['name'];
+            $this->dataView['employeeList'] = $this->employeeRepository->getLike($dataForm);
         } else {
             $this->dataView['employeeList'] = $this->employeeRepository->all();
         }
@@ -88,6 +88,7 @@ class EmployeeController extends BaseController
         $result = $result = $this->employeeRepository->add($dataForm);
 
         if (!$result) {
+            session()->setFlashdata('route', 'employee.list-search');
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
         }
 
@@ -203,4 +204,5 @@ class EmployeeController extends BaseController
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Serviço não encontrado!');
         }
     }
+
 }

@@ -1,4 +1,23 @@
--- public.storage_view source
+-- public.order_view source
+
+CREATE OR REPLACE VIEW public.order_view
+AS SELECT orders.id,
+    orders.client_id,
+    orders.employee_id,
+    orders.register,
+    orders.total,
+    orders.is_settled,
+    orders.is_canceled,
+    orders.created_at,
+    orders.updated_at,
+    orders.deleted_at,
+    clients.name AS client_name,
+    employees.name AS employee_name
+   FROM orders
+     JOIN clients ON orders.client_id = clients.id
+     JOIN employees ON orders.employee_id = employees.id;
+
+---------------------------------------------------------------------------
 
 CREATE OR REPLACE VIEW public.storage_view
 AS SELECT storages.id,
@@ -9,8 +28,7 @@ AS SELECT storages.id,
     storages.updated_at,
     storages.deleted_at,
     products.description,
-    products.image
+    products.image,
+    products.type_product_id
    FROM storages
      JOIN products ON storages.product_id = products.id;
-
----------------------------------------------------------------------------

@@ -103,6 +103,26 @@
                 </li>
             </ul>
         </li><!-- End Components Nav -->
+        
+        <li class="nav-heading">Serviços</li>
+        
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#orders" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-menu-button-wide"></i><span>Pedidos</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="orders" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="<?php echo route_to('order.list'); ?>">
+                        <i class="bi bi-circle"></i><span>Listar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo route_to('order.list-client'); ?>">
+                        <i class="bi bi-circle"></i><span>Adicionar novo</span>
+                    </a>
+                </li>
+            </ul>
+        </li><!-- End Components Nav -->
 
     </ul>
 

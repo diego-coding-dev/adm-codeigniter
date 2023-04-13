@@ -33,20 +33,18 @@ class StorageController extends BaseController
             'account' => $this->auth->data()
         ];
 
-        $description = strval($this->request->getGet('description'));
+        $dataForm = $this->request->getGet();
 
-        if (strlen($description) > 0) {
-
-            if (is_array($errors = $this->validation->onlyDescription(true)->run($this->request->getGet()))) {
+        if (count($dataForm) > 0) {
+            if (is_array($errors = $this->validation->onlyDescription(true)->run($dataForm))) {
                 return redirect()->back()->with('errors', $errors);
             }
 
-            $this->dataView['description'] = $description;
-            $this->dataView['storageList'] = $this->storageRepository->getLike($description);
+            $this->dataView['description'] = $dataForm['description'];
+            $this->dataView['storageList'] = $this->storageRepository->getLike($dataForm, true);
             $this->dataView['pager'] = $this->storageRepository->pager(true);
         } else {
-
-            $this->dataView['storageList'] = $this->storageRepository->all();
+            $this->dataView['storageList'] = $this->storageRepository->all(true);
             $this->dataView['pager'] = $this->storageRepository->pager(true);
         }
 
@@ -100,7 +98,7 @@ class StorageController extends BaseController
             return redirect()->back()->with('errors', $errors);
         }
 
-        $this->storageRepository->update($decStorageId, $dataForm);
+        $this->storageRepository->update(['id' => $decStorageId], $dataForm);
 
         return redirect()->route('storage.list-search')->with('success', '* Estoque adicionado com sucesso!');
     }

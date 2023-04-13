@@ -11,9 +11,9 @@ trait PagerTrait
      * Gerador dos links de paginação
      *
      * @param boolean $useView
-     * @return object
+     * @return null|object
      */
-    public function pager(bool $useView = false): object
+    public function pager(bool $useView = false): null|object
     {
         if (!$useView) {
             return $this->model->pager;

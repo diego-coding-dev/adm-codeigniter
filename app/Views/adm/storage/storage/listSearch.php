@@ -16,7 +16,7 @@
 
 <div class="col-lg-12">
 
-    <form class="user" method="get" action="<?php echo url_to('storage.list-search') ?>">
+    <form class="user" method="get" action="<?php echo url_to('storage.list-search'); ?>">
         <div class="form-group row">
             <div class="col-sm-5 col-md-4 mb-3 mb-sm-0">
                 <div class="input-group">
@@ -56,16 +56,14 @@
 
                             <tr>
                                 <td>
-                                    <img src="<?php echo route_to('product.image', $storage->image); ?>" alt="" width="50px;" height="50px;">&nbsp;
+        <!--                                    <img src="<?php // echo route_to('product.image', $storage->image);  ?>" alt="" width="50px;" height="50px;">&nbsp;-->
                                     <?php echo esc($storage->description); ?>
                                 </td>
                                 <td style="width: 150px;">
-                                    <p style="margin-top: 15px;">
-                                        <?php echo esc($storage->quantity); ?>&nbsp;un.
-                                    </p>
+                                    <?php echo esc($storage->quantity); ?>&nbsp;un.
                                 </td>
-                                <th class="text-center" style="width: 100px;">
-                                    <a style="margin-top: 10px;" href="<?php echo route_to('storage.show', encrypt($storage->id)); ?>" type="button" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                                <th class="text-center" style="/*width: 100px*/;">
+                                    <a style="/*margin-top: 10px;*/" href="<?php echo route_to('storage.show', encrypt($storage->id)); ?>" type="button" class="btn btn-primary btn-sm"><i class="ri-eye-fill"></i></a>
                                 </th>
                             </tr>
 

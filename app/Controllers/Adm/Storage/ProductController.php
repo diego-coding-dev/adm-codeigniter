@@ -3,10 +3,10 @@
 namespace App\Controllers\Adm\Storage;
 
 use App\Controllers\BaseController;
-use CodeIgniter\Files\Exceptions\FileNotFoundException;
 
 class ProductController extends BaseController
 {
+
     private array $dataView;
     private object $productRepository;
     private object $validation;
@@ -26,7 +26,7 @@ class ProductController extends BaseController
      *
      * @return string|object
      */
-    public function listSearch(): string| object
+    public function listSearch(): string|object
     {
         // colocar filtro para saber se é ajax (middleware)
         $this->dataView = [
@@ -35,16 +35,15 @@ class ProductController extends BaseController
             'account' => $this->auth->data()
         ];
 
-        $description = strval($this->request->getGet('description'));
+        $dataForm = $this->request->getGet();
 
-        if (strlen($description) > 0) {
-
-            if (is_array($errors = $this->validation->forSearchProduct()->run($this->request->getGet()))) {
+        if (count($dataForm) > 0) {
+            if (is_array($errors = $this->validation->forSearchProduct()->run($dataForm))) {
                 return redirect()->back()->with('errors', $errors);
             }
 
-            $this->dataView['description'] = $description;
-            $this->dataView['productList'] = $this->productRepository->getLike(['description' => $description]);
+            $this->dataView['description'] = $dataForm['description'];
+            $this->dataView['productList'] = $this->productRepository->getLike($dataForm);
         } else {
             $this->dataView['productList'] = $this->productRepository->all();
         }
@@ -188,7 +187,7 @@ class ProductController extends BaseController
      * @param string|null $image
      * @return void
      */
-    public function image(string $image = null): void
+    public function image(string $image = 'null'): void
     {
         $data = $this->file->retrieve($image);
 
@@ -244,18 +243,19 @@ class ProductController extends BaseController
      */
     private function addProduct(array $product): bool
     {
-        try {
-            $product['image'] = $this->file->store($product['file'], env('storage.product'));
+        $product['image'] = $this->file->store($product['file'], env('storage.product'));
 
-            unset($product['file']);
+        unset($product['file']);
 
-            $this->productRepository->add($product);
+        $registerResult = $this->productRepository->register($product);
 
-            return true;
-        } catch (\Exception $e) {
+        if (!$registerResult) {
             $this->file->remove($product['image'], env('storage.product'));
-            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Operações temporáriamente indisponível!');
+            session()->setFlashdata('route', 'product.list-search');
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
         }
+
+        return redirect()->route('product.list-search')->with('success', 'Produto registrado com sucesso!');
     }
 
     /**
@@ -302,4 +302,5 @@ class ProductController extends BaseController
             throw \CodeIgniter\Encryption\Exceptions\EncryptionException::forEncryptionFailed();
         }
     }
+
 }

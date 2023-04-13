@@ -6,6 +6,7 @@ use App\Controllers\BaseController;
 
 class ClientController extends BaseController
 {
+
     private array $dataView;
     private object $clientRepository;
     private object $validation;
@@ -31,16 +32,16 @@ class ClientController extends BaseController
             'dashboard' => 'Lista de clientes',
             'account' => $this->auth->data()
         ];
-        $name = strval($this->request->getGet('name'));
 
-        if (strlen($name) > 0) {
+        $dataForm = $this->request->getGet();
 
-            if (is_array($errors = $this->validation->forSearchCliente()->run($this->request->getGet()))) {
+        if (count($dataForm) > 0) {
+            if (is_array($errors = $this->validation->forSearchCliente()->run($dataForm))) {
                 return redirect()->back()->with('errors', $errors);
             }
 
-            $this->dataView['name'] = $name;
-            $this->dataView['clientList'] = $this->clientRepository->getLike(['name' => $name]);
+            $this->dataView['name'] = $dataForm['name'];
+            $this->dataView['clientList'] = $this->clientRepository->getLike($dataForm);
         } else {
             $this->dataView['clientList'] = $this->clientRepository->all();
         }
@@ -157,4 +158,5 @@ class ClientController extends BaseController
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Serviço não encontrado!');
         }
     }
+
 }

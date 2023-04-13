@@ -8,6 +8,7 @@ use App\Repository\Trait\PagerTrait;
 
 class EmployeeRepository extends BaseRepository implements DefaulRepositoryInterface
 {
+
     use PagerTrait;
 
     private object $token;
@@ -18,7 +19,7 @@ class EmployeeRepository extends BaseRepository implements DefaulRepositoryInter
         parent::__construct(new Employee());
     }
 
-    public function add(array $employeeData): bool|string
+    public function add(array $data, bool $returnId = false): bool|int|string
     {
         $db = db_connect('default');
 
@@ -42,22 +43,18 @@ class EmployeeRepository extends BaseRepository implements DefaulRepositoryInter
         return $this->token->getToken();
     }
 
-    public function getLike(array $like): array
-    {
-        return $this->model->where('type_user_id', 2)->like($like)->orderBy('id', 'asc')->paginate(10);
-    }
-
-    public function getWhere(array $data, $first = false): array|object
-    {
-        if (!$first) {
-            return $this->model->where($data)->findAll();
-        }
-
-        return $this->model->where($data)->first();
-    }
-
-    public function all(): array
+    public function all(bool $userView = false): array
     {
         return $this->model->where('type_user_id', 2)->orderBy('id', 'asc')->paginate(10);
     }
+
+    public function getLike(array $like, bool $useView = false): array
+    {
+        if (!$useView) {
+            return $this->model->where('type_user_id', 2)->like($like)->orderBy('id', 'asc')->paginate(10);
+        }
+
+        return $this->view->where('type_user_id', 2)->like($like)->orderBy('id', 'asc')->paginate(10);
+    }
+
 }

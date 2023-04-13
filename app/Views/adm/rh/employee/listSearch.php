@@ -16,7 +16,7 @@
 
 <div class="col-lg-12">
 
-    <form class="user" method="get" action="<?php echo url_to('employee.list-search') ?>">
+    <form class="user" method="get" action="<?php echo url_to('employee.list-search'); ?>">
         <div class="form-group row">
             <div class="col-sm-5 col-md-4 mb-3 mb-sm-0">
                 <div class="input-group">
@@ -61,7 +61,7 @@
                                     <?php echo ($employee->is_active === 't') ? 'Ativado' : 'Não ativado'; ?>
                                 </td>
                                 <th class="text-center" style="width: 100px;">
-                                    <a href="<?php echo route_to('employee.show', encrypt($employee->id)); ?>" type="button" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                                    <a href="<?php echo route_to('employee.show', encrypt($employee->id)); ?>" type="button" class="btn btn-primary btn-sm"><i class="ri-eye-fill"></i></a>
                                 </th>
                             </tr>
 

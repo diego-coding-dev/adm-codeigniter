@@ -8,6 +8,7 @@ use App\Repository\Trait\PagerTrait;
 
 class ProductRepository extends BaseRepository implements DefaulRepositoryInterface
 {
+
     use PagerTrait;
 
     public function __construct()
@@ -15,41 +16,37 @@ class ProductRepository extends BaseRepository implements DefaulRepositoryInterf
         parent::__construct(new Product());
     }
 
-    public function add(array $data): bool|string
+    public function register(array $data, bool $returnId = false): bool|int|string
     {
         $db = db_connect('default');
+        $storageRepository = \Config\Services::repository('storage');
 
         $db->transBegin();
 
-        $this->model->insert($data);
+        $productId = parent::add($data, true);
 
         $date = Date('Y-m-d H:i:s', time());
-        
-        $db->table('storages')->insert([
-            'product_id' => $this->model->getInsertID(),
-            'quantity' => 0,
+
+        $storageRepository->add([
+            'product_id' => $productId,
+            'quantity1' => 0,
             'created_at' => $date,
             'updated_at' => $date
         ]);
 
         if ($db->transStatus() === false) {
-
             $db->transRollback();
             return false;
         }
+        throw new \CodeIgniter\Database\Exceptions\DatabaseException();
 
         $db->transCommit();
-        return true;
-    }
 
-    public function getLike(array $like): array
-    {
-        return $this->model->like($like)->orderBy('id', 'asc')->paginate(10);
-    }
+        if (!$returnId) {
+            return true;
+        }
 
-    public function all(): array
-    {
-        return $this->model->orderBy('id', 'asc')->paginate(10);
+        return $productId;
     }
 
     public function allCategories(): array
@@ -61,4 +58,5 @@ class ProductRepository extends BaseRepository implements DefaulRepositoryInterf
     {
         return service('repository', 'typeProduct')->find($id);
     }
+
 }

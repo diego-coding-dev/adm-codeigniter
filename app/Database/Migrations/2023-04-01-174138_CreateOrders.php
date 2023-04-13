@@ -36,7 +36,8 @@ class CreateOrders extends Migration
                 'type' => 'decimal',
                 'constraint' => '8,2',
                 'unsigned' => true,
-                'null' => false
+                'null' => false,
+                'default' => 0.0
             ],
             'is_settled' => [
                 'type' => 'boolean',

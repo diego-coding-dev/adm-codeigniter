@@ -91,25 +91,6 @@ class Services extends BaseService
     /**
      * Retorna instância de um determinado model
      *
-     * @param string $repositoryClass
-     * @return object
-     */
-    public static function repositoryView(string $repositoryViewClass)
-    {
-        $repositoryViewClass = str_replace('View', '', $repositoryViewClass);
-
-        $class = '\\App\\Repository\\Views\\' . ucfirst($repositoryViewClass) . 'View';
-
-        if (!class_exists($class)) {
-            throw new Exception("Class {$class} not exists!");
-        }
-
-        return new $class();
-    }
-
-    /**
-     * Retorna instância de um determinado model
-     *
      * @param string $modelClass
      * @return object
      */

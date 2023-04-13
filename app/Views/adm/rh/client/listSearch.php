@@ -16,7 +16,7 @@
 
 <div class="col-lg-12">
 
-    <form class="user" method="get" action="<?php echo url_to('client.list-search') ?>">
+    <form class="user" method="get" action="<?php echo url_to('client.list-search'); ?>">
         <div class="form-group row">
             <div class="col-sm-5 col-md-4 mb-3 mb-sm-0">
                 <div class="input-group">
@@ -61,8 +61,8 @@
                                     <?php echo esc($cliente->created_at->humanize()); ?>
                                 </td>
                                 <th class="text-center" style="width: 100px;">
-                                    <a href="<?php echo route_to('client.show', encrypt($cliente->id)); ?>" type="button" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
-                                    <a href="<?php echo route_to('client.remove', encrypt($cliente->id)); ?>" type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></a>
+                                    <a href="<?php echo route_to('client.show', encrypt($cliente->id)); ?>" type="button" class="btn btn-primary btn-sm"><i class="ri-eye-fill"></i></a>
+                                    <a href="<?php echo route_to('client.remove', encrypt($cliente->id)); ?>" type="button" class="btn btn-danger btn-sm"><i class="ri-delete-bin-6-fill"></i></a>
                                 </th>
                             </tr>
 

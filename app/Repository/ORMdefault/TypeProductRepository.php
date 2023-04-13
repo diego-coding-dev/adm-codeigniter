@@ -8,6 +8,7 @@ use App\Repository\Trait\PagerTrait;
 
 class TypeProductRepository extends BaseRepository implements DefaulRepositoryInterface
 {
+
     use PagerTrait;
 
     public function __construct()
@@ -15,18 +16,4 @@ class TypeProductRepository extends BaseRepository implements DefaulRepositoryIn
         parent::__construct(new TypeProduct());
     }
 
-    public function add(array $data): bool|string
-    {
-        return $this->model->insert($data);
-    }
-
-    public function all(): array
-    {
-        return $this->model->orderBy('id', 'asc')->paginate(10);
-    }
-
-    public function getLike(array $like): array
-    {
-        return $this->model->like($like)->orderBy('id', 'asc')->paginate(10);
-    }
 }

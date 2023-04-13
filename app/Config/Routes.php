@@ -58,7 +58,7 @@ $routes->group('adm', function ($routes) {
          * rota employee
          */
         $routes->group('employee', function ($routes) {
-            $routes->get('list-search', 'Adm\Rh\EmployeeController::listSearch', ['as' => 'employee.list-search']);
+            $routes->get('list', 'Adm\Rh\EmployeeController::listSearch', ['as' => 'employee.list-search']);
             $routes->get('adding', 'Adm\Rh\EmployeeController::adding', ['as' => 'employee.adding']);
             $routes->post('add', 'Adm\Rh\EmployeeController::add', ['as' => 'employee.add']);
             $routes->get('show/(:hash)', 'Adm\Rh\EmployeeController::show/$1', ['as' => 'employee.show']);
@@ -71,7 +71,7 @@ $routes->group('adm', function ($routes) {
          * rota client
          */
         $routes->group('client', function ($routes) {
-            $routes->get('list-search', 'Adm\Rh\ClientController::listSearch', ['as' => 'client.list-search']);
+            $routes->get('list', 'Adm\Rh\ClientController::listSearch', ['as' => 'client.list-search']);
             $routes->get('adding', 'Adm\Rh\ClientController::adding', ['as' => 'client.adding']);
             $routes->post('add', 'Adm\Rh\ClientController::add', ['as' => 'client.add']);
             $routes->get('show/(:hash)', 'Adm\Rh\ClientController::show/$1', ['as' => 'client.show']);
@@ -93,7 +93,7 @@ $routes->group('adm', function ($routes) {
          * rota type-product
          */
         $routes->group('type-product', function ($routes) {
-            $routes->get('list-search', 'Adm\Storage\TypeProductController::listSearch', ['as' => 'type-product.list-search']);
+            $routes->get('list', 'Adm\Storage\TypeProductController::listSearch', ['as' => 'type-product.list-search']);
             $routes->get('adding', 'Adm\Storage\TypeProductController::adding', ['as' => 'type-product.adding']);
             $routes->post('add', 'Adm\Storage\TypeProductController::add', ['as' => 'type-product.add']);
             $routes->get('show/(:hash)', 'Adm\Storage\TypeProductController::show/$1', ['as' => 'type-product.show']);
@@ -104,7 +104,7 @@ $routes->group('adm', function ($routes) {
          * rota product
          */
         $routes->group('product', function ($routes) {
-            $routes->get('list-search', 'Adm\Storage\ProductController::listSearch', ['as' => 'product.list-search']);
+            $routes->get('list', 'Adm\Storage\ProductController::listSearch', ['as' => 'product.list-search']);
             $routes->get('product-image/(:segment)', 'Adm\Storage\ProductController::image/$1', ['as' => 'product.image']);
             $routes->get('adding', 'Adm\Storage\ProductController::adding', ['as' => 'product.adding']);
             $routes->post('add', 'Adm\Storage\ProductController::add', ['as' => 'product.add']);
@@ -114,6 +114,41 @@ $routes->group('adm', function ($routes) {
             $routes->get('remove/(:hash)', 'Adm\Storage\ProductController::remove/$1', ['as' => 'product.remove']);
             $routes->post('confirm-remove/(:hash)', 'Adm\Storage\ProductController::confirmRemove/$1', ['as' => 'product.confirm-remove']);
         });
+    });
+    /**
+     * rota order
+     */
+    $routes->group('order', function ($routes) {
+        $routes->get('list', 'Adm\Delivery\OrderController::list', ['as' => 'order.list']);
+        /**
+         * rota client
+         */
+        $routes->group('client', function ($routes) {
+            $routes->get('list', 'Adm\Delivery\OrderController::listClient', ['as' => 'order.list-client']);
+            $routes->get('select/(:hash)', 'Adm\Delivery\OrderController::selectClient/$1', ['as' => 'order.select-client']);
+        });
+        /**
+         * rota orderCart
+         */
+        $routes->group('order-cart', function ($routes) {
+            $routes->get('show/(:hash)', 'Adm\Delivery\OrderCartController::show/$1', ['as' => 'order.order-cart-show']);
+            $routes->get('adding-item/(:hash)', 'Adm\Delivery\OrderCartController::addingItem/$1', ['as' => 'order.order-cart.adding-item']);
+            $routes->get('add-item-quantity/(:hash)', 'Adm\Delivery\OrderCartController::addItemQuantity/$1', ['as' => 'order.order-cart.add-item-quantity']);
+            $routes->post('add-item/(:hash)', 'Adm\Delivery\OrderCartController::addItem/$1', ['as' => 'order.order-cart.add-item']);
+            $routes->get('remove-item/(:hash)', 'Adm\Delivery\OrderCartController::removeItem/$1', ['as' => 'order.order-cart.remove-item']);
+        });
+        /**
+         * rota add
+         */
+//        $routes->group('add', function ($routes) {
+//
+//            /**
+//             * rota order-cart
+//             */
+//            $routes->group('order-cart', function ($routes) {
+//                $routes->get('itens', 'Adm\Delivery\OrderController::selectClient/$1');
+//            });
+//        });
     });
     /**
      * rota profile

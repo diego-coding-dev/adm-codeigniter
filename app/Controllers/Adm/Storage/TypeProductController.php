@@ -37,16 +37,15 @@ class TypeProductController extends BaseController
             'account' => $this->auth->data()
         ];
 
-        $typeProduct = strval($this->request->getGet('type_product'));
+        $dataForm = $this->request->getGet();
 
-        if (strlen($typeProduct) > 0) {
-
-            if (is_array($errors = $this->validation->forSearchTypeProduct()->run($this->request->getGet()))) {
+        if (count($dataForm) > 0) {
+            if (is_array($errors = $this->validation->forSearchTypeProduct()->run($dataForm))) {
                 return redirect()->back()->with('errors', $errors);
             }
 
-            $this->dataView['typeProduct'] = $typeProduct;
-            $this->dataView['typeProductList'] = $this->typeProductRepository->getLike(['type_product' => $typeProduct]);
+            $this->dataView['typeProduct'] = $dataForm['type_product'];
+            $this->dataView['typeProductList'] = $this->typeProductRepository->getLike($dataForm);
         } else {
             $this->dataView['typeProductList'] = $this->typeProductRepository->all();
         }
