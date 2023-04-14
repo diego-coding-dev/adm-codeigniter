@@ -24,14 +24,14 @@ class EmployeeRepository extends BaseRepository implements DefaulRepositoryInter
         $db = db_connect('default');
 
         $activationData = [
-            'email' => $employeeData['email'],
+            'email' => $data['email'],
             'token_hash' => $this->token->getTokenHash(),
             'created_at' => Date('Y-m-d H:i:s', time() + 3600)
         ];
 
         $db->transBegin();
 
-        $db->table('employees')->insert($employeeData);
+        $db->table('employees')->insert($data);
         $db->table('activation_tokens')->insert($activationData);
 
         if ($db->transStatus() === false) {

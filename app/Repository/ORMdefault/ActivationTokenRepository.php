@@ -21,9 +21,9 @@ class ActivationTokenRepository extends BaseRepository implements DefaulReposito
         return $this->model->where($data)->first();
     }
 
-    public function update(int $id, array $data): bool
+    public function update(array $where, array $data): bool
     {
-        return $this->model->where('id', $id)->set($data)->update();
+        return $this->model->where($where)->set($data)->update();
     }
 
     public function removeBy(array $data): bool

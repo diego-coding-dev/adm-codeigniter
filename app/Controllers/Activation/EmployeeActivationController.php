@@ -7,6 +7,7 @@ use App\Libraries\Token;
 
 class EmployeeActivationController extends BaseController
 {
+
     private object $employeeRepository;
     private object $activationTokensRepository;
     private object $token;
@@ -59,7 +60,6 @@ class EmployeeActivationController extends BaseController
         return view('activation/employeeActivation/setPassword', $viewData);
     }
 
-
     public function setPassword(): object
     {
         $dataForm = $this->request->getPost();
@@ -93,18 +93,20 @@ class EmployeeActivationController extends BaseController
     {
         $db = db_connect('default');
 
-        $employee = $this->employeeRepository->getBy([
+        $employee = $this->employeeRepository->getWhereFirst([
             'id' => $employeeData['employee_id']
-        ], true);
+        ]);
 
         $db->transBegin();
 
-        $this->employeeRepository->update($employee->id, [
+        $this->employeeRepository->update([
+            'id' => $employee->id
+                ], [
             'password' => $employeeData['password'],
             'is_active' => true
         ]);
 
-        $this->activationTokensRepository->removeBy([
+        $this->activationTokensRepository->removeWhere([
             'email' => $employee->email
         ]);
 
@@ -125,9 +127,9 @@ class EmployeeActivationController extends BaseController
      */
     private function getEmployeeDataByEmail(object $account): null|object
     {
-        return $this->employeeRepository->getBy([
-            'email' => $account->email
-        ], true);
+        return $this->employeeRepository->getWhereFirst([
+                    'email' => $account->email
+        ]);
     }
 
     /**
@@ -143,8 +145,8 @@ class EmployeeActivationController extends BaseController
         $tokenHash = $this->token->getTokenHash();
 
         return $this->activationTokensRepository->getBy([
-            'token_hash' => $tokenHash
-        ], true);
+                    'token_hash' => $tokenHash
+                        ], true);
     }
 
     /**
@@ -157,4 +159,5 @@ class EmployeeActivationController extends BaseController
     {
         return Date('Y-m-d H:i:s') < $account->created_at;
     }
+
 }

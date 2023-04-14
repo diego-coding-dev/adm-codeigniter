@@ -75,6 +75,16 @@ class EmployeeAuthentication implements AuthenticationInterface
         return session()->get('employee_id');
     }
 
+    public function isAuthenticated(): bool
+    {
+        return session()->has('employee_id');
+    }
+
+    public function isActive(): bool
+    {
+        return $this->data()->is_active === 't';
+    }
+
     /**
      * Realiza o logout da conta
      *

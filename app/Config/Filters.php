@@ -21,6 +21,12 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
+        // ---------------------------------------------------------------------
+        'is_authenticated' => \App\Filters\IsAuthenticated::class,
+        'is_not_authenticated' => \App\Filters\IsNotAuthenticated::class,
+        'cart_item_empty' => \App\Filters\EmptyOrderCart::class,
+        'product_is_zero' => \App\Filters\ProductNoMore::class,
+        'teste' => \App\Filters\Teste::class,
     ];
 
     /**

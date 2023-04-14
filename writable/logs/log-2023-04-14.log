@@ -1,0 +1,451 @@
+INFO - 2023-04-14 10:15:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:15:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-14 10:15:55 --> CodeIgniter\Router\RouteCollection::getFilterForRoute(): Return value must be of type string, array returned
+in SYSTEMPATH/Router/RouteCollection.php on line 1143.
+ 1 SYSTEMPATH/Router/Router.php(189): CodeIgniter\Router\RouteCollection->getFilterForRoute('adm/storage')
+ 2 SYSTEMPATH/CodeIgniter.php(815): CodeIgniter\Router\Router->handle('adm/storage')
+ 3 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-14 10:16:33 --> CodeIgniter\Router\RouteCollection::getFilterForRoute(): Return value must be of type string, array returned
+in SYSTEMPATH/Router/RouteCollection.php on line 1143.
+ 1 SYSTEMPATH/Router/Router.php(189): CodeIgniter\Router\RouteCollection->getFilterForRoute('adm/storage')
+ 2 SYSTEMPATH/CodeIgniter.php(815): CodeIgniter\Router\Router->handle('adm/storage')
+ 3 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-14 10:16:34 --> CodeIgniter\Router\RouteCollection::getFilterForRoute(): Return value must be of type string, array returned
+in SYSTEMPATH/Router/RouteCollection.php on line 1143.
+ 1 SYSTEMPATH/Router/Router.php(189): CodeIgniter\Router\RouteCollection->getFilterForRoute('adm/storage')
+ 2 SYSTEMPATH/CodeIgniter.php(815): CodeIgniter\Router\Router->handle('adm/storage')
+ 3 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-14 10:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-14 10:17:32 --> Attempt to read property "name" on null
+in APPPATH/Views/layout/adm-navbar.php on line 177.
+ 1 APPPATH/Views/layout/adm-navbar.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on null', '/home/diego/_PHP/adm-codeigniter/app/Views/layout/adm-navbar.php', 177)
+ 2 SYSTEMPATH/View/View.php(213): include('/home/diego/_PHP/adm-codeigniter/app/Views/layout/adm-navbar.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(431): CodeIgniter\View\View->render('layout/adm-navbar', null, true)
+ 5 APPPATH/Views/layout/adm-main.php(25): CodeIgniter\View\View->include('layout/adm-navbar')
+ 6 SYSTEMPATH/View/View.php(213): include('/home/diego/_PHP/adm-codeigniter/app/Views/layout/adm-main.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('layout/adm-main', [], true)
+ 9 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('adm/storage/storage/listSearch', [], true)
+10 APPPATH/Controllers/Adm/Storage/StorageController.php(51): view('adm/storage/storage/listSearch', [...])
+11 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Storage\StorageController->listSearch()
+12 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Storage\StorageController))
+13 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-14 10:18:10 --> Class "Config\App\Filters\IsAuthenticated" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('adm/storage', 'before')
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-14 10:21:53 --> Class "Config\App\Filters\IsAuthenticated" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('adm/storage', 'before')
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-14 10:22:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:22:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:22:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:25:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:25:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:25:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:26:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:26:06 --> CSRF token verified.
+INFO - 2023-04-14 10:26:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:26:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:26:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:26:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:27:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:27:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:27:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:27:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:27:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:27:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:28:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:28:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:28:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:30:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:33:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:33:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 10:33:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:01:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:01:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:01:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:01:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:01:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:02:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:03:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-14 11:04:52 --> Call to undefined function App\Filters\decrypt()
+in APPPATH/Filters/EmptyOrderCart.php on line 30.
+ 1 SYSTEMPATH/Filters/Filters.php(173): App\Filters\EmptyOrderCart->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('adm/order/finish/deaffea8291e1f24ead1ecc2a83f210abb35af1663e2aceb6f09e9d2428a4f386be5be3c96651ade9337dc71de5986aab5f60c7ddcea3e6eedb21e4f1d223711fa005c5ec7c1a1065d49e8da70a722bf7e', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-14 11:06:45 --> Call to undefined function App\Filters\decrypt()
+in APPPATH/Filters/EmptyOrderCart.php on line 30.
+ 1 SYSTEMPATH/Filters/Filters.php(173): App\Filters\EmptyOrderCart->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('adm/order/finish/deaffea8291e1f24ead1ecc2a83f210abb35af1663e2aceb6f09e9d2428a4f386be5be3c96651ade9337dc71de5986aab5f60c7ddcea3e6eedb21e4f1d223711fa005c5ec7c1a1065d49e8da70a722bf7e', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-14 11:10:38 --> Call to undefined method CodeIgniter\HTTP\URI::segments()
+in APPPATH/Filters/EmptyOrderCart.php on line 30.
+ 1 SYSTEMPATH/Filters/Filters.php(173): App\Filters\EmptyOrderCart->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('adm/order/finish/deaffea8291e1f24ead1ecc2a83f210abb35af1663e2aceb6f09e9d2428a4f386be5be3c96651ade9337dc71de5986aab5f60c7ddcea3e6eedb21e4f1d223711fa005c5ec7c1a1065d49e8da70a722bf7e', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-14 11:10:44 --> Call to undefined method CodeIgniter\HTTP\URI::segment()
+in APPPATH/Filters/EmptyOrderCart.php on line 30.
+ 1 SYSTEMPATH/Filters/Filters.php(173): App\Filters\EmptyOrderCart->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('adm/order/finish/deaffea8291e1f24ead1ecc2a83f210abb35af1663e2aceb6f09e9d2428a4f386be5be3c96651ade9337dc71de5986aab5f60c7ddcea3e6eedb21e4f1d223711fa005c5ec7c1a1065d49e8da70a722bf7e', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-14 11:11:35 --> Undefined variable $orderId
+in APPPATH/Filters/EmptyOrderCart.php on line 34.
+ 1 APPPATH/Filters/EmptyOrderCart.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $orderId', '/home/diego/_PHP/adm-codeigniter/app/Filters/EmptyOrderCart.php', 34)
+ 2 SYSTEMPATH/Filters/Filters.php(173): App\Filters\EmptyOrderCart->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('adm/order/finish/deaffea8291e1f24ead1ecc2a83f210abb35af1663e2aceb6f09e9d2428a4f386be5be3c96651ade9337dc71de5986aab5f60c7ddcea3e6eedb21e4f1d223711fa005c5ec7c1a1065d49e8da70a722bf7e', 'before')
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-14 11:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:23:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-14 11:35:48 --> Undefined variable $account
+in APPPATH/Views/layout/adm-navbar.php on line 177.
+ 1 APPPATH/Views/layout/adm-navbar.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $account', '/home/diego/_PHP/adm-codeigniter/app/Views/layout/adm-navbar.php', 177)
+ 2 SYSTEMPATH/View/View.php(213): include('/home/diego/_PHP/adm-codeigniter/app/Views/layout/adm-navbar.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(431): CodeIgniter\View\View->render('layout/adm-navbar', null, true)
+ 5 APPPATH/Views/layout/adm-main.php(25): CodeIgniter\View\View->include('layout/adm-navbar')
+ 6 SYSTEMPATH/View/View.php(213): include('/home/diego/_PHP/adm-codeigniter/app/Views/layout/adm-main.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('layout/adm-main', [], true)
+ 9 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('home', [], true)
+10 APPPATH/Controllers/Home.php(9): view('home')
+11 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+12 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-14 11:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-14 11:35:58 --> Uncaught TypeError: route_to(): Argument #1 ($method) must be of type string, null given, called in /home/diego/_PHP/adm-codeigniter/app/Views/errors/html/error_404.php on line 50 and defined in /home/diego/_PHP/adm-codeigniter/system/Common.php:968
+Stack trace:
+#0 /home/diego/_PHP/adm-codeigniter/app/Views/errors/html/error_404.php(50): route_to(NULL)
+#1 /home/diego/_PHP/adm-codeigniter/system/Debug/Exceptions.php(282): include('/home/diego/_PH...')
+#2 /home/diego/_PHP/adm-codeigniter/system/Debug/Exceptions.php(285): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#3 /home/diego/_PHP/adm-codeigniter/system/Debug/Exceptions.php(156): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+ã€Previous Exceptionã€‘
+CodeIgniter\Exceptions\PageNotFoundException
+Can't find a route for 'get: authenticate'.
+#0 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(993): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Can't find a ro...')
+#1 /home/diego/_PHP/adm-codeigniter/system/CodeIgniter.php(387): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 /home/diego/_PHP/adm-codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#3 /home/diego/_PHP/adm-codeigniter/system/Commands/Server/rewrite.php(47): require_once('/home/diego/_PH...')
+#4 {main}
+in SYSTEMPATH/Common.php on line 968.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-04-14 11:43:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:43:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:54:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:54:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:54:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:54:30 --> CSRF token verified.
+INFO - 2023-04-14 11:54:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:54:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:54:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-14 11:55:09 --> hex2bin(): Hexadecimal input string must have an even length
+in APPPATH/Helpers/encrypt_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'hex2bin(): Hexadecimal input string must have an even length', '/home/diego/_PHP/adm-codeigniter/app/Helpers/encrypt_helper.php', 19)
+ 2 APPPATH/Helpers/encrypt_helper.php(19): hex2bin('9600e0ee89d69575d316ca8b8404903137e748420f6d7c79358b7704130e9caf3068726cd791d34fdc2ceeeaa572e57efa1931e289b5754182c965a1f1ffeeaedd0deee13a81417d831932e8da23f434d')
+ 3 APPPATH/Filters/EmptyOrderCart.php(31): decrypt('9600e0ee89d69575d316ca8b8404903137e748420f6d7c79358b7704130e9caf3068726cd791d34fdc2ceeeaa572e57efa1931e289b5754182c965a1f1ffeeaedd0deee13a81417d831932e8da23f434d')
+ 4 SYSTEMPATH/Filters/Filters.php(173): App\Filters\EmptyOrderCart->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('adm/order/finish/9600e0ee89d69575d316ca8b8404903137e748420f6d7c79358b7704130e9caf3068726cd791d34fdc2ceeeaa572e57efa1931e289b5754182c965a1f1ffeeaedd0deee13a81417d831932e8da23f434d', 'before')
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-14 11:55:22 --> hex2bin(): Hexadecimal input string must have an even length
+in APPPATH/Helpers/encrypt_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'hex2bin(): Hexadecimal input string must have an even length', '/home/diego/_PHP/adm-codeigniter/app/Helpers/encrypt_helper.php', 19)
+ 2 APPPATH/Helpers/encrypt_helper.php(19): hex2bin('9600e0ee89d69575d316ca8b8404903137e748420f6d7c79358b7704130e9caf3068726cd791d34fdc2ceeeaa572e57efa1931e289b5754182c965a1f1ffeeaedd0deee13a81417d831932e8da23f434d')
+ 3 APPPATH/Filters/EmptyOrderCart.php(31): decrypt('9600e0ee89d69575d316ca8b8404903137e748420f6d7c79358b7704130e9caf3068726cd791d34fdc2ceeeaa572e57efa1931e289b5754182c965a1f1ffeeaedd0deee13a81417d831932e8da23f434d')
+ 4 SYSTEMPATH/Filters/Filters.php(173): App\Filters\EmptyOrderCart->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('adm/order/finish/9600e0ee89d69575d316ca8b8404903137e748420f6d7c79358b7704130e9caf3068726cd791d34fdc2ceeeaa572e57efa1931e289b5754182c965a1f1ffeeaedd0deee13a81417d831932e8da23f434d', 'before')
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-14 11:55:29 --> Decrypting: authentication failed.
+in SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php on line 137.
+ 1 SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php(137): CodeIgniter\Encryption\Exceptions\EncryptionException::forAuthenticationFailed()
+ 2 APPPATH/Helpers/encrypt_helper.php(19): CodeIgniter\Encryption\Handlers\OpenSSLHandler->decrypt('íÐÞî¨Ø1“.¢?CM')
+ 3 APPPATH/Filters/EmptyOrderCart.php(31): decrypt('39600e0ee89d69575d316ca8b8404903137e748420f6d7c79358b7704130e9caf3068726cd791d34fdc2ceeeaa572e57efa1931e289b5754182c965a1f1ffeeaedd0deee13a81417d831932e8da23f434d')
+ 4 SYSTEMPATH/Filters/Filters.php(173): App\Filters\EmptyOrderCart->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('adm/order/finish/39600e0ee89d69575d316ca8b8404903137e748420f6d7c79358b7704130e9caf3068726cd791d34fdc2ceeeaa572e57efa1931e289b5754182c965a1f1ffeeaedd0deee13a81417d831932e8da23f434d', 'before')
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-14 11:55:54 --> Decrypting: authentication failed.
+in SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php on line 137.
+ 1 SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php(137): CodeIgniter\Encryption\Exceptions\EncryptionException::forAuthenticationFailed()
+ 2 APPPATH/Helpers/encrypt_helper.php(19): CodeIgniter\Encryption\Handlers\OpenSSLHandler->decrypt('íÐÞî¨Ø1“.¢?CM')
+ 3 APPPATH/Filters/EmptyOrderCart.php(31): decrypt('39600e0ee89d69575d316ca8b8404903137e748420f6d7c79358b7704130e9caf3068726cd791d34fdc2ceeeaa572e57efa1931e289b5754182c965a1f1ffeeaedd0deee13a81417d831932e8da23f434d')
+ 4 SYSTEMPATH/Filters/Filters.php(173): App\Filters\EmptyOrderCart->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('adm/order/finish/39600e0ee89d69575d316ca8b8404903137e748420f6d7c79358b7704130e9caf3068726cd791d34fdc2ceeeaa572e57efa1931e289b5754182c965a1f1ffeeaedd0deee13a81417d831932e8da23f434d', 'before')
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-14 11:56:00 --> Decrypting: authentication failed.
+in SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php on line 137.
+ 1 SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php(137): CodeIgniter\Encryption\Exceptions\EncryptionException::forAuthenticationFailed()
+ 2 APPPATH/Helpers/encrypt_helper.php(19): CodeIgniter\Encryption\Handlers\OpenSSLHandler->decrypt('íÐÞî¨Ø1“.¢?CM')
+ 3 APPPATH/Filters/EmptyOrderCart.php(31): decrypt('39600e0ee89d69575d316ca8b8404903137e748420f6d7c79358b7704130e9caf3068726cd791d34fdc2ceeeaa572e57efa1931e289b5754182c965a1f1ffeeaedd0deee13a81417d831932e8da23f434d')
+ 4 SYSTEMPATH/Filters/Filters.php(173): App\Filters\EmptyOrderCart->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('adm/order/finish/39600e0ee89d69575d316ca8b8404903137e748420f6d7c79358b7704130e9caf3068726cd791d34fdc2ceeeaa572e57efa1931e289b5754182c965a1f1ffeeaedd0deee13a81417d831932e8da23f434d', 'before')
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-14 11:56:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:56:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:56:12 --> CSRF token verified.
+INFO - 2023-04-14 11:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:56:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 11:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:31:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:31:41 --> CSRF token verified.
+INFO - 2023-04-14 16:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:31:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:31:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:31:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:31:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:31:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:31:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:32:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:32:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:32:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:38:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:38:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:38:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:38:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:38:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-14 16:39:54 --> hex2bin(): Hexadecimal input string must have an even length
+in APPPATH/Helpers/encrypt_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'hex2bin(): Hexadecimal input string must have an even length', '/home/diego/_PHP/adm-codeigniter/app/Helpers/encrypt_helper.php', 19)
+ 2 APPPATH/Helpers/encrypt_helper.php(19): hex2bin('orderId')
+ 3 APPPATH/Filters/EmptyOrderCart.php(31): decrypt('orderId')
+ 4 SYSTEMPATH/Filters/Filters.php(173): App\Filters\EmptyOrderCart->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 5 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('adm/order/finish/b254dd86b64453fad031f075bf0d4a2e22d437f3bd95ab8de3b2cdf6b153af94071b34b405fc3180554d0959735551beff4da48b7f6788ecfc44f36bedfd64734121afebee7b8c336191cc53fa028e827b', 'before')
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-14 16:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:45:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:45:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:45:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:45:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:45:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:45:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:45:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 16:45:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 17:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 17:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 17:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 17:44:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 17:44:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 17:44:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 17:44:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 17:44:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 17:50:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 17:50:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-14 17:51:11 --> "teste,cart_item_empty" filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 340.
+ 1 SYSTEMPATH/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('teste,cart_item_empty')
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\Filters\Filters->enableFilter('teste,cart_item_empty', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-14 17:55:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 17:55:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 17:55:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:01:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:06:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:06:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:06:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:06:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:06:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:06:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-14 18:08:27 --> App\Repository\ORMdefault\BaseRepository::find(): Argument #1 ($id) must be of type int, array given, called in /home/diego/_PHP/adm-codeigniter/app/Filters/ProductNoMore.php on line 30
+in APPPATH/Repository/ORMdefault/BaseRepository.php on line 40.
+ 1 APPPATH/Filters/ProductNoMore.php(30): App\Repository\ORMdefault\BaseRepository->find([...])
+ 2 SYSTEMPATH/Filters/Filters.php(173): App\Filters\ProductNoMore->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('adm/storage/product/remove/3b620c0031133cf483ed745f640ada6680e82b4f3c5dd56ffcc253fbab7e531c2afe1581fd2e627f755493e3490caa9122a042e6cc67682278c321d4f6b48529564a4985e3a12f6bd1cb7ee897a12e67e4', 'before')
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-14 18:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:10:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:10:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:10:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:10:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:10:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:10:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-14 18:15:56 --> Attempt to read property "is_active" on null
+in APPPATH/Libraries/Authentication/EmployeeAuthentication.php on line 85.
+ 1 APPPATH/Libraries/Authentication/EmployeeAuthentication.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "is_active" on null', '/home/diego/_PHP/adm-codeigniter/app/Libraries/Authentication/EmployeeAuthentication.php', 85)
+ 2 APPPATH/Filters/IsNotAuthenticated.php(31): App\Libraries\Authentication\EmployeeAuthentication->isActive()
+ 3 SYSTEMPATH/Filters/Filters.php(173): App\Filters\IsNotAuthenticated->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('adm/storage/product/list', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-14 18:16:16 --> Attempt to read property "is_active" on null
+in APPPATH/Libraries/Authentication/EmployeeAuthentication.php on line 85.
+ 1 APPPATH/Libraries/Authentication/EmployeeAuthentication.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "is_active" on null', '/home/diego/_PHP/adm-codeigniter/app/Libraries/Authentication/EmployeeAuthentication.php', 85)
+ 2 APPPATH/Filters/IsNotAuthenticated.php(31): App\Libraries\Authentication\EmployeeAuthentication->isActive()
+ 3 SYSTEMPATH/Filters/Filters.php(173): App\Filters\IsNotAuthenticated->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('adm/storage/product/list', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+CRITICAL - 2023-04-14 18:16:18 --> Attempt to read property "is_active" on null
+in APPPATH/Libraries/Authentication/EmployeeAuthentication.php on line 85.
+ 1 APPPATH/Libraries/Authentication/EmployeeAuthentication.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "is_active" on null', '/home/diego/_PHP/adm-codeigniter/app/Libraries/Authentication/EmployeeAuthentication.php', 85)
+ 2 APPPATH/Filters/IsNotAuthenticated.php(31): App\Libraries\Authentication\EmployeeAuthentication->isActive()
+ 3 SYSTEMPATH/Filters/Filters.php(173): App\Filters\IsNotAuthenticated->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('adm/storage/product/list', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-14 18:16:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:17:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-14 18:17:18 --> App\Libraries\Authentication\EmployeeAuthentication::isActive(): Return value must be of type App\Libraries\Authentication\boll, bool returned
+in APPPATH/Libraries/Authentication/EmployeeAuthentication.php on line 85.
+ 1 APPPATH/Filters/IsNotAuthenticated.php(31): App\Libraries\Authentication\EmployeeAuthentication->isActive()
+ 2 SYSTEMPATH/Filters/Filters.php(173): App\Filters\IsNotAuthenticated->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('adm/storage/product/list', 'before')
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-14 18:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:18:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:18:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:18:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:18:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:18:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:18:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:38:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:38:30 --> CSRF token verified.
+CRITICAL - 2023-04-14 18:38:30 --> Undefined variable $employeeData
+in APPPATH/Repository/ORMdefault/EmployeeRepository.php on line 27.
+ 1 APPPATH/Repository/ORMdefault/EmployeeRepository.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employeeData', '/home/diego/_PHP/adm-codeigniter/app/Repository/ORMdefault/EmployeeRepository.php', 27)
+ 2 APPPATH/Controllers/Adm/Rh/EmployeeController.php(88): App\Repository\ORMdefault\EmployeeRepository->add([...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Adm\Rh\EmployeeController->add()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adm\Rh\EmployeeController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-14 18:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:41:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:41:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:41:14 --> CSRF token verified.
+INFO - 2023-04-14 18:41:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:41:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:42:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:42:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:42:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:42:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-14 18:42:56 --> Declaration of App\Repository\ORMdefault\ActivationTokenRepository::update(int $id, array $data): bool must be compatible with App\Repository\ORMdefault\BaseRepository::update(array $where, array $data): bool
+in APPPATH/Repository/ORMdefault/ActivationTokenRepository.php on line 24.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-04-14 18:46:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-04-14 18:46:11 --> Call to a member function where() on null
+in APPPATH/Repository/ORMdefault/BaseRepository.php on line 63.
+ 1 APPPATH/Controllers/Activation/EmployeeActivationController.php(128): App\Repository\ORMdefault\BaseRepository->getWhereFirst([...], true)
+ 2 APPPATH/Controllers/Activation/EmployeeActivationController.php(48): App\Controllers\Activation\EmployeeActivationController->getEmployeeDataByEmail(Object(App\Entities\ActivationTokensEntity))
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Activation\EmployeeActivationController->check('52129d36d1bdbd3b6b3e8f30d123e7b7')
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Activation\EmployeeActivationController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/diego/_PHP/adm-codeigniter/public/index.php')
+INFO - 2023-04-14 18:46:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:46:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:46:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:47:00 --> CSRF token verified.
+INFO - 2023-04-14 18:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:48:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:48:53 --> CSRF token verified.
+INFO - 2023-04-14 18:48:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:48:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:49:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:49:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-04-14 18:49:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.

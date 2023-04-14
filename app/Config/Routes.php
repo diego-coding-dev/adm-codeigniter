@@ -40,7 +40,7 @@ $routes->group('/', function ($routes) {
     /**
      * rota authentication
      */
-    $routes->group('authentication', function ($routes) {
+    $routes->group('authentication', ['filter' => 'is_authenticated'], function ($routes) {
         $routes->get('', 'Authentication\EmployeeAuthenticationController::authentication', ['as' => 'authentication']);
         $routes->post('authenticate', 'Authentication\EmployeeAuthenticationController::authenticate', ['as' => 'authenticate']);
     });
@@ -49,7 +49,7 @@ $routes->group('/', function ($routes) {
 /**
  * rota adm
  */
-$routes->group('adm', function ($routes) {
+$routes->group('adm', ['filter' => 'is_not_authenticated'], function ($routes) {
     /**
      * rota rh
      */
@@ -111,7 +111,7 @@ $routes->group('adm', function ($routes) {
             $routes->get('show/(:hash)', 'Adm\Storage\ProductController::show/$1', ['as' => 'product.show']);
             $routes->get('change-image/(:hash)', 'Adm\Storage\ProductController::changeImage/$1', ['as' => 'product.change-image']);
             $routes->post('save-image/(:hash)', 'Adm\Storage\ProductController::saveImage/$1', ['as' => 'product.save-image']);
-            $routes->get('remove/(:hash)', 'Adm\Storage\ProductController::remove/$1', ['as' => 'product.remove']);
+            $routes->get('remove/(:hash)', 'Adm\Storage\ProductController::remove/$1', ['as' => 'product.remove', 'filter' => 'product_is_zero']);
             $routes->post('confirm-remove/(:hash)', 'Adm\Storage\ProductController::confirmRemove/$1', ['as' => 'product.confirm-remove']);
         });
     });
@@ -124,8 +124,8 @@ $routes->group('adm', function ($routes) {
         /**
          * rota finish
          */
-        $routes->group('finish', function ($routes) {
-            $routes->get('(:hash)', 'Adm\Delivery\OrderController::finish/$1', ['as' => 'order.finish']);
+        $routes->group('finish/(:hash)', ['filter' => 'cart_item_empty'], function ($routes) {
+            $routes->get('', 'Adm\Delivery\OrderController::finish/$1', ['as' => 'order.finish']);
             $routes->post('confirm/(:hash)', 'Adm\Delivery\OrderController::finishConfirm/$1', ['as' => 'order.finish-confirm']);
         });
         /**
