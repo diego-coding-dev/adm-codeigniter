@@ -24,8 +24,8 @@ A aplicação consiste em registrar os pedidos dos clientes, onde os itens são 
 ## Back end
 
 - PHP
-- Laravel Codeigniter 4.3.3
-- MariaDB 10.4.27
+- Codeigniter 4.3.3
+- Postgresql 14.7
 
 ## Front end
 
