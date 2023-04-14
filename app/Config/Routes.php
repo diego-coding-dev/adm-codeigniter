@@ -120,6 +120,21 @@ $routes->group('adm', function ($routes) {
      */
     $routes->group('order', function ($routes) {
         $routes->get('list', 'Adm\Delivery\OrderController::list', ['as' => 'order.list']);
+        $routes->get('details/(:hash)', 'Adm\Delivery\OrderController::details/$1', ['as' => 'order.details']);
+        /**
+         * rota finish
+         */
+        $routes->group('finish', function ($routes) {
+            $routes->get('(:hash)', 'Adm\Delivery\OrderController::finish/$1', ['as' => 'order.finish']);
+            $routes->post('confirm/(:hash)', 'Adm\Delivery\OrderController::finishConfirm/$1', ['as' => 'order.finish-confirm']);
+        });
+        /**
+         * rota cancel
+         */
+        $routes->group('cancel', function ($routes) {
+            $routes->get('(:hash)', 'Adm\Delivery\OrderController::cancel/$1', ['as' => 'order.cancel']);
+            $routes->post('confirm/(:hash)', 'Adm\Delivery\OrderController::cancelConfirm/$1', ['as' => 'order.cancel-confirm']);
+        });
         /**
          * rota client
          */
@@ -137,18 +152,6 @@ $routes->group('adm', function ($routes) {
             $routes->post('add-item/(:hash)', 'Adm\Delivery\OrderCartController::addItem/$1', ['as' => 'order.order-cart.add-item']);
             $routes->get('remove-item/(:hash)', 'Adm\Delivery\OrderCartController::removeItem/$1', ['as' => 'order.order-cart.remove-item']);
         });
-        /**
-         * rota add
-         */
-//        $routes->group('add', function ($routes) {
-//
-//            /**
-//             * rota order-cart
-//             */
-//            $routes->group('order-cart', function ($routes) {
-//                $routes->get('itens', 'Adm\Delivery\OrderController::selectClient/$1');
-//            });
-//        });
     });
     /**
      * rota profile

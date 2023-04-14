@@ -44,8 +44,9 @@
                 <table class="table" style="margin-top: 20px;">
                     <thead>
                         <tr>
-                            <th scope="col">Produto</th>
-                            <th style="width: 150px;" scope="col">Registrado há</th>
+                            <th scope="col">Registro</th>
+                            <th style="width: 150px;" scope="col">Status</th>
+                            <th style="width: 150px;" scope="col">Data registro</th>
                             <th class="text-center" scope="col" style="width: 100px;">Ação</th>
                         </tr>
                     </thead>
@@ -55,17 +56,16 @@
 
                             <tr>
                                 <td>
-                                    <img src="<?php echo route_to('product.image', $order->image); ?>" alt="" width="50px;" height="50px;">&nbsp;
-                                    <?php echo esc($order->description); ?>
+                                    #&nbsp;<?php echo esc($order->register); ?>
                                 </td>
                                 <td style="width: 150px;">
-                                    <p style="margin-top: 15px;">
-                                        <?php echo esc(format($order->created_at)); ?>
-                                    </p>
+                                    <?php echo $order->status(); ?>
+                                </td>
+                                <td style="width: 150px;">
+                                    <?php echo esc(format($order->created_at)); ?>
                                 </td>
                                 <th class="text-center" style="width: 100px;">
-                                    <a style="margin-top: 10px;" href="<?php echo route_to('product.show', encrypt($order->id)); ?>" type="button" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
-                                    <a style="margin-top: 10px;" href="<?php echo route_to('product.remove', encrypt($order->id)); ?>" type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></a>
+                                    <a href="<?php echo route_to('order.details', encrypt($order->id)); ?>" type="button" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
                                 </th>
                             </tr>
 
@@ -78,7 +78,7 @@
 
             </div>
         </div>
-</div>
+    </div>
 
 <?php endif; ?>
 

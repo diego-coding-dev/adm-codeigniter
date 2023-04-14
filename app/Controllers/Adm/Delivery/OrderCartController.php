@@ -27,9 +27,9 @@ class OrderCartController extends BaseController
      * Exibe tela com os dados do cliente e do pedido
      * 
      * @param string $orderId
-     * @return type
+     * @return string
      */
-    public function show(string $orderId)
+    public function show(string $orderId): string
     {
         // colocar filtro para saber se é ajax (middleware)
         $this->dataView = [
@@ -50,9 +50,9 @@ class OrderCartController extends BaseController
      * Exibe tela com a lista de itens disponíveis no estoque
      * 
      * @param string $orderId
-     * @return type
+     * @return string
      */
-    public function addingItem(string $orderId)
+    public function addingItem(string $orderId): string
     {
         // colocar filtro para saber se é ajax (middleware)
         $this->dataView = [
@@ -86,9 +86,9 @@ class OrderCartController extends BaseController
      * Exibe tela para adicionar a quantidade de determinado item
      * 
      * @param string $storageId
-     * @return type
+     * @return string
      */
-    public function addItemQuantity(string $storageId)
+    public function addItemQuantity(string $storageId): string
     {
         $decStorageId = $this->decrypt($storageId);
 
@@ -118,10 +118,10 @@ class OrderCartController extends BaseController
      * Adiciona item no carrinho
      * 
      * @param string $storageId
-     * @return type
+     * @return string
      * @throws type
      */
-    public function addItem(string $storageId)
+    public function addItem(string $storageId): string
     {
         $formData = $this->request->getPost();
 
@@ -134,7 +134,7 @@ class OrderCartController extends BaseController
             'storage_id' => $this->decrypt($storageId),
             'quantity' => $formData['quantity']
         ];
-        dd('passou');
+
         if (!$this->orderCartRepository->add($cartItemData)) {
             session()->remove('order_id');
             session()->setFlashdata('route', 'order.list');
@@ -150,10 +150,10 @@ class OrderCartController extends BaseController
      * Remove item do carrinho
      * 
      * @param string $itemId
-     * @return type
+     * @return string
      * @throws type
      */
-    public function removeItem(string $itemId)
+    public function removeItem(string $itemId): string
     {
         $decItemId = $this->decrypt($itemId);
 

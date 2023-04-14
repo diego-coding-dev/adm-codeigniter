@@ -39,4 +39,79 @@ class OrderRepository extends BaseRepository implements DefaulRepositoryInterfac
         ]);
     }
 
+    public function hasManyItens(int $orderId)
+    {
+        return \Config\Services::repository('orderItens')->getWhere([
+                    'order_id' => $orderId
+        ], true);
+    }
+
+    public function finish(int $orderId)
+    {
+        $db = db_connect('default');
+        $orderCartRepository = \Config\Services::repository('orderCart');
+        $orderItensRepository = \Config\Services::repository('orderItens');
+
+        $db->transBegin();
+
+        $cartItens = $orderCartRepository->getWhere(['order_id' => $orderId]);
+
+        foreach ($cartItens as $item) {
+            $orderItensRepository->add([
+                'order_id' => $item->order_id,
+                'storage_id' => $item->storage_id,
+                'quantity' => $item->quantity
+            ]);
+        }
+
+        $orderCartRepository->removeWhere(['order_id' => $orderId]);
+
+        parent::update(['id' => $orderId], ['is_settled' => true]);
+
+        if ($db->transStatus() === false) {
+            $db->transRollback();
+            return false;
+        }
+
+        $db->transCommit();
+        return true;
+    }
+
+    public function cancel(int $orderId): bool
+    {
+        $db = db_connect('default');
+        $orderCartRepository = \Config\Services::repository('orderCart');
+        $storageRepository = \Config\Services::repository('storage');
+
+        $db->transBegin();
+
+        $cartItens = $orderCartRepository->getWhere(['order_id' => $orderId]);
+
+        if (count($cartItens) < 1) {
+            return parent::remove($orderId);
+        }
+
+        foreach ($cartItens as $item) {
+            $storageItem = $storageRepository->find($item->storage_id);
+
+            $storageData['quantity'] = $storageItem->quantity + $item->quantity;
+
+            $storageRepository->update(['id' => $item->storage_id], $storageData);
+        }
+
+        $orderCartRepository->removeWhere(['order_id' => $orderId]);
+
+        parent::update(['id' => $orderId], ['is_canceled' => true]);
+
+        parent::remove($orderId);
+
+        if ($db->transStatus() === false) {
+            $db->transRollback();
+            return false;
+        }
+
+        $db->transCommit();
+        return true;
+    }
+
 }

@@ -79,7 +79,12 @@ abstract class BaseRepository implements BaseRepositoryInterface
 
     public function remove(int $id): bool
     {
-        return $this->model->where('id', $id)->delete();
+        return $this->model->delete($id);
+    }
+
+    public function removeWhere(array $where): bool
+    {
+        return $this->model->where($where)->delete();
     }
 
 }

@@ -15,12 +15,8 @@
 <?php echo $this->section('content'); ?>
 
 <div class="col-xl-4">
-    <a href="<?php echo route_to('order.list'); ?>" type="button" class="btn btn-secondary btn-sm">Voltar</a>
-    <a href="<?php echo route_to('order.cancel', $orderId); ?>" type="button" class="btn btn-danger btn-sm">Cancelar pedido</a>
 
-    <?php if (count($cartItens) > 0): ?>
-        <a href="<?php echo route_to('order.finish', $orderId); ?>" type="button" class="btn btn-success btn-sm">Finalizar pedido</a>
-    <?php endif; ?>
+    <a href="<?php echo route_to('order.list'); ?>" type="button" class="btn btn-secondary btn-sm">Voltar</a>
 
     <div class="col-xl-12">
 
@@ -53,11 +49,9 @@
 
 <div class="col-xl-8">
 
-    <a href="<?php echo route_to('order.order-cart.adding-item', $orderId); ?>" type="button" class="btn btn-primary btn-sm">Adicionar item</a>
-
     <div class="col-xl-12">
 
-        <div class="card" style="margin-top: 20px;">
+        <div class="card" style="margin-top: 50px;">
             <div class="card-body">
                 <div class="tab-content">
 
@@ -65,7 +59,7 @@
 
                         <h5 class="card-title"><i class="ri-shopping-bag-2-line"></i>&nbsp;Lista de itens&nbsp;</h5>
 
-                        <?php if (count($cartItens) < 1): ?>
+                        <?php if (count($orderItens) < 1): ?>
 
                             <h4 class="text-center">A lista está vazia!</h4>
 
@@ -76,18 +70,14 @@
                                     <tr>
                                         <th scope="col">Iten</th>
                                         <th class="text-center" style="width: 150px;" scope="col">Qantidade</th>
-                                        <th class="text-center" scope="col" style="width: 100px;">Ação</th>
                                     </tr>
                                 </thead>
                                 <tbody>
 
-                                    <?php foreach ($cartItens as $item): ?>
+                                    <?php foreach ($orderItens as $item): ?>
                                         <tr>
                                             <td><?php echo esc($item->description); ?></td>
                                             <td class="text-center" style="width: 150px;"><?php echo esc($item->quantity); ?></td>
-                                            <td class="text-center" style="width: 100px;">
-                                                <a href="<?php echo route_to('order.order-cart.remove-item', encrypt($item->id)); ?>" type="button" class="btn btn-danger btn-sm"><i class="ri-delete-bin-6-fill"></i></a>
-                                            </td>
                                         </tr>
                                     <?php endforeach; ?>
 

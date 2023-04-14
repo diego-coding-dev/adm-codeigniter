@@ -35,20 +35,7 @@ class OrderController extends BaseController
             'account' => $this->auth->data()
         ];
 
-        $dataForm = $this->request->getGet();
-
-        // desabilidato, implementar uma pesquisa baseado em datas
-        if (count($dataForm) > 0) {
-//            if (is_array($errors = $this->validation->onlyName()->run($this->request->getGet()))) {
-//                return redirect()->back()->with('errors', $errors);
-//            }
-//
-//            $this->dataView['name'] = $name;
-//            $this->dataView['orderList'] = $this->orderRepository->getLike(['name' => $name], true);
-        } else {
-            $this->dataView['orderList'] = $this->orderRepository->all(true);
-        }
-
+        $this->dataView['orderList'] = $this->orderRepository->all();
         $this->dataView['pager'] = $this->orderRepository->pager();
 
         return view('adm/delivery/order/listSearch', $this->dataView);
@@ -94,7 +81,7 @@ class OrderController extends BaseController
      */
     public function selectClient(string $clientId): object
     {
-        $decClientId = $this->decryptUrlId($clientId);
+        $decClientId = $this->decrypt($clientId);
         $hasOrderNotSettled = $this->orderRepository->hasOneNotSettled($decClientId);
 
         if (!$hasOrderNotSettled) {
@@ -113,13 +100,101 @@ class OrderController extends BaseController
         return redirect()->route('order.order-cart-show', [encrypt($hasOrderNotSettled->id)])->with('warning', 'Este cliente possui um pedido em aberto!');
     }
 
+    public function details(string $orderId)
+    {
+        // colocar filtro para saber se é ajax (middleware)
+        $this->dataView = [
+            'title' => 'ADM - Pedido',
+            'dashboard' => 'Detalhes do pedido',
+            'orderId' => $orderId,
+            'account' => $this->auth->data(),
+            'client' => $this->orderRepository->belongsOneClient($this->decrypt($orderId)),
+            'orderItens' => $this->orderRepository->hasManyItens($this->decrypt($orderId), true)
+        ];
+
+        return view('adm/delivery/order/details', $this->dataView);
+    }
+
+    /**
+     * Exibe tela para confirmar o cancelamento do pedido
+     * 
+     * @return string
+     */
+    public function finish(string $orderId): string
+    {
+        $decOrderId = $this->decrypt($orderId);
+
+        $this->dataView = [
+            'title' => 'ADM - Deliveries',
+            'dashboard' => 'Confirmar pedido',
+            'client' => $this->orderRepository->belongsOneClient($decOrderId),
+            'account' => $this->auth->data(),
+            'orderId' => $orderId
+        ];
+
+        return view('adm/delivery/order/finish', $this->dataView);
+    }
+
+    /**
+     * Efetua o registro do pedido
+     * 
+     * @param string $orderId
+     * @return object
+     * @throws type
+     */
+    public function finishConfirm(string $orderId): object
+    {
+        $decOrderId = $this->decrypt($orderId);
+
+        if (!$this->orderRepository->finish($decOrderId)) {
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Operação não realizada, contacte o administrador!');
+        }
+
+        return redirect()->route('order.list')->with('success', 'Pedidos registrado com sucesso!');
+    }
+
+    /**
+     * Exibe tela para confirmar o cancelamento do pedido
+     * 
+     * @return string
+     */
+    public function cancel(string $orderId): string
+    {
+        $this->dataView = [
+            'title' => 'ADM - Deliveries',
+            'dashboard' => 'Cancelar pedido',
+            'account' => $this->auth->data(),
+            'orderId' => $orderId
+        ];
+
+        return view('adm/delivery/order/cancel', $this->dataView);
+    }
+
+    /**
+     * Efetua o cancelamento do pedido
+     * 
+     * @param string $orderId
+     * @return object
+     * @throws type
+     */
+    public function cancelConfirm(string $orderId): object
+    {
+        $decOrderId = $this->decrypt($orderId);
+
+        if (!$this->orderRepository->cancel($decOrderId)) {
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Operação não realizada, contacte o administrador!');
+        }
+
+        return redirect()->route('order.list')->with('success', 'Pedidos cancelado com sucesso!');
+    }
+
     /**
      * Função para decriptografar o id do cliente
      *
      * @param string $clientId
      * @return int
      */
-    private function decryptUrlId(string|array|null $clientId): int
+    private function decrypt(string|array|null $clientId): int
     {
         try {
             return decrypt($clientId);

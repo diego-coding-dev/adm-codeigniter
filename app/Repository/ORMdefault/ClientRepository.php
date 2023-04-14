@@ -20,9 +20,4 @@ class ClientRepository extends BaseRepository implements DefaulRepositoryInterfa
     {
         return $this->model->where('type_user_id', 1)->like($like)->orderBy('id', 'asc')->paginate(10);
     }
-
-    public function all(bool $useView = false): array
-    {
-        return $this->model->where('type_user_id', 1)->orderBy('id', 'asc')->paginate(10);
-    }
 }

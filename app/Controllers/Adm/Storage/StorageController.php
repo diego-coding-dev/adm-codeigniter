@@ -98,6 +98,10 @@ class StorageController extends BaseController
             return redirect()->back()->with('errors', $errors);
         }
 
+        $storageItem = $this->storageRepository->find($decStorageId);
+
+        $dataForm['quantity'] = $storageItem->quantity + $dataForm['quantity'];
+
         $this->storageRepository->update(['id' => $decStorageId], $dataForm);
 
         return redirect()->route('storage.list-search')->with('success', '* Estoque adicionado com sucesso!');

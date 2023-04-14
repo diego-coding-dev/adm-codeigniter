@@ -96,11 +96,6 @@
                         <i class="bi bi-circle"></i><span>Listar</span>
                     </a>
                 </li>
-                <li>
-                    <a href="<?php echo route_to('product.adding'); ?>">
-                        <i class="bi bi-circle"></i><span>Adicionar novo</span>
-                    </a>
-                </li>
             </ul>
         </li><!-- End Components Nav -->
         
